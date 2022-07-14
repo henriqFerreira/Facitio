@@ -1,0 +1,78 @@
+@import "../style.css";
+
+.wrapper { max-width: 90%; margin: 0 auto; }
+
+/* Barra de navegação */
+header {
+    width: 100%; height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 2px solid #FED253;
+    color: #FED253;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s;
+}
+header a:hover {
+    background-color: #FED253;
+    color: #FFFFFF;
+}
+#logo {
+    display: block;
+    height: 45px; width: 116px;
+    background-image: url("../../img/LOGO.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Slogan section (slg-sec) */
+.slg-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slg-sec-left {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.slg-sec-left h1 { font-size: 1.9rem; }
+.subtitle { font-size: 1.2rem; color: #989898; }
+
+.search-inp form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-inp form input[type="text"] {
+    width: 50%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+}
+
+.search-inp form input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    outline: none;
+    background-color: #C3C3E6;
+    cursor: pointer;
+}
+
+.slg-sec-right {
+
+}
