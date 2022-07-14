@@ -1,2 +1,31 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
 section { width: 100%; min-height: 100vh; }
+
+/* Buttons */
+.md-btn {
+    min-width: 200px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 2px solid #FED253;
+    color: #FED253;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.lg-btn {
+    min-width: 300px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 2px solid #FED253;
+    color: #FED253;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+.lg-btn:hover, .md-btn:hover {
+    background-color: #FED253;
+    color: #FFFFFF;
+}

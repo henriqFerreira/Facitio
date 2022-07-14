@@ -12,13 +12,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/homepage/homepage.css">
+    <link rel="stylesheet" href="./css/module/homepage/homepage.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
             <span id="logo"></span>
-            <a href="#">Seja um profissional</a>
+            <a href="#" class="md-btn">Seja um profissional</a>
         </header>
     </div>
     <main>

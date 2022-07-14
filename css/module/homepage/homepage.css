@@ -1,4 +1,4 @@
-@import "../style.css";
+@import "../../style.css";
 
 .wrapper { max-width: 90%; margin: 0 auto; }
 
@@ -9,23 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header a {
-    padding: 14px 20px;
-    border-radius: 10px;
-    border: 2px solid #FED253;
-    color: #FED253;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .2s;
-}
-header a:hover {
-    background-color: #FED253;
-    color: #FFFFFF;
-}
 #logo {
     display: block;
     height: 45px; width: 116px;
-    background-image: url("../../img/LOGO.svg");
+    background-image: url("../../../img/LOGO.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
