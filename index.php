@@ -157,8 +157,10 @@
             <div class="ctg-sec">
 
                 <div class="ctg-opt">
-                    <img src="img/icons/diploma.svg" alt="">
-                    <p>Estudo</p>
+                    <a href="#">
+                        <img src="img/icons/diploma.svg" alt="">
+                        <p>Estudo</p>
+                    </a>
                 </div>
 
                 <div class="ctg-opt">
@@ -191,6 +193,27 @@
                     <p>UX/UI Design</p>
                 </div>
             </div>
+            <section class="hglg-sec" style="border: 2px solid red;">
+                <h1>Categorias em destaque</h1>
+                <div class="hglg-cards">
+                    <div class="hglg-card">
+                        dsasaddsa
+                    </div>
+
+                    <div class="hglg-card">
+                        a
+                    </div>
+
+                    <div class="hglg-card">
+                        a
+                    </div>
+
+                    <div class="hglg-card">
+                        b
+                    </div>
+
+                </div>
+            </section>
         </div>
     </main>
 </body>
