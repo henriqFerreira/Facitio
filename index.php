@@ -154,6 +154,43 @@
                     </svg>
                 </div>
             </section>
+            <div class="ctg-sec">
+
+                <div class="ctg-opt">
+                    <img src="img/icons/diploma.svg" alt="">
+                    <p>Estudo</p>
+                </div>
+
+                <div class="ctg-opt">
+                    <img src="img/icons/car.svg" alt="">    
+                    <p>Automobilístico</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/balloons.svg" alt="">
+                    <p>Festas & Eventos</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/tools.svg" alt="">
+                    <p>Reparos & Consertos</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/home.svg" alt="">
+                    <p>Serviços Domésticos</p>
+                </div>
+                                      
+                <div class="ctg-opt">
+                    <img src="img/icons/computer.svg" alt=""> 
+                    <p>Tecnologia</p>
+                </div>
+                         
+                <div class="ctg-opt">
+                    <img src="img/icons/design.svg" alt=""> 
+                    <p>UX/UI Design</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
