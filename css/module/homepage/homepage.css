@@ -12,7 +12,7 @@ header {
 #logo {
     display: block;
     height: 45px; width: 116px;
-    background-image: url("../../../img/LOGO.svg");
+    background-image: url("../../../img/LOGO.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -92,35 +92,43 @@ header {
 }
 
 .hglg-card {
-    width: 510px; height: 232px; 
+    width: 510px; height: 232px;
+    display: block;
+
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
 }
+
 
 .hglg-cards {
     position: relative;
+    display: block;
+    height: 100vh;
 }
 
 .hglg-cards div:nth-child(1) {
     background-color: rgb(255, 0, 225);
     position: absolute;
-    top: 50px;
+    top: 80px;
 }
 
 .hglg-cards div:nth-child(2) {
     background-color: rgb(0, 157, 255);
     position: absolute;
-    top: 204px;   
-    right: 10px;
+    top: 254px;   
+    right: 0px;
 }
 
 .hglg-cards div:nth-child(3) {
     background-color: rgb(77, 255, 0);
     position: absolute;
-    top: 358px;
+    top: 428px;
 }
 
 .hglg-cards div:nth-child(4) {
     background-color: rgb(179, 255, 0);
     position: absolute;
-    top: 512px;
-    right: 10px;
+    top: 600px;
+    right: 0px;
 }
