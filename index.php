@@ -216,9 +216,41 @@
                 </div>
             </section>
             <section class="abt-us-sec">
-
+                <div>
+                    <h2>Um pouco sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non malesuada lacus, euismod viverra nulla. Mauris vitae mi ac ligula pellentesque maximus ac in ex. Aenean condimentum, massa quis mattis ullamcorper, velit ex sodales purus, at egestas ex lacus eget quam. In ipsum arcu, efficitur quis augue et, mollis porta odio. Sed sodales tortor eu tempus semper.</p>
+                </div>
+                <div>
+                    <button class="sm-btn">Saiba Mais</button>
+                </div>
+            </section>
+            <section class="sgin-sec">
+                <div>
+                    <h2>Torne-se um profissional da Facitio</h2>
+                    <p>Ou contrate um agora mesmo!</p>
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="exemplo@email.com">
+                        <input type="password" name="" id="" placeholder="Senha">
+                        <input type="submit" value="Cadastrar">
+                    </form>
+                </div>
             </section>
         </div>
     </main>
+    <footer>
+        <div class="wrapper">
+            <div class="up">
+                <span id="logo"></span>
+                    <div>
+                        <a href="#">Quem Somos</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div> 
+                <hr>
+            <div class="down">
+                <h3>©2022 - Facitio</h3>
+            </div>        
+        </div>
+    </footer>
 </body>
 </html>

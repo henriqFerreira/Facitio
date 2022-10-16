@@ -25,7 +25,20 @@ section { width: 100%; min-height: 100vh; }
     text-decoration: none;
     transition: all .2s;
 }
-.lg-btn:hover, .md-btn:hover {
+
+.sm-btn{
+    min-width: 100px;
+    min-height: 35px;
+    border-radius: 5px;
+    border: 2px solid #FED253;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;    
+}
+
+.lg-btn:hover, .md-btn:hover{
     background-color: #FED253;
     color: #FFFFFF;
 }

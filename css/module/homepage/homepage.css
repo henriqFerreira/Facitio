@@ -1,6 +1,7 @@
 @import "../../style.css";
 
 .wrapper { max-width: 90%; margin: 0 auto; }
+section{ margin-top: 20px;}
 
 /* Barra de navegação */
 header {
@@ -39,7 +40,7 @@ header {
     align-items: center;
 }
 
-.search-inp form input[type="text"] {
+.search-inp form input[type="text"]{
     width: 50%;
     margin-right: 10px;
     padding: 12px 20px;
@@ -131,4 +132,93 @@ header {
     position: absolute;
     top: 600px;
     right: 0px;
+}
+
+.abt-us-sec{
+    border: 1px solid red;
+    min-height: 200px;
+    background-image: url("../../../img/Group1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+}
+
+.abt-us-sec div:nth-child(1){
+    width: 60%; min-height: 100%;
+    border: 1px solid blue;
+    margin: 10px;
+    font-size: 18px;
+    display: block;
+}
+
+.abt-us-sec div:nth-child(2){
+    width: 10%; min-height: 100%;
+    border: 1px solid blue;
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.abt-us-sec p{
+    padding-top: 20px;
+}
+
+.sgin-sec{
+    min-height: 200px;
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.sgin-sec form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sgin-sec form input[type="email"], input[type="password"]{
+    width: 20%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+}
+
+.sgin-sec form input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    outline: none;
+    background-color: #C3C3E6;
+    cursor: pointer;
+}
+
+footer{
+    min-height: 150px ;
+    background-color: #C3C3E6;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+footer div a{
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+
+.up, .down{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer hr{
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
