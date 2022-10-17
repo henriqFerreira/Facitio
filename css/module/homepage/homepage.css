@@ -137,9 +137,9 @@ header {
 .abt-us-sec{
     border: 1px solid red;
     min-height: 200px;
-    background-image: url("../../../img/Group1.svg");
+    background-image: url("../../../img/Group2.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: right;
     display: flex;
 }
@@ -199,26 +199,36 @@ header {
     cursor: pointer;
 }
 
-footer{
+ footer{
     min-height: 150px ;
     background-color: #C3C3E6;
     color: rgb(255, 255, 255);
-    padding: 30px;
+    
+}
+
+footer div{
+    width:100%; height:74px;
 }
 
 footer div a{
+    display: inline;
     padding-left: 30px;
     color: #FFFFFF;
 }
 
-.up, .down{
+#footerAreas{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+
 
 footer hr{
     border: 0px;
     height: 0px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+} 
+
+

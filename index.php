@@ -157,7 +157,7 @@
             <div class="ctg-sec">
 
                 <div class="ctg-opt">
-                    <a href="#">
+                    <a href="Home.php">
                         <img src="img/icons/diploma.svg" alt="">
                         <p>Estudo</p>
                     </a>
@@ -239,17 +239,17 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="up">
+            <div id="footerAreas" class="up">
                 <span id="logo"></span>
-                    <div>
-                        <a href="#">Quem Somos</a>
-                        <a href="#">Ajuda</a>
-                    </div>
-                </div> 
-                <hr>
-            <div class="down">
+                <span>
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Ajuda</a>
+                </span>
+            </div>
+            <hr>
+            <div id="footerAreas" class="down">
                 <h3>©2022 - Facitio</h3>
-            </div>        
+            </div>
         </div>
     </footer>
 </body>
