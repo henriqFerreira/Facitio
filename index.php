@@ -197,12 +197,7 @@
                 <h1>Categorias em destaque</h1>
                 <div class="hglg-cards">
                     <div class="hglg-card">
-                        <h1>a</h1>
-                        <p>b</p>
-                    </div>
-
-                    <div class="hglg-card">
-                        a
+                        1
                     </div>
 
                     <div class="hglg-card">
@@ -211,6 +206,26 @@
 
                     <div class="hglg-card">
                         b
+                    </div>
+
+                    <div class="hglg-card">
+                        c
+                    </div>
+
+                    <div class="hglg-card">
+                        d
+                    </div>
+
+                    <div class="hglg-card">
+                        e
+                    </div>
+
+                    <div class="hglg-card">
+                        f
+                    </div>
+
+                    <div class="hglg-card">
+                        g
                     </div>
 
                 </div>
