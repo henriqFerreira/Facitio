@@ -3,6 +3,11 @@
 .wrapper { max-width: 90%; margin: 0 auto; }
 section{ margin-top: 20px;}
 
+a:hover { text-decoration: none; color:rgb(156, 156, 156); }
+a:focus { text-decoration: none; color:rgb(158, 158, 158); }
+a:active { text-decoration: none; color:rgb(156, 156, 156); }
+a { text-decoration: none; color: rgb(156, 156, 156);}
+
 /* Barra de navegação */
 header {
     width: 100%; height: 90px;
@@ -10,13 +15,82 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-#logo {
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header a{
+    color: #FED253;
+    font-weight: bolder;
+}
+
+
+/* Logo texto preta */
+#text-logo {
     display: block;
-    height: 45px; width: 116px;
-    background-image: url("../../../img/LOGO.png");
+    height: 45px; width: 125px;
+    background-image: url("../../../img/logo-texto.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* Logo pequena preta */
+#sm-logo-black {
+    display: block;
+    height: 25px; width: 80px;
+    background-image: url("../../../img/logo-preta.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Logo pequena branca */
+#sm-logo-white {
+    display: block;
+    height: 25px; width: 80px;
+    background-image: url("../../../img/logo-branca.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Logo média preta */
+#md-logo-black {
+    display: block;
+    height: 45px; width: 125px;
+    background-image: url("../../../img/logo-preta.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Logo média branca */
+#md-logo-white {
+    display: block;
+    height: 45px; width: 125px;
+    background-image: url("../../../img/logo-branca.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Logo grande preta */
+#bg-logo-black {
+    display: block;
+    height: 67.5px; width: 174px;
+    background-image: url("../../../img/logo-preta.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Logo grande branca */
+#bg-logo-white {
+    display: block;
+    height: 67.5px; width: 174px;
+    background-image: url("../../../img/logo-branca.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /* Slogan section (slg-sec) */
 .slg-sec {
@@ -90,7 +164,7 @@ header {
 
 .hglg-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 25px;
 }
@@ -140,7 +214,6 @@ header {
 }
 
 .abt-us-sec{
-    border: 1px solid red;
     min-height: 200px;
     background-image: url("../../../img/Group2.svg");
     background-repeat: no-repeat;
@@ -151,7 +224,6 @@ header {
 
 .abt-us-sec div:nth-child(1){
     width: 60%; min-height: 100%;
-    border: 1px solid blue;
     margin: 10px;
     font-size: 18px;
     display: block;
@@ -159,7 +231,6 @@ header {
 
 .abt-us-sec div:nth-child(2){
     width: 10%; min-height: 100%;
-    border: 1px solid blue;
     margin: 10px;
     font-size: 18px;
     display: flex;
@@ -173,7 +244,6 @@ header {
 
 .sgin-sec{
     min-height: 200px;
-    border: 1px solid blue;
     padding: 30px;
 }
 
@@ -204,36 +274,48 @@ header {
     cursor: pointer;
 }
 
- footer{
-    min-height: 150px ;
-    background-color: #C3C3E6;
-    color: rgb(255, 255, 255);
-    
-}
-
-footer div{
-    width:100%; height:74px;
-}
-
-footer div a{
-    display: inline;
-    padding-left: 30px;
-    color: #FFFFFF;
-}
-
-#footerAreas{
+footer{
+    height: 280px; 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    height: 100%;
+}
+
+#footer div{
+    width: 100%;   
+}
+
+#content-ftr-list{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#content-ftr-list ul{
+    list-style: none;
+    line-height: 40px;
 }
 
 
 
-footer hr{
-    border: 0px;
-    height: 0px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-} 
 
-
+#ftr-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 50px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #FED253;
+}

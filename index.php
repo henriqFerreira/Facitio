@@ -17,8 +17,11 @@
 <body>
     <div class="wrapper">
         <header>
-            <span id="logo"></span>
-            <a href="#" class="md-btn">Seja um profissional</a>
+            <span id="text-logo"></span>
+            <div>
+                <a href="#">Entrar</a>
+                <a href="#" class="md-btn">Seja um profissional</a>
+            </div>
         </header>
     </div>
     <main>
@@ -193,7 +196,7 @@
                     <p>UX/UI Design</p>
                 </div>
             </div>
-            <section class="hglg-sec" style="border: 2px solid red;">
+            <section class="hglg-sec">
                 <h1>Categorias em destaque</h1>
                 <div class="hglg-cards">
                     <div class="hglg-card">
@@ -253,18 +256,30 @@
         </div>
     </main>
     <footer>
-        <div class="wrapper">
-            <div id="footerAreas" class="up">
-                <span id="logo"></span>
-                <span>
-                    <a href="#">Quem Somos</a>
-                    <a href="#">Ajuda</a>
-                </span>
+        <div id="footer">
+            <span id="md-logo-black"></span>
+            <div id="content-ftr-list">
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
             </div>
-            <hr>
-            <div id="footerAreas" class="down">
-                <h3>©2022 - Facitio</h3>
-            </div>
+        </div>    
+        <div id="ftr-footer">
+            <p>©2022 - </p>   
+            <span id="sm-logo-white"></span>
+            <p> - All rights reserved.</p>
         </div>
     </footer>
 </body>
