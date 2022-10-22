@@ -17,8 +17,11 @@
 <body>
     <div class="wrapper">
         <header>
-            <span id="logo"></span>
-            <a href="#" class="md-btn">Seja um profissional</a>
+            <span id="text-logo"></span>
+            <div>
+                <a href="#">Entrar</a>
+                <a href="#" class="md-btn">Seja um profissional</a>
+            </div>
         </header>
     </div>
     <main>
@@ -154,7 +157,130 @@
                     </svg>
                 </div>
             </section>
+            <div class="ctg-sec">
+
+                <div class="ctg-opt">
+                    <a href="Home.php">
+                        <img src="img/icons/diploma.svg" alt="">
+                        <p>Estudo</p>
+                    </a>
+                </div>
+
+                <div class="ctg-opt">
+                    <img src="img/icons/car.svg" alt="">    
+                    <p>Automobilístico</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/balloons.svg" alt="">
+                    <p>Festas & Eventos</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/tools.svg" alt="">
+                    <p>Reparos & Consertos</p>
+                </div>
+                    
+                <div class="ctg-opt">
+                    <img src="img/icons/home.svg" alt="">
+                    <p>Serviços Domésticos</p>
+                </div>
+                                      
+                <div class="ctg-opt">
+                    <img src="img/icons/computer.svg" alt=""> 
+                    <p>Tecnologia</p>
+                </div>
+                         
+                <div class="ctg-opt">
+                    <img src="img/icons/design.svg" alt=""> 
+                    <p>UX/UI Design</p>
+                </div>
+            </div>
+            <section class="hglg-sec">
+                <h1>Categorias em destaque</h1>
+                <div class="hglg-cards">
+                    <div class="hglg-card">
+                        1
+                    </div>
+
+                    <div class="hglg-card">
+                        a
+                    </div>
+
+                    <div class="hglg-card">
+                        b
+                    </div>
+
+                    <div class="hglg-card">
+                        c
+                    </div>
+
+                    <div class="hglg-card">
+                        d
+                    </div>
+
+                    <div class="hglg-card">
+                        e
+                    </div>
+
+                    <div class="hglg-card">
+                        f
+                    </div>
+
+                    <div class="hglg-card">
+                        g
+                    </div>
+
+                </div>
+            </section>
+            <section class="abt-us-sec">
+                <div>
+                    <h2>Um pouco sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non malesuada lacus, euismod viverra nulla. Mauris vitae mi ac ligula pellentesque maximus ac in ex. Aenean condimentum, massa quis mattis ullamcorper, velit ex sodales purus, at egestas ex lacus eget quam. In ipsum arcu, efficitur quis augue et, mollis porta odio. Sed sodales tortor eu tempus semper.</p>
+                </div>
+                <div>
+                    <button class="sm-btn">Saiba Mais</button>
+                </div>
+            </section>
+            <section class="sgin-sec">
+                <div>
+                    <h2>Torne-se um profissional da Facitio</h2>
+                    <p>Ou contrate um agora mesmo!</p>
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="exemplo@email.com">
+                        <input type="password" name="" id="" placeholder="Senha">
+                        <input type="submit" value="Cadastrar">
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
+    <footer>
+        <div id="footer">
+            <span id="md-logo-black"></span>
+            <div id="content-ftr-list">
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Sobre a Facitio</h2></li>
+                    <li><a href="">Nossa Equipe</a></li>
+                    <li><a href="">Objetivo</a></li>
+                </ul>
+            </div>
+        </div>    
+        <div id="ftr-footer">
+            <p>©2022 - </p>   
+            <span id="sm-logo-white"></span>
+            <p> - All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
