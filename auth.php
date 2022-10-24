@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/module/auth/auth.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main id="auth-wrapper">
@@ -22,10 +23,16 @@
             <span id="bg-logo-yellow"></span>
             <h2>ENTRAR</h2>
             <h3>Como cliente</h3>
-            <form action="">
-                <input type="text" name="" id="">
-                <input type="password" name="" id="">
-                <button>ENTRAR</button>
+            <form action="" >
+
+                <label for="CPF">CPF</label>
+                <input type="text" name="CPF" id="">
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="">
+
+                <input type="submit" value="ENTRAR">
+
                 <P>Não possui uma conta? Cadastre-se</P>
             </form>
         </div>      

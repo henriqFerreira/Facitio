@@ -25,6 +25,12 @@ main {
 
 .auth-profile a { margin-top: 10px; }
 
+.auth-profile form { 
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .a {
     width: 50%;
     background-color: blue;
@@ -32,3 +38,40 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.auth-profile form {
+    
+}
+
+.auth-profile form input[type="text"]{
+    width: 100%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+}
+
+.auth-profile form input[type="password"]{
+    width: 100%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+}
+
+.inp form input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    outline: none;
+    background-color: #C3C3E6;
+    cursor: pointer;
+}
+

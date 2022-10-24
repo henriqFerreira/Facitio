@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/module/pages/index.css">
+    
 </head>
 
 <body>

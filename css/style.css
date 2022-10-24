@@ -156,3 +156,35 @@ section { width: 100%; min-height: 100vh; }
     background-color: #FED253;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+/* .inp form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inp form input[type="text"]{
+    width: 50%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+}
+
+.inp form input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: 2px solid #C3C3E6;
+    border-radius: 10px;
+    outline: none;
+    background-color: #C3C3E6;
+    cursor: pointer;
+} */
