@@ -1,5 +1,11 @@
 @import url("../../style.css");
 
+body {
+    /* background-image: url("../../../img/auth/background/Rectangle43.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
 /* Auth */
 #auth-wrapper {
     width: 100%; min-height: 100vh;

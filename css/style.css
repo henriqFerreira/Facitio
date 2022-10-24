@@ -1,12 +1,30 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; text-decoration: none; }
 section { width: 100%; min-height: 100vh; }
 
+:root {
+    --mustard-color: #FED253; 
+        /* var(--mustard-color) */
+
+    --vodka-color: #C3C3E6;
+        /* var(--vodka-color) */
+
+    --spanish-gray: #989898;
+        /* var(--spanish-gray) */
+
+    --white-color: #FFFFFF;
+        /* var(--white-color) */
+
+    --black-color: #000000;
+        /* var(--black-color) */
+
+  }
+
 /* Buttons */
 .md-btn {
     min-width: 200px;
     padding: 14px 20px;
     border-radius: 10px;
-    border: 2px solid #FED253;
+    border: 2px solid var(--mustard-color);
     color: #FED253;
     font-weight: bold;
     text-align: center;

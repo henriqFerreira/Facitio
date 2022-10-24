@@ -3,10 +3,10 @@
 .wrapper { max-width: 90%; margin: 0 auto; }
 section{ margin-top: 20px;}
 
-a:hover { text-decoration: none; color:rgb(156, 156, 156); }
-a:focus { text-decoration: none; color:rgb(158, 158, 158); }
-a:active { text-decoration: none; color:rgb(156, 156, 156); }
-a { text-decoration: none; color: rgb(156, 156, 156);}
+a:hover { text-decoration: none; color:var(--spanish-gray) }
+a:focus { text-decoration: none; color:var(--spanish-gray) }
+a:active { text-decoration: none; color:var(--spanish-gray) }
+a { text-decoration: none; color: var(--spanish-gray)}
 
 /* Barra de navegação */
 header {
@@ -23,7 +23,7 @@ header div{
 }
 
 header a{
-    color: #FED253;
+    color: var(--mustard-color);
     font-weight: bolder;
 }
 
@@ -32,7 +32,7 @@ header a{
 #text-logo {
     display: block;
     height: 45px; width: 125px;
-    background-image: url("../../../img/logo-texto.svg");
+    background-image: url("../../../img/logo/logo-texto.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -41,7 +41,7 @@ header a{
 #sm-logo-black {
     display: block;
     height: 25px; width: 80px;
-    background-image: url("../../../img/logo-preta.png");
+    background-image: url("../../../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -50,7 +50,7 @@ header a{
 #sm-logo-white {
     display: block;
     height: 25px; width: 80px;
-    background-image: url("../../../img/logo-branca.svg");
+    background-image: url("../../../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -59,7 +59,7 @@ header a{
 #md-logo-black {
     display: block;
     height: 45px; width: 125px;
-    background-image: url("../../../img/logo-preta.png");
+    background-image: url("../../../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -68,7 +68,7 @@ header a{
 #md-logo-white {
     display: block;
     height: 45px; width: 125px;
-    background-image: url("../../../img/logo-branca.svg");
+    background-image: url("../../../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -77,7 +77,7 @@ header a{
 #bg-logo-black {
     display: block;
     height: 67.5px; width: 174px;
-    background-image: url("../../../img/logo-preta.png");
+    background-image: url("../../../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -86,7 +86,7 @@ header a{
 #bg-logo-white {
     display: block;
     height: 67.5px; width: 174px;
-    background-image: url("../../../img/logo-branca.svg");
+    background-image: url("../../../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -141,9 +141,10 @@ header a{
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    background: #FFFFFF;
+    
+    /* background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 
@@ -157,65 +158,58 @@ header a{
 /* Highlight section (hglg-sec) */
 .hglg-sec {
     margin-top: 100px;
-    text-align: center;
     position: relative;
-    
+}
+
+.hglg-sec h1{
+    text-align: center;
 }
 
 .hglg-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 25px;
+    gap: 150px;
+    margin-top:30px
 }
 
-.hglg-card {
+.card {
     width: 327px; height: 353px;
     display: block;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 7px solid #FED253;
 
     -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
-
-
-
-.hglg-cards div:nth-child(1) {
-    background-color: rgb(255, 0, 225);
+.upside{
+    height: 196px;
+    background-color: rgb(143, 143, 143);
+    background-image: url("../../../img/academico.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 140px;
 }
 
-.hglg-cards div:nth-child(2) {
-    background-color: rgb(0, 157, 255);
+
+.downside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+    height: 156px;
+    padding-left: 10px;
 }
 
-.hglg-cards div:nth-child(3) {
-    background-color: rgb(77, 255, 0);
-}
 
-.hglg-cards div:nth-child(4) {
-    background-color: rgb(60, 136, 70);
-}
-
-.hglg-cards div:nth-child(5) {
-    background-color: rgb(143, 49, 49);
-}
-
-.hglg-cards div:nth-child(6) {
-    background-color: rgb(0, 195, 255);
-}
-
-.hglg-cards div:nth-child(7) {
-    background-color: rgb(255, 0, 157);
-}
-
-.hglg-cards div:nth-child(8) {
-    background-color: rgb(110, 0, 201);
-}
 
 .abt-us-sec{
     min-height: 200px;
-    background-image: url("../../../img/Group2.svg");
+    background-image: url("../../../img/background/Group2.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
