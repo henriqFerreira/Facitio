@@ -1,9 +1,7 @@
 @import url("../../style.css");
 
-body {
-    /* background-image: url("../../../img/auth/background/Rectangle43.svg");
-    background-repeat: no-repeat;
-    background-size: cover; */
+main {
+    display: flex;
 }
 
 /* Auth */
@@ -22,6 +20,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: blueviolet;
 }
 
 .auth-profile a { margin-top: 10px; }
+
+.a {
+    width: 50%;
+    background-color: blue;
+    background-image: url("../../../img/auth/background/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

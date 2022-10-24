@@ -16,11 +16,18 @@
 </head>
 <body>
     <main id="auth-wrapper">
-        <div>
-
+        <div class="a">
         </div>
-        <div>
-
+        <div class="auth-profile">
+            <span id="bg-logo-yellow"></span>
+            <h2>ENTRAR</h2>
+            <h3>Como cliente</h3>
+            <form action="">
+                <input type="text" name="" id="">
+                <input type="password" name="" id="">
+                <button>ENTRAR</button>
+                <P>Não possui uma conta? Cadastre-se</P>
+            </form>
         </div>      
     </main>
 </body>
