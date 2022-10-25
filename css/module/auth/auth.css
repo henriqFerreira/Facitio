@@ -20,7 +20,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blueviolet;
 }
 
 .auth-profile a { margin-top: 10px; }
@@ -33,14 +32,13 @@ main {
 
 .a {
     width: 50%;
-    background-color: blue;
     background-image: url("../../../img/auth/background/Background.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.auth-profile form {
-    
+.auth-profile form input::placeholder {
+    padding-left: 20px;
 }
 
 .auth-profile form input[type="text"]{
@@ -75,3 +73,9 @@ main {
     cursor: pointer;
 }
 
+
+.inp-ico{
+    position: relative;
+    top: 57px;
+    padding-left: 10px;
+}

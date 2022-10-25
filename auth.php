@@ -25,13 +25,16 @@
             <h3>Como cliente</h3>
             <form action="" >
 
-                <label for="CPF">CPF</label>
-                <input type="text" name="CPF" id="">
+                <label class="inp-ico" for="senha"><img src="img/auth/icons/id.svg" alt=""></label>
+                <label for="CPF">CPF</label>                
+                <input type="text" name="CPF" id="" placeholder="___.___.___-__">
 
+                
+                <label class="inp-ico" for="senha"><img src="img/auth/icons/chave.svg" alt=""></label>
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="">
+                <input type="password" name="senha" id="" placeholder="Senha">
 
-                <input type="submit" value="ENTRAR">
+                <input class="md-btn" type="submit" value="ENTRAR">
 
                 <P>Não possui uma conta? Cadastre-se</P>
             </form>
