@@ -17,27 +17,33 @@
 </head>
 <body>
     <main id="auth-wrapper">
-        <div class="a">
-        </div>
+        <!-- <div class="a">
+        </div> -->
+        <div id="overlay"></div>
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>
-            <h2>ENTRAR</h2>
-            <h3>Como cliente</h3>
-            <form action="" >
-
-                <label class="inp-ico" for="senha"><img src="img/auth/icons/id.svg" alt=""></label>
-                <label for="CPF">CPF</label>                
-                <input type="text" name="CPF" id="" placeholder="___.___.___-__">
-
+            <div>
+                <div>
+                    <h2>ENTRAR</h2>
+                    <h3>Como cliente</h3>
+                </div>
+                <form action="" >
+                    <label class="inp-ico" for="senha"><img src="img/auth/icons/id.svg" alt=""></label>
+                    <label for="CPF">CPF</label>
+                    <input type="text" name="CPF" id="" placeholder="___.___.___-__">
                 
-                <label class="inp-ico" for="senha"><img src="img/auth/icons/chave.svg" alt=""></label>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="" placeholder="Senha">
-
-                <input class="md-btn" type="submit" value="ENTRAR">
-
-                <P>Não possui uma conta? Cadastre-se</P>
-            </form>
+                    <label class="inp-ico" for="senha"><img src="img/auth/icons/chave.svg" alt=""></label>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="" placeholder="Senha">
+                    <input class="md-btn-yellow" type="submit" value="ENTRAR">
+                    <a href=""><b>Não possui uma     conta? Cadastre-se</b></a>
+                </form>
+            </div>
+            <div id="ftr-footer">
+                <p>©2022 - </p>
+                <span id="sm-logo-black"></span>
+                <p> - All rights reserved.</p>
+            </div>
         </div>      
     </main>
 </body>

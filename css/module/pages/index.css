@@ -3,10 +3,6 @@
 .wrapper { max-width: 90%; margin: 0 auto; }
 section{ margin-top: 20px;}
 
-a:hover { text-decoration: none; color:var(--spanish-gray) }
-a:focus { text-decoration: none; color:var(--spanish-gray) }
-a:active { text-decoration: none; color:var(--spanish-gray) }
-a { text-decoration: none; color: var(--spanish-gray)}
 
 /* Barra de navegação */
 header {
