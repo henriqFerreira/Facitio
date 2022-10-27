@@ -1,3 +1,8 @@
+<?php
+
+use model\User;
+
+ require '../autoLoader.php'; ini_set('display_errors', 1); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +17,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/module/auth/auth.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/module/auth/auth.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <main id="auth-wrapper">

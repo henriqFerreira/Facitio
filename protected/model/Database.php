@@ -1,15 +1,13 @@
 <?php
-namespace protected\model;
+namespace model;
 
 require '../autoLoader.php';
 
 use PDO;
-use PDOException;
-use Exception;
-use protected\model\EnvHandler as EnvironmentVariables;
+use model\EnvHandler as EnvironmentVariables;
 
 $loadEnvironmentVariables = new EnvironmentVariables();
-$loadEnvironmentVariables->loadEnvFile("{$_SERVER['DOCUMENT_ROOT']}/root");
+$loadEnvironmentVariables->loadEnvFile("{$_SERVER['DOCUMENT_ROOT']}/Facitio");
 
 abstract class Database {
 
@@ -18,7 +16,7 @@ abstract class Database {
     protected $DB_USER;
     protected $DB_PASSWORD;
 
-    protected function getConnection() : PDO {
+    protected function getConnection() {
         $this->DB_HOST = getenv("DB_HOST");
         $this->DB_NAME = getenv("DB_NAME");
         $this->DB_USER = getenv("DB_USER");
@@ -27,6 +25,7 @@ abstract class Database {
         try {
             $conn = new PDO("mysql:host=$this->DB_HOST;dbname=$this->DB_NAME", $this->DB_USER, $this->DB_PASSWORD);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Conexão estabilizada";
             return $conn;
         } catch (\PDOException $Exception) {
             echo "<span id='errorMsg'>[ Falha na conexão com o banco de dados ] => " . $Exception->getMessage() . "<span>";

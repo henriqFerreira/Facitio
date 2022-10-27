@@ -1,9 +1,9 @@
 <?php
 
-namespace protected\model;
+namespace model;
 
 class EnvHandler {
-    public function loadEnvFile($dir) : bool {
+    public function loadEnvFile($dir) {
         if (!file_exists($dir."/.env"))
             return false;
 
