@@ -1,6 +1,7 @@
 -- Version: 1.0
--- Project: Name of the project
--- Author: User
+-- Project: Facitio
+-- Author: Garoupa Soluções
+DROP SCHEMA IF EXISTS `DB_Facitio`;
 CREATE SCHEMA IF NOT EXISTS `DB_Facitio` DEFAULT CHARACTER SET utf8mb4;
 USE `DB_Facitio`;
 
@@ -17,20 +18,6 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_admin` (
 )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
-
-CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_endereco_admin` (
-  `end_id` INT NOT NULL AUTO_INCREMENT,
-  `end_nome` VARCHAR(45) NOT NULL,
-  `end_num` VARCHAR(45) NOT NULL,
-  `end_complemento` VARCHAR(45) NOT NULL,
-  `end_bairro` VARCHAR(45) NOT NULL,
-  `end_cidade` VARCHAR(45) NOT NULL,
-  `end_estado` VARCHAR(45) NOT NULL,
-  `end_cep` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`end_id`)
-)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
 /*----------END ADMIN----------*/
 
 /*----------CLIENTE----------*/
@@ -41,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_cliente` (
   `cliente_login` VARCHAR(45) NOT NULL,
   `cliente_email` VARCHAR(45) NOT NULL,
   `cliente_cpf` VARCHAR(45) NOT NULL,
+  `cliente_rg` VARCHAR(45) NOT NULL,
   `cliente_datanasc` DATE NOT NULL,
   `cliente_endereco` VARCHAR(45) NOT NULL,
   `cliente_contato` VARCHAR(45),
@@ -59,6 +47,14 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_endereco_cliente` (
   `end_cidade` VARCHAR(45) NOT NULL,
   `end_estado` VARCHAR(45) NOT NULL,
   `end_cep` VARCHAR(45) NOT NULL,
+  `cliente_id` INT NOT NULL,
+
+  CONSTRAINT
+    FOREIGN KEY (`cliente_id`)
+    REFERENCES `DB_Facitio`.`tb_login_cliente` (`cliente_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+
   PRIMARY KEY (`end_id`)
 )
 ENGINE = InnoDB
@@ -73,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_profissional` (
   `profissional_login` VARCHAR(45) NOT NULL,
   `profissional_email` VARCHAR(45) NOT NULL,
   `profissional_cpf` VARCHAR(45) NOT NULL,
+  `cliente_rg` VARCHAR(45) NOT NULL,
   `profissional_datanasc` DATE NOT NULL,
   `profissional_endereco` VARCHAR(45) NOT NULL,
   `profissional_contato` VARCHAR(45) NOT NULL,
@@ -81,7 +78,49 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_profissional` (
 )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_endereco_profissional` (
+  `end_id` INT NOT NULL AUTO_INCREMENT,
+  `end_nome` VARCHAR(45) NOT NULL,
+  `end_num` VARCHAR(45) NOT NULL,
+  `end_complemento` VARCHAR(45) NOT NULL,
+  `end_bairro` VARCHAR(45) NOT NULL,
+  `end_cidade` VARCHAR(45) NOT NULL,
+  `end_estado` VARCHAR(45) NOT NULL,
+  `end_cep` VARCHAR(45) NOT NULL,
+  `profissional_id` INT NOT NULL,
+
+  CONSTRAINT
+    FOREIGN KEY (`profissional_id`)
+    REFERENCES `DB_Facitio`.`tb_login_profissional` (`profissional_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+
+    PRIMARY KEY (`end_id`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
 /*----------END PROFISSIONAL----------*/
+
+/*--------------SERVIÇO---------------*/
+CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
+  `servico_id` INT NOT NULL AUTO_INCREMENT,
+  `servico_nome` VARCHAR(255) NOT NULL,
+  `servico_desc` VARCHAR(1000) NOT NULL,
+  `servico_aval` FLOAT NOT NULL,
+  `profissional_id` INT(11) NOT NULL,
+
+  CONSTRAINT
+    FOREIGN KEY (`profissional_id`)
+    REFERENCES `DB_Facitio`.`tb_login_profissional` (`profissional_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  
+  PRIMARY KEY(`servico_id`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+/*------------END SERVIÇO-------------*/
 
 /*----------SOLICITAÇÃO----------*/
 CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
@@ -90,10 +129,9 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
   `solicitacao_status` ENUM("S", "N") NULL DEFAULT NULL,
   `cliente_id` INT(11) NOT NULL,
   `profissional_id` INT(11) NOT NULL,
-  PRIMARY KEY (`solicitacao_id`),
+  `servico_id` INT(11) NOT NULL,
   
   INDEX `fk_cliente_id_idx` (`cliente_id` ),
-  
   INDEX `fk_profissional_id_idx` (`profissional_id`),
   
   CONSTRAINT `fk_cliente_id`
@@ -106,8 +144,16 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
     FOREIGN KEY (`profissional_id`)
     REFERENCES `DB_Facitio`.`tb_login_profissional` (`profissional_id`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION
-    
+    ON UPDATE NO ACTION,
+  
+  CONSTRAINT `fk_servico_id`
+    FOREIGN KEY (`servico_id`)
+    REFERENCES `DB_Facitio`.`tb_servico` (`servico_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  
+   PRIMARY KEY (`solicitacao_id`)
+   
 )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
