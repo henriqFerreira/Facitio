@@ -1,32 +1,27 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; text-decoration: none; }
 section { width: 100%; min-height: 100vh; }
 
-
 :root {
     --mustard-color: #FED253; 
         /* var(--mustard-color) */
-
     --vodka-color: #C3C3E6;
         /* var(--vodka-color) */
-
     --spanish-gray: #989898;
         /* var(--spanish-gray) */
-
     --cool-december-color: #FDFBF8 ;
         /* var(--cool-december-color) */
-
     --black-color: #252525;
         /* var(--black-color) */
-
 }
 
-a:hover { text-decoration: none; color:var(--spanish-gray) }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background-color: var(--cool-december-color); }
+::-webkit-scrollbar-thumb { background-color: var(--black-color); border-radius: 2px; }
+
+/* a:hover { text-decoration: none; color:var(--spanish-gray) }
 a:focus { text-decoration: none; color:var(--spanish-gray) }
-a:active { text-decoration: none; color:var(--spanish-gray) }
-a { text-decoration: none; color: var(--spanish-gray)}
-
-
-
+a:active { text-decoration: none; color:var(--spanish-gray) } */
+a { color: var(--spanish-gray) }
 
 /* Logo texto preta */
 #text-logo {
@@ -37,25 +32,7 @@ a { text-decoration: none; color: var(--spanish-gray)}
     background-size: contain;
 }
 
-/* Logo pequena preta */
-#sm-logo-black {
-    display: block;
-    height: 25px; width: 80px;
-    background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo pequena branca */
-#sm-logo-white {
-    display: block;
-    height: 25px; width: 80px;
-    background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo pequena amarela */
+/* -- LOGO AMARELA -- */
 #sm-logo-yellow {
     display: block;
     height: 25px; width: 80px;
@@ -63,26 +40,6 @@ a { text-decoration: none; color: var(--spanish-gray)}
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* Logo média preta */
-#md-logo-black {
-    display: block;
-    height: 45px; width: 125px;
-    background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo média branca */
-#md-logo-white {
-    display: block;
-    height: 45px; width: 125px;
-    background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo média branca */
 #md-logo-yellow {
     display: block;
     height: 45px; width: 125px;
@@ -90,26 +47,6 @@ a { text-decoration: none; color: var(--spanish-gray)}
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* Logo grande preta */
-#bg-logo-black {
-    display: block;
-    height: 67.5px; width: 174px;
-    background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo grande branca */
-#bg-logo-white {
-    display: block;
-    height: 67.5px; width: 174px;
-    background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Logo grande branca */
 #bg-logo-yellow {
     display: block;
     height: 67.5px; width: 174px;
@@ -118,23 +55,98 @@ a { text-decoration: none; color: var(--spanish-gray)}
     background-size: contain;
 }
 
+/* -- LOGO PRETA -- */
+#sm-logo-black {
+    display: block;
+    height: 25px; width: 80px;
+    background-image: url("../img/logo/Facitio-logo-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#md-logo-black {
+    display: block;
+    height: 45px; width: 125px;
+    background-image: url("../img/logo/Facitio-logo-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#bg-logo-black {
+    display: block;
+    height: 67.5px; width: 174px;
+    background-image: url("../img/logo/Facitio-logo-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-
-
-
-
+/* -- LOGO BRANCA -- */
+#sm-logo-white {
+    display: block;
+    height: 25px; width: 80px;
+    background-image: url("../img/logo/Facitio-logo-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#md-logo-white {
+    display: block;
+    height: 45px; width: 125px;
+    background-image: url("../img/logo/Facitio-logo-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#bg-logo-white {
+    display: block;
+    height: 67.5px; width: 174px;
+    background-image: url("../img/logo/Facitio-logo-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* Buttons */
-.md-btn {
+.bg-outline-btn {
     min-width: 200px;
     padding: 14px 20px;
     border-radius: 10px;
     border: 2px solid var(--mustard-color);
-    color: #FED253;
+    color: var(--mustard-color);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     transition: all .2s;
+}
+.bg-outline-btn:hover {
+    background-color: var(--mustard-color);
+    color: var(--cool-december-color);
+}
+
+.bg-filled-btn {
+    min-width: 200px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: var(--mustard-color);
+    color: var(--cool-december-color);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+.bg-filled-btn:hover {
+    background-color: var(--cool-december-color);
+    color: var(--mustard-color);
+}
+
+.bg-transparent-btn {
+    min-width: 200px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--mustard-color);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+.bg-transparent-btn:hover {
+    border: 2px solid var(--mustard-color);
 }
 
 .md-btn-yellow {
@@ -142,7 +154,7 @@ a { text-decoration: none; color: var(--spanish-gray)}
     padding: 14px 20px;
     border-radius: 10px;
     border: 2px solid var(--mustard-color);
-    color: #FED253;
+    color: var(--mustard-color);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -156,20 +168,20 @@ a { text-decoration: none; color: var(--spanish-gray)}
     min-width: 300px;
     padding: 14px 20px;
     border-radius: 10px;
-    border: 2px solid #FED253;
-    color: #FED253;
+    border: 2px solid var(--mustard-color);
+    color: var(--mustard-color);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     transition: all .2s;
 }
 
-.sm-btn{
+.sm-btn {
     min-width: 100px;
     min-height: 35px;
     border-radius: 5px;
-    border: 2px solid #FED253;
-    color: #000000;
+    border: 2px solid var(--mustard-color);
+    color: var(--black-color);
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -177,14 +189,9 @@ a { text-decoration: none; color: var(--spanish-gray)}
 }
 
 .lg-btn:hover, .md-btn:hover{
-    background-color: #FED253;
-    color: #FFFFFF;
+    background-color: var(--mustard-color);
+    color: var(--cool-december-color);
 }
-
-
-
-
-
 
 /* .inp form {
     position: relative;

@@ -20,10 +20,10 @@
 <body>
     <div class="wrapper">
         <header>
-            <span id="text-logo"></span>
+            <span id="md-logo-black"></span>
             <div>
-                <a href="#">Entrar</a>
-                <a href="#" class="md-btn">Seja um profissional</a>
+                <a href="#" class="bg-transparent-btn">Entrar</a>
+                <a href="#" class="bg-outline-btn">Seja um profissional</a>
             </div>
         </header>
     </div>
