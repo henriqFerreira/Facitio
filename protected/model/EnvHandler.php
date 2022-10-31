@@ -1,6 +1,7 @@
 <?php
-
 namespace model;
+
+require '../autoLoader.php';
 
 class EnvHandler {
     public function loadEnvFile($dir) {
