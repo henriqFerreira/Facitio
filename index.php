@@ -22,8 +22,8 @@
         <header>
             <span id="md-logo-black"></span>
             <div>
-                <a href="#" class="bg-transparent-btn">Entrar</a>
-                <a href="#" class="bg-outline-btn">Seja um profissional</a>
+                <a href="protected/view/SignInMiddleScreen.php" class="bg-transparent-btn">Entrar</a>
+                <a href="protected/view/SignUpMiddleScreen.php" class="bg-outline-btn">Cadastrar</a>
             </div>
         </header>
     </div>

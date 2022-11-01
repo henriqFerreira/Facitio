@@ -1,8 +1,4 @@
-<?php
-
-use model\User;
-
- require '../autoLoader.php'; ini_set('display_errors', 1); ?>
+<?php require '../autoLoader.php'; ini_set('display_errors', 1); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +18,6 @@ use model\User;
 </head>
 <body>
     <main id="auth-wrapper">
-        <!-- <div class="a">
-        </div> -->
         <div id="overlay"></div>
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>

@@ -13,11 +13,11 @@ class User extends Database {
     private static string $contato;
     private static array $endereco;
 
-    public function __construct(string $nome, string $sobrenome, string $email, string $cpfa, string $rg, string $nascimento, string $contato, array $endereco) {
+    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, array $endereco) {
         $this->$nome = $nome;
         $this->$sobrenome = $sobrenome;
         $this->$email = $email;
-        $this->cpfa = $cpfa;
+        $this->cpf = $cpf;
         $this->rg = $rg;
         $this->nascimento = $nascimento;
         $this->contato = $contato;
