@@ -29,7 +29,6 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_cliente` (
   `cliente_cpf` VARCHAR(45) NOT NULL,
   `cliente_rg` VARCHAR(45) NOT NULL,
   `cliente_datanasc` DATE NOT NULL,
-  `cliente_endereco` VARCHAR(45) NOT NULL,
   `cliente_contato` VARCHAR(45),
   `cliente_senha` VARCHAR(64) NOT NULL,
   PRIMARY KEY (`cliente_id`)
@@ -69,7 +68,6 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_login_profissional` (
   `profissional_cpf` VARCHAR(45) NOT NULL,
   `profissional_rg` VARCHAR(45) NOT NULL,
   `profissional_datanasc` DATE NOT NULL,
-  `profissional_endereco` VARCHAR(45) NOT NULL,
   `profissional_contato` VARCHAR(45) NOT NULL,
   `profissional_senha` VARCHAR(64) NOT NULL,
   PRIMARY KEY (`profissional_id`)
@@ -156,6 +154,8 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 /*----------END PROFISSIONAL----------*/
+
+INSERT INTO tb_login_cliente VALUES (default, "Henrique", "Neto", "henrique@email.com", "123.456.789-00", "98.765.432-10", "2000-02-02", "(12) 34567-8900", "Senha");
 
 -- SELECT * FROM tb_login_cliente;
 -- SELECT * FROM tb_login_profissional;

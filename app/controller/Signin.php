@@ -48,15 +48,20 @@ class Signin extends Controller {
                     $checkUser[0]->cliente_cpf,
                     $checkUser[0]->cliente_rg,
                     $checkUser[0]->cliente_datanasc,
-                    $checkUser[0]->cliente_endereco,
                     $checkUser[0]->cliente_contato,
                     "cliente"
                 );
                 $_SESSION['logged'] = array(
-                    $user->getNome(),
-                    $user->getSobrenome(),
-                    $user->getType()
+                    "Nome" => $user->getNome(),
+                    "Sobrenome" => $user->getSobrenome(),
+                    "Email" => $user->getEmail(),
+                    "CPF" => $user->getCpf(),
+                    "RG" => $user->getRg(),
+                    "DataNasc" => $user->getNascimento(),
+                    "Contato" => $user->getContato(),
+                    "Tipo" => $user->getType()
                 );
+                header('Location: ' . ROOT . 'profile');
             } else {
                 echo "Inexistente.";
             }

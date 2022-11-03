@@ -11,10 +11,9 @@ class User {
     private string $rg;
     private string $nascimento;
     private string $contato;
-    private string $endereco;
     private string $type;
 
-    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, string $endereco, string $type) {
+    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, string $type) {
         $this->nome = $nome;
         $this->sobrenome = $sobrenome;
         $this->email = $email;
@@ -22,7 +21,6 @@ class User {
         $this->rg = $rg;
         $this->nascimento = $nascimento;
         $this->contato = $contato;
-        $this->endereco = $endereco;
         $this->type = $type;
     }
 
