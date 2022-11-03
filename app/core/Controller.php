@@ -4,7 +4,7 @@ namespace core;
 class Controller {
     const ERROR404PAGE = "../app/view/404.php";
 
-    protected function loadView($view) {
+    protected function loadView($view, $data = []) {
         $view = ucfirst(strtolower($view));
         $url = "../app/view/" . $view . ".php";
         if (file_exists($url)) {

@@ -19,7 +19,8 @@ define('DATABASE_PASSWORD', getenv("DB_PASSWORD"));
 define('PROTOCOL', "https");
 
 // Path do root e assets
-$path = str_replace("\\", "/",PROTOCOL . "://" . $_SERVER['SERVER_NAME'] . __DIR__ . "/");
+// $path = str_replace("\\", "/",PROTOCOL . "://" . $_SERVER['SERVER_NAME'] . __DIR__ . "/");
+$path = str_replace("\\", "/", __DIR__ . "/");
 $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", $path);
 
 define('ROOT', str_replace("app/core", "public", $path));

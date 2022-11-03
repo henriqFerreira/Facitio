@@ -13,18 +13,46 @@ class Database {
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
         } catch (\PDOException $Exception) {
-            die("[ Falha na conexão com o banco de dados ] => " . $Exception->getMessage());
+            die("[ PDOException ] => " . $Exception->getMessage());
         } catch (\Exception $Exception) {
-            die("[ Falha na conexão ] => " . $Exception->getMessage());
+            die("[ Exception ] => " . $Exception->getMessage());
         }
     }
 
     public function read($query, $data = []) {
-        
+        $conn = $this->getConnection();
+        $stmt = $conn->prepare($query);
+
+        if(count($data) == 0) {
+            $stmt = $conn->query($query);
+            $check = $stmt ? 1 : 0;
+        } else {
+            $check = $stmt->execute($data);
+        }
+
+        if($check) {
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+        } else {
+            return false;
+        }
     }
 
     public function write($query, $data = []) {
+        $conn = $this->getConnection();
+        $stmt = $conn->prepare($query);
 
+        if(count($data) == 0) {
+            $stmt = $conn->query($query);
+            $check = $stmt ? 1 : 0;
+        } else {
+            $check = $stmt->execute($data);
+        }
+
+        if($check) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

@@ -1,19 +1,22 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facitio: Soluções fáceis para seus problemas difíceis</title>
+    <title><?= $data['TITLE'] ?></title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/module/pages/index.css">
+    <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/index.css">
     
 </head>
 
@@ -22,8 +25,8 @@
         <header>
             <span id="md-logo-black"></span>
             <div>
-                <a href="protected/view/SignInMiddleScreen.php" class="bg-transparent-btn">Entrar</a>
-                <a href="protected/view/SignUpMiddleScreen.php" class="bg-outline-btn">Cadastrar</a>
+                <a href="<?=ROOT?>signin/" class="bg-transparent-btn">Entrar</a>
+                <a href="<?=ROOT?>signup/" class="bg-outline-btn">Cadastrar</a>
             </div>
         </header>
     </div>
@@ -164,49 +167,49 @@
             <div class="ctg-sec">
                 <div class="ctg-opt">
                     <a href="auth.php">
-                        <img src="img/icons/diploma.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/diploma.svg" alt="">
                         <p>Estudo</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/car.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/car.svg" alt="">
                         <p>Automobilístico</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/balloons.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/balloons.svg" alt="">
                         <p>Festas & Eventos</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/tools.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/tools.svg" alt="">
                         <p>Reparos & Consertos</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/home.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/home.svg" alt="">
                         <p>Serviços Domésticos</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/computer.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/computer.svg" alt="">
                         <p>Tecnologia</p>
                     </a>
                 </div>
 
                 <div class="ctg-opt">
                     <a href="">
-                        <img src="img/icons/design.svg" alt="">
+                        <img src="<?=ASSETS?>img/icons/design.svg" alt="">
                         <p>UX/UI Design</p>
                     </a>
                 </div>

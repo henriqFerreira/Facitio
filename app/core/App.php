@@ -4,6 +4,7 @@ namespace core;
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 
 class App {
+    const ERROR404PAGE = "../app/view/404.php";
 
     private $controller = 'Home'; // Controlador padrão a ser chamado caso a URL não tenha parâmetros
     private $method = 'index'; // Método padrão do controlador
@@ -23,16 +24,19 @@ class App {
                 if (method_exists($this->controller, $url[1])) { // Verifica se o método existe
                     $this->method = $url[1]; // Atribui o método a variável do método
                     unset($url[1]); // Remove o método do array
+                    $this->params = array_values($url); // Atribui um novo array dos índices restantes na variável de parâmetros
+                    call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada    
+    
+                }  else {
+                    include_once self::ERROR404PAGE;
                 }
+            } else {
+                $this->params = array_values($url); // Atribui um novo array dos índices restantes na variável de parâmetros
+                call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada    
             }
-
-            $this->params = array_values($url); // Atribui um novo array dos índices restantes na variável de parâmetros
-            call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada
+        } else {
+            include_once self::ERROR404PAGE;
         }
-
-        echo "<pre>";
-        print_r($url);
-        echo "</pre>";
     }
 
     private function splitURL() {

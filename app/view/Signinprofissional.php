@@ -1,11 +1,14 @@
-<?php require '../autoLoader.php'; ini_set('display_errors', 1); ?>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facitio: Soluções fáceis para seus problemas difíceis</title>
+    <title><?=$data['TITLE']?></title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +16,18 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="../../css/module/auth/auth.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth.css">
+    <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
 </head>
 <body>
-    <main id="auth-wrapper">
+    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-profissional.svg);">
         <div id="overlay"></div>
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>
             <div>
                 <div>
                     <h2>ENTRAR</h2>
-                    <h3>Como cliente</h3>
+                    <h3>Como profissional</h3>
                 </div>
                 <form action="" >
                     <label class="inp-ico" for="senha"><img src="img/auth/icons/id.svg" alt=""></label>
