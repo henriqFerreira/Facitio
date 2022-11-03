@@ -1,5 +1,5 @@
 <?php
-namespace model;
+namespace core;
 
 class EnvHandler {
     public function loadEnvFile($dir) {

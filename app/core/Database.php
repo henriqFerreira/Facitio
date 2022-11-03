@@ -1,5 +1,5 @@
 <?php
-namespace model;
+namespace core;
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';

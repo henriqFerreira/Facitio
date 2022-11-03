@@ -1,9 +1,7 @@
 <?php
 namespace core;
 
-use model\EnvHandler as EnvironmentVariables;
-
-$loadEnvironmentVariables = new EnvironmentVariables();
+$loadEnvironmentVariables = new EnvHandler();
 $loadEnvironmentVariables->loadEnvFile("{$_SERVER['DOCUMENT_ROOT']}/Facitio");
 
 // Nome do website

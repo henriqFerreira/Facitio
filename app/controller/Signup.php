@@ -23,4 +23,5 @@ class Signup extends Controller {
         );
         $this->loadView("Signupprofissional", $data);
     }
+    
 }

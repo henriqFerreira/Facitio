@@ -3,60 +3,62 @@ namespace model;
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 
-class User extends Database {
-    private static string $nome;
-    private static string $sobrenome;
-    private static string $email;
-    private static string $cpf;
-    private static string $rg;
-    private static string $nascimento;
-    private static string $contato;
-    private static array $endereco;
+class User {
+    private string $nome;
+    private string $sobrenome;
+    private string $email;
+    private string $cpf;
+    private string $rg;
+    private string $nascimento;
+    private string $contato;
+    private string $endereco;
+    private string $type;
 
-    // public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, array $endereco) {
-    //     $this->$nome = $nome;
-    //     $this->$sobrenome = $sobrenome;
-    //     $this->$email = $email;
-    //     $this->cpf = $cpf;
-    //     $this->rg = $rg;
-    //     $this->nascimento = $nascimento;
-    //     $this->contato = $contato;
-    //     $this->endereco = $endereco;
-    // }
-
-    public function teste() {
-        $this->getConnection();
+    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, string $endereco, string $type) {
+        $this->nome = $nome;
+        $this->sobrenome = $sobrenome;
+        $this->email = $email;
+        $this->cpf = $cpf;
+        $this->rg = $rg;
+        $this->nascimento = $nascimento;
+        $this->contato = $contato;
+        $this->endereco = $endereco;
+        $this->type = $type;
     }
 
-    private function getNome() : string {
+    public function getNome() : string {
         return $this->nome;
     }
 
-    private function getSobrenome() : string {
+    public function getSobrenome() : string {
         return $this->sobrenome;
     }
 
-    private function getEmail() : string {
+    public function getEmail() : string {
         return $this->email;
     }
 
-    private function getCpf() : string {
+    public function getCpf() : string {
         return $this->cpf;
     }
 
-    private function getRg() : string {
+    public function getRg() : string {
         return $this->rg;
     }
 
-    private function getNascimento() : string {
+    public function getNascimento() : string {
         return $this->nascimento;
     }
 
-    private function getContato() : string {
+    public function getContato() : string {
         return $this->contato;
     }
 
-    private function getEndereco() : array {
+    public function getEndereco() : string {
         return $this->endereco;
+    }
+
+    public function getType() : string {
+        return $this->type;
     }
 }
