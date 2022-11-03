@@ -18,6 +18,18 @@ section { width: 100%; min-height: 100vh; }
 ::-webkit-scrollbar-track { background-color: var(--cool-december-color); }
 ::-webkit-scrollbar-thumb { background-color: var(--black-color); border-radius: 2px; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* a:hover { text-decoration: none; color:var(--spanish-gray) }
 a:focus { text-decoration: none; color:var(--spanish-gray) }
 a:active { text-decoration: none; color:var(--spanish-gray) } */
