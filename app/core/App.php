@@ -1,0 +1,42 @@
+<?php
+namespace core;
+
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+
+class App {
+
+    private $controller = 'Home'; // Controlador padrão a ser chamado caso a URL não tenha parâmetros
+    private $method = 'index'; // Método padrão do controlador
+    private $params = []; // Parâmetros da URL
+
+    public function __construct() {
+        $url = $this->splitURL(); // Transforma a URL num array
+
+        if(file_exists("../app/controller/". ucfirst(strtolower($url[0])) . ".php")) { // Verifica se o arquivo da classe existe
+            $this->controller = ucfirst(strtolower($url[0])); // Formata o nome da classe a atribui a variável do controlador
+            unset($url[0]); // Remove a classe do array
+
+            $className = 'controller\\'.$this->controller; // Concatena a classe com o namespace pertencente
+            $this->controller = new $className; // Instancia a nova classe
+
+            if(isset($url[1])) { // Verifica se o índice do método da classe existe
+                if (method_exists($this->controller, $url[1])) { // Verifica se o método existe
+                    $this->method = $url[1]; // Atribui o método a variável do método
+                    unset($url[1]); // Remove o método do array
+                }
+            }
+
+            $this->params = array_values($url); // Atribui um novo array dos índices restantes na variável de parâmetros
+            call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada
+        }
+
+        echo "<pre>";
+        print_r($url);
+        echo "</pre>";
+    }
+
+    private function splitURL() {
+        $url = isset($_GET['url']) ? $_GET['url'] : $this->controller; // Se não houver nada na URL, a página gerada será a Home
+        return explode("/", filter_var(trim($url, "/"), FILTER_SANITIZE_URL));
+    }
+}
