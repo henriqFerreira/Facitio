@@ -30,6 +30,7 @@ body {
 /* Auth profile */
 .auth-profile {
     height: 100vh;
+    width: 400px;
     position: absolute;
     top: 50%; right: 30%;
     transform: translate(50%, -50%);
@@ -50,6 +51,12 @@ body {
 }
 
 .btn-flex{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-flex {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
