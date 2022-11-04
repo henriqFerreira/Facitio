@@ -204,6 +204,17 @@ input[type=number] {
     background-position: center;
 }
 
+#icon-caretdown{
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/CaretDown.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+CaretDown
+
 /* 
     === TAMANHO DOS LINKS ===
 */
@@ -381,6 +392,11 @@ input[type=number] {
 /* 
     === BARRA DE PESQUISA ===
 */
+.fullscreen-search-wrapper {
+    max-width: 99.9%;
+    max-height: 50px;
+}
+
 .bg-search-wrapper {
     max-width: 350px;
     max-height: 50px;
