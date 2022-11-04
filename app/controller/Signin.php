@@ -40,25 +40,27 @@ class Signin extends Controller {
             $query = "SELECT * FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf AND {$userType}_senha = :senha";
             $checkUser = $database->read($query, $params);
 
+            $nome = $userType."_nome";
+            $sobrenome = $userType."_sobrenome";
+            $email = $userType."_email";
+            $cpf = $userType."_cpf";
+            $rg = $userType."_rg";
+            $datanasc = $userType."_datanasc";
+            $contato = $userType."_contato";
+
             if (!empty($checkUser)) {
                 $user = new User(
-                    $checkUser[0]->cliente_nome,
-                    $checkUser[0]->cliente_sobrenome,
-                    $checkUser[0]->cliente_email,
-                    $checkUser[0]->cliente_cpf,
-                    $checkUser[0]->cliente_rg,
-                    $checkUser[0]->cliente_datanasc,
-                    $checkUser[0]->cliente_contato,
-                    "cliente"
+                    $checkUser[0]->$nome,
+                    $checkUser[0]->$sobrenome,
+                    $checkUser[0]->$email,
+                    $checkUser[0]->$cpf,
+                    $checkUser[0]->$rg,
+                    $checkUser[0]->$datanasc,
+                    $checkUser[0]->$contato,
+                    $userType
                 );
                 $_SESSION['logged'] = array(
-                    "Nome" => $user->getNome(),
-                    "Sobrenome" => $user->getSobrenome(),
-                    "Email" => $user->getEmail(),
                     "CPF" => $user->getCpf(),
-                    "RG" => $user->getRg(),
-                    "DataNasc" => $user->getNascimento(),
-                    "Contato" => $user->getContato(),
                     "Tipo" => $user->getType()
                 );
                 header('Location: ' . ROOT . 'profile');

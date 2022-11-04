@@ -15,7 +15,7 @@
     echo '</pre>';
     ?>
     <section>
-        <?php ($_SESSION['logged']['Tipo'] == "cliente") ? $this->loadView("ProfileCliente", $data) : $this->loadView("ProfileProfissional", $data); ?>
+        <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
     </section>
 </body>
 </html>
