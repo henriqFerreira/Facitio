@@ -20,11 +20,70 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
 </head>
 <body>
-    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-profissional.svg);">
+    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-cadastro-profissional.svg);">
         <div id="overlay"></div>
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>
-            <div>
+            <div class="steps">
+                <div>1</div>
+                <div>2</div>
+                <hr>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div id="form-area">
+                <div>
+                    <h2>CRIE SUA CONTA</h2>
+                    <P>Como cliente</P>
+                </div>
+                <form action="" >
+                    <div style="width: 100%;">
+                            <div style="display:flex;flex-direction:row;justify-content: space-between;padding: 25px;">
+                                <div style="display:flex;flex-direction:column;width: 50%;">
+
+                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/id.svg" alt=""></label>
+                                    <label for="CPF">Nome</label>
+                                    <input type="text" name="CPF" id="" placeholder="Nome">
+
+                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/id.svg" alt=""></label>
+                                    <label for="senha">Sobrenome</label>
+                                    <input type="password" name="senha" id="" placeholder="Sobrenome">
+                                </div>
+                                <div style="display:flex;flex-direction:column;width: 50%;">
+
+                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/atsign.svg" alt=""></label>
+                                    <label for="senha">Email</label>
+                                    <input type="email" name="senha" id="" placeholder="email@exemplo.com">
+                                
+                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/phone.svg" alt=""></label>
+                                    <label for="senha">Contato</label>
+                                    <input type="number" name="senha" id="" placeholder="(  ) _____-____">
+                                </div>
+                            </div>
+                        
+                        <div ><input class="btn-yellow" type="submit" value="PRÓXIMO"></div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div>
                 <div>
                     <h2>CADASTAR</h2>
                     <h3>Como profissional</h3>
@@ -40,12 +99,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <input class="md-btn-yellow" type="submit" value="ENTRAR">
                     <a href=""><b>Não possui uma     conta? Cadastre-se</b></a>
                 </form>
-            </div>
-            <div id="ftr-footer">
-                <p>©2022 - </p>
-                <span id="sm-logo-black"></span>
-                <p> - All rights reserved.</p>
-            </div>
+            </div> -->
         </div>      
     </main>
 </body>

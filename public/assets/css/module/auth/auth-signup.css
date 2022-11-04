@@ -15,16 +15,16 @@ body {
     background-repeat: no-repeat;
 }
 
-/* @media (max-width: 700px) {
+ /* @media (max-width: 700px) {
     #auth-wrapper{
-        background-size: cover; 
+        background-size: contain; 
         background-image: none;     
     }    
 
     .auth-profile{
         right: 50%;
     }   
-} */
+}  */
 
 .steps {
     /* background-color: red; */

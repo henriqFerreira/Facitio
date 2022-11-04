@@ -1,0 +1,77 @@
+@import url("../../style.css");
+
+main {
+    display: flex;
+}
+
+body { 
+    background-color: var(--cool-december-color);
+}
+
+/* Auth */
+#auth-wrapper {
+    width: 100%; min-height: 100vh;
+    background-image: url("../../../img/auth/background/Background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+    #auth-wrapper{
+        background-size: cover; 
+        background-image: none;     
+    }    
+
+    .auth-profile{
+        right: 50%;
+    }
+}
+
+/* Auth profile */
+.auth-profile {
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    top: 50%; right: 30%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.auth-profile h2{font-size: 1.8em;}
+.auth-profile h2,h3{text-align: center;}
+.auth-profile a { margin-top: 10px; text-align: center; }
+.auth-profile button {font-size: 1.1em;}
+
+.auth-profile form { 
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-flex{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-profile form input{z-index: 5;}
+.auth-profile form label {color: var(--spanish-gray);}
+
+
+
+#ftr-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 50px;
+    font-size: 1.2em;
+    color: var(--black-color);
+}
