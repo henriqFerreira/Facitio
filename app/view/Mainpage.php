@@ -39,8 +39,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     </form>
                 </div>
             </div>
-            <div id="wrapper-menu" style="border:1px solid red">
-                <span id="icon-caretdown"></span>
+            <div id="wrapper-menu">
+                <button><span id="icon-caretdown"></span></button>
             </div>
         </div>
     </header>
@@ -89,47 +89,10 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             <span>⭐ 0.0</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
                 </div>
+            </section>
+            <section id="more-services">
+                
             </section>
     </main>
     <footer>

@@ -23,6 +23,11 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     justify-content: center;
 }
 
+#wrapper-menu button{
+    border: none;
+    background-color: transparent;
+}
+
 
 /* Highlight section (hglg-sec) */
 .hglg-sec { margin-top: 100px; }
