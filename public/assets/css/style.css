@@ -1,6 +1,3 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; text-decoration: none; }
-section { width: 100%; min-height: 100vh; }
-
 :root {
     --mustard-color: #FED253; 
         /* var(--mustard-color) */
@@ -12,32 +9,43 @@ section { width: 100%; min-height: 100vh; }
         /* var(--cool-december-color) */
     --black-color: #252525;
         /* var(--black-color) */
-}
-
-body { 
-    background-color: var(--cool-december-color);
+    --big-text: 16;
+        /* var(--big-text) */
+    --medium-text: 14;
+        /* var(--medium-text) */
+    --small-text: 12;
+        /* var(--small-text) */
 }
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background-color: var(--cool-december-color); }
 ::-webkit-scrollbar-thumb { background-color: var(--black-color); border-radius: 2px; }
 
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+body { background-color: var(--cool-december-color); }
+section { width: 100%; min-height: 100vh; }
+h2,h3,h4,h5,h6 { color: var(--spanish-gray); font-weight: normal; }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
-
-/* a:hover { text-decoration: none; color:var(--spanish-gray) }
-a:focus { text-decoration: none; color:var(--spanish-gray) }
-a:active { text-decoration: none; color:var(--spanish-gray) } */
-a { color: var(--spanish-gray) }
 
 /* Logo texto preta */
 #text-logo {
@@ -117,76 +125,26 @@ a { color: var(--spanish-gray) }
     background-size: contain;
 }
 
-/* Buttons */
-.bg-outline-btn {
+/* 
+    === TAMANHO DOS BOTÕES ===
+*/
+.bg-btn {
     min-width: 200px;
-    padding: 14px 20px;
+    padding: 12px 16px;
     border-radius: 10px;
-    border: 2px solid var(--mustard-color);
-    color: var(--mustard-color);
     font-weight: bold;
+    font-size: var(--big-text);
     text-align: center;
     text-decoration: none;
     transition: all .2s;
 }
-.bg-outline-btn:hover {
-    background-color: var(--mustard-color);
-    color: var(--cool-december-color);
-}
 
-.bg-filled-btn {
-    min-width: 200px;
-    padding: 14px 20px;
+.md-btn {
+    min-width: 150px;
+    padding: 10px 14px;
     border-radius: 10px;
-    background-color: var(--mustard-color);
-    color: var(--cool-december-color);
     font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s;
-}
-.bg-filled-btn:hover {
-    background-color: var(--cool-december-color);
-    color: var(--mustard-color);
-}
-
-.bg-transparent-btn {
-    min-width: 200px;
-    padding: 14px 20px;
-    border-radius: 10px;
-    background-color: transparent;
-    color: var(--mustard-color);
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s;
-}
-.bg-transparent-btn:hover {
-    border: 2px solid var(--mustard-color);
-}
-
-.md-btn-yellow {
-    min-width: 200px;
-    padding: 14px 20px;
-    border-radius: 10px;
-    border: 2px solid var(--mustard-color);
-    color: var(--mustard-color);
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: transparent;
-}
-
-.lg-btn {
-    min-width: 300px;
-    padding: 14px 20px;
-    border-radius: 10px;
-    border: 2px solid var(--mustard-color);
-    color: var(--mustard-color);
-    font-weight: bold;
+    font-size: var(--medium-text);
     text-align: center;
     text-decoration: none;
     transition: all .2s;
@@ -194,45 +152,175 @@ a { color: var(--spanish-gray) }
 
 .sm-btn {
     min-width: 100px;
-    min-height: 35px;
-    border-radius: 5px;
-    border: 2px solid var(--mustard-color);
-    color: var(--black-color);
-    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: var(--small-text);
     text-align: center;
     text-decoration: none;
-    transition: all .2s;    
+    transition: all .2s;
 }
 
-.lg-btn:hover, .md-btn:hover{
+/* 
+    === ESTILOS DOS BOTÕES ===
+*/
+
+/* --- Outline --- */
+.outline-yellow-btn {
+    border: 2px solid var(--mustard-color);
+    color: var(--mustard-color);
+}
+.outline-yellow-btn:hover {
     background-color: var(--mustard-color);
     color: var(--cool-december-color);
 }
 
-/* .inp form {
+.outline-white-btn {
+    border: 2px solid var(--cool-december-color);
+    color: var(--cool-december-color);
+}
+.outline-white-btn:hover {
+    background-color: var(--cool-december-color);
+    color: var(--black-color);
+}
+
+.outline-blue-btn {
+    border: 2px solid var(--vodka-color);
+    color: var(--vodka-color);
+}
+.outline-blue-btn:hover {
+    background-color: var(--vodka-color);
+    color: var(--cool-december-color);
+}
+
+.outline-black-btn {
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+}
+.outline-black-btn:hover {
+    background-color: var(--black-color);
+    color: var(--cool-december-color);
+}
+
+.outline-gray-btn {
+    border: 2px solid var(--spanish-gray);
+    color: var(--spanish-gray);
+}
+.outline-gray-btn:hover {
+    background-color: var(--spanish-gray);
+    color: var(--cool-december-color);
+}
+
+/* --- Filled --- */
+.filled-yellow-btn {
+    background-color: var(--mustard-color);
+    color: var(--cool-december-color);
+}
+
+.filled-white-btn {
+    background-color: var(--cool-december-color);
+    color: var(--black-color);
+}
+
+.filled-blue-btn {
+    background-color: var(--vodka-color);
+    color: var(--cool-december-color);
+}
+
+.filled-black-btn {
+    background-color: var(--black-color);
+    color: var(--cool-december-color);
+}
+
+.filled-gray-btn {
+    background-color: var(--spanish-gray);
+    color: var(--cool-december-color);
+}
+
+/* -- Transparent --- */
+.transparent-yellow-btn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--mustard-color);
+}
+.transparent-yellow-btn:hover {
+    border: 2px solid var(--mustard-color);
+}
+
+.transparent-white-btn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--cool-december-color);
+}
+.transparent-white-btn:hover {
+    border: 2px solid var(--cool-december-color);
+}
+
+.transparent-blue-btn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--vodka-color);
+}
+.transparent-blue-btn:hover {
+    border: 2px solid var(--vodka-color);
+}
+
+.transparent-black-btn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--black-color);
+}
+.transparent-black-btn:hover {
+    border: 2px solid var(--black-color);
+}
+
+.transparent-gray-btn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--spanish-gray);
+}
+.transparent-gray-btn:hover {
+    border: 2px solid var(--spanish-gray);
+}
+
+/* 
+    === BARRA DE PESQUISA ===
+*/
+.bg-search-wrapper {
+    max-width: 350px;
+    max-height: 50px;
+}
+
+.md-search-wrapper {
+    max-width: 500px;
+    max-height: 40px;
+}
+
+.sw form {
     position: relative;
-    display: flex;
-    align-items: center;
+    width: 100%; height: 100%;
 }
 
-.inp form input[type="text"]{
-    width: 50%;
-    margin-right: 10px;
-    padding: 12px 20px;
-    border: 2px solid #C3C3E6;
-    border-radius: 10px;
-    font-size: 1.1rem;
+.sw form input {
+    width: inherit; height: inherit;
+    font-size: var(--big-text);
+    padding: 14px 16px;
+    border: 2px solid var(--spanish-gray);
+    border-radius: 12px;
     outline: none;
-    background: none;
 }
 
-.inp form input[type="submit"] {
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    border: 2px solid #C3C3E6;
-    border-radius: 10px;
-    outline: none;
-    background-color: #C3C3E6;
+.sw form input[type="submit"] {
+    display: block;
+    position: absolute;
+    top: 50%; right: -1%;
+    transform: translate(-50%, -50%);
+    height: 24px; width: 24px;
+    border: none;
+    background-color: white;
+    background-image: url("../img/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 10;
     cursor: pointer;
-} */
-
+}

@@ -25,8 +25,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         <header>
             <span id="md-logo-black"></span>
             <div>
-                <a href="<?=ROOT?>signin/" class="bg-transparent-btn">Entrar</a>
-                <a href="<?=ROOT?>signup/" class="bg-outline-btn">Cadastrar</a>
+                <a href="<?=ROOT?>signin/" class="bg-btn transparent-black-btn">Entrar</a>
+                <a href="<?=ROOT?>signup/" class="bg-btn outline-yellow-btn">Cadastrar</a>
             </div>
         </header>
     </div>
@@ -35,11 +35,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
             <section class="slg-sec">
                 <div class="slg-sec-left">
                     <h1>Soluções fáceis para seus problemas difíceis</h1>
-                    <span class="subtitle">O que precisar, quando precisar.</span>
-                    <div class="search-inp">
-                        <form action="" method="">
+                    <h3>O que precisar, quando precisar.</h3>
+                    <div class="bg-search-wrapper sw">
+                        <form>
                             <input type="text" placeholder="O que está procurando hoje?">
-                            <input type="submit" value="Buscar">
+                            <input type="submit" name="search" value="">
                         </form>
                     </div>
                 </div>
@@ -161,7 +161,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             </g>
                         </g>
                     </svg>
-
                 </div>
             </section>
             <div class="ctg-sec">
