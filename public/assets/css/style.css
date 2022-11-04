@@ -1,4 +1,6 @@
 :root {
+    --neutral: white;
+        /* var(--neutral) */
     --mustard-color: #FED253; 
         /* var(--mustard-color) */
     --vodka-color: #C3C3E6;
@@ -9,11 +11,15 @@
         /* var(--cool-december-color) */
     --black-color: #252525;
         /* var(--black-color) */
-    --big-text: 16;
+    --big-header: 2rem;
+        /* var(--big-header) */
+    --medium-header: 1.2rem;
+        /* var(--medium-header) */
+    --big-text: 1rem;
         /* var(--big-text) */
-    --medium-text: 14;
+    --medium-text: 0.9rem;
         /* var(--medium-text) */
-    --small-text: 12;
+    --small-text: 0.8rem;
         /* var(--small-text) */
 }
 
@@ -30,8 +36,8 @@
 }
 
 body { background-color: var(--cool-december-color); }
+.wrapper { padding: 0px 65px; }
 section { width: 100%; min-height: 100vh; }
-h2,h3,h4,h5,h6 { color: var(--spanish-gray); font-weight: normal; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -54,6 +60,7 @@ input[type=number] {
     background-image: url("../img/logo/logo-texto.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 /* -- LOGO AMARELA -- */
@@ -63,6 +70,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #md-logo-yellow {
     display: block;
@@ -70,6 +78,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #bg-logo-yellow {
     display: block;
@@ -77,6 +86,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 /* -- LOGO PRETA -- */
@@ -86,6 +96,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #md-logo-black {
     display: block;
@@ -93,6 +104,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #bg-logo-black {
     display: block;
@@ -100,6 +112,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 /* -- LOGO BRANCA -- */
@@ -109,6 +122,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #md-logo-white {
     display: block;
@@ -116,6 +130,7 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 #bg-logo-white {
     display: block;
@@ -123,7 +138,88 @@ input[type=number] {
     background-image: url("../img/logo/Facitio-logo-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
+
+#icon-diploma {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/diploma.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-carro {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/car.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-baloes {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/balloons.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-ferramentas {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/tools.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-casa {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/home.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-computador {
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/computer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#icon-design{
+    display: block;
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* 
+    === TAMANHO DOS LINKS ===
+*/
+.title-link { font-size: var(--medium-header); font-weight: bold; }
+.bg-link { font-size: var(--big-text); font-weight: bold; }
+.md-link { font-size: var(--medium-text); }
+.sm-link { font-size: var(--small-text); }
+
+/* 
+    === ESTILOS DOS LINKS ===
+*/
+.yellow-link { color: var(--mustard-color); }
+.white-link { color: var(--cool-december-color); }
+.blue-link { color: var(--vodka-color); }
+.black-link { color: var(--black-color); }
+.gray-link { color: var(--spanish-gray); }
 
 /* 
     === TAMANHO DOS BOTÕES ===
