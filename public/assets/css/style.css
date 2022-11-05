@@ -38,9 +38,9 @@
 
 body { background-color: var(--neutral); }
 main { width: 100%; min-height: 100vh; }
-.wrapper { padding: 0px 65px; }
 section { width: 100%; min-height: 100vh; }
 article { width: 100%; min-height: 35vh; }
+.wrapper { padding: 0px 65px; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -70,7 +70,7 @@ input[type=number] {
 .background-sign-type { background-image: url("../img/background/SIGNIN-TYPE-SVG.svg"); }
 .background-cliente { background-image: url("../img/background/CLIENTE-SVG.svg"); }
 .background-profissional { background-image: url("../img/background/PROFISSIONAL-SVG.svg"); }
-.background-engineer-svg { background-image: url("../img/icons/SVG-Engineer.svg"); }
+.background-engineer-svg { background-image: url("../img/background/ENGINEER.svg"); }
 
 /* 
     === ÍCONES ===
@@ -173,6 +173,21 @@ input[type=number] {
 .icon-caretdown{
     height: 44px; width: 44px;
     background-image: url("../img/icons/CaretDown.svg");
+}
+
+.icon-input-chave {
+    height: 32px; width: 32px;
+    background-image: url("../img/icons/chave.svg");
+}
+
+.icon-input-celular {
+    height: 32px; width: 32px;
+    background-image: url("../img/icons/phone.svg");
+}
+
+.icon-input-id {
+    height: 32px; width: 32px;
+    background-image: url("../img/icons/id.svg");
 }
 
 /* 
@@ -486,6 +501,23 @@ input[type=number] {
     border-width: 2px;
     border-style: solid;
 }
+
+/* 
+    === INPUT COM ICONE E LABEL ===
+*/
+.bg-icon-input {
+    min-width: 300px;
+    padding: 12px 16px 12px 44px;
+    border-radius: 8px;
+    font-size: var(--big-text);
+    border-width: 2px;
+    border-style: solid;
+}
+.inp-group { display: flex; flex-direction: column; gap: 2px; }
+.inp-group label { font-size: var(--medium-text); color: var(--spanish-gray); }
+.icon-group { position: relative; }
+.icon-group span { position: absolute; top: 50%; left: 8%; transform: translate(-50%, -50%); }
+input[type="submit"] { width: 300px; }
 
 /* 
     === ESTILO DOS INPUTS ===

@@ -1,109 +1,11 @@
 @import url("../../style.css");
 
-main {
-    display: flex;
-}
-
 /* Auth */
-#auth-wrapper {
-    width: 100%; min-height: 100vh;
-    background-image: url("../../../img/auth/background/Background.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+#auth-wrapper { width: inherit; height: inherit; display: flex; justify-content: space-around; align-items: center; }
+.auth-content { width: 50%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 40px; }
+.auth-sub-content { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; }
+.auth-sub-content form { display: flex; flex-direction: column; gap: 20px; }
+.auth-sub-content button { width: 300px; }
 
-@media (max-width: 700px) {
-    #auth-wrapper{
-        background-size: cover; 
-        background-image: none;     
-    }    
-
-    .auth-profile{
-        right: 50%;
-    }
-}
-
-/* Auth profile */
-.auth-profile {
-    height: 100vh;
-    position: absolute;
-    top: 50%; right: 30%;
-    transform: translate(50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.auth-profile h2{font-size: 1.8em;}
-.auth-profile h2,h3,a   {text-align: center;}
-.auth-profile a { margin-top: 10px; }
-
-.auth-profile form { 
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-
-.auth-profile form input{z-index: 5;}
-.auth-profile form label {color: var(--spanish-gray);}
-
-/* .a {
-    width: 50%;
-    background-image: url("../../../img/auth/background/Background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-
-.auth-profile form input[type="text"]{
-    width: 100%;
-    margin-right: 10px;
-    padding: 12px 20px;
-    padding-left: 40px;
-    border: 2px solid var(--spanish-gray);
-    border-radius: 10px;
-    font-size: 1.1rem;
-    outline: none;
-    background-color: var(--neutral);
-}
-
-.auth-profile form input[type="password"]{
-    width: 100%;
-    margin-right: 10px;
-    padding: 12px 20px;
-    padding-left: 40px;
-    border: 2px solid var(--spanish-gray);
-    border-radius: 10px;
-    font-size: 1.1rem;
-    outline: none;
-    background: var(--neutral);
-}
-
-.inp form input[type="submit"] {
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    border: 2px solid #C3C3E6;
-    border-radius: 10px;
-    outline: none;
-    background-color: #C3C3E6;
-    cursor: pointer;
-}
-
-
-.inp-ico{
-    position: relative;
-    top: 57px;
-    padding-left: 10px;
-}
-
-
-#ftr-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    min-height: 50px;
-    font-size: 1.2em;
-    color: var(--black-color);
-}
+/* Footer */
+#ftr-footer{ display: flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--small-text); color: var(--black-color); }

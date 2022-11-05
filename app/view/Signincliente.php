@@ -19,42 +19,47 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth.css">
-    <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
 </head>
 <body>
     <main id="auth-wrapper">
         <span class="half-background background-cliente"></span>
-        <div class="auth-profile">
-            <span id="bg-logo-yellow"></span>
+        <div class="auth-content">
+            <span class="icon bg-logo-yellow"></span>
             <div>
-                <div>
-                    <h2>ENTRAR</h2>
-                    <h3>Como cliente</h3>
-                </div>
+                <h2>Seja bem-vindo novamente!</h2>
+                <h3>Entrando como cliente</h3>
+            </div>
+            <div class="auth-sub-content">
                 <form method="POST">
-                    <label class="inp-ico" for="senha"><img src="img/auth/icons/id.svg" alt=""></label>
-                    <label for="CPF">CPF</label>
-                    <input type="text" name="cpf" id="" placeholder="___.___.___-__">
-                
-                    <label class="inp-ico" for="senha"><img src="img/auth/icons/chave.svg" alt=""></label>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="" placeholder="Senha">
-                    <input class="md-btn-yellow" type="submit" name="submit" value="Entrar">
-                    <a href="<?=ROOT?>signup/cliente"><b>Não possui uma conta? Cadastre-se</b></a>
+                    <div class="inp-group">
+                        <label for="CPF">CPF</label>
+                        <div class="icon-group">
+                            <span class="icon icon-input-id"></span>
+                            <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                        </div>
+                    </div>
+                    <div class="inp-group">
+                        <label for="senha">Senha</label>
+                        <div class="icon-group">
+                            <span class="icon icon-input-chave"></span>
+                            <input class="bg-icon-input gray-input" type="password" name="senha" placeholder="Senha">
+                        </div>
+                    </div>
+                    <input class="bg-btn outline-yellow-btn" type="submit" name="submit" value="ENTRAR">
                 </form>
             </div>
+            <a href="<?=ROOT?>signup/" class="bg-link black-link">Não possui uma conta? Cadastre-se</a>
             <div id="ftr-footer">
                 <p>©2022 - </p>
-                <span id="sm-logo-black"></span>
+                <span class="icon sm-logo-black"></span>
                 <p> - All rights reserved.</p>
             </div>
-        </div>      
+        </div>
     </main>
 </body>
 </html>
 
 <?php
-
 if (isset($_POST['submit'])) {
     $checkSignin = new Signin();
     $checkSignin->checkSignin($_POST, $data['TYPE']);
