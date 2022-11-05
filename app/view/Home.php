@@ -213,26 +213,22 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     </div>
                 </div>
             </section>
-            <section class="abt-us-sec">
+            <article class="abt-us-sec">
+                <h2>Um pouco sobre nós</h2>
                 <div>
-                    <h2>Um pouco sobre nós</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non malesuada lacus, euismod viverra nulla. Mauris vitae mi ac ligula pellentesque maximus ac in ex. Aenean condimentum, massa quis mattis ullamcorper, velit ex sodales purus, at egestas ex lacus eget quam. In ipsum arcu, efficitur quis augue et, mollis porta odio. Sed sodales tortor eu tempus semper.</p>
+                    <button class="md-btn filled-white-btn">Saiba Mais</button>
                 </div>
-                <div>
-                    <button class="sm-btn">Saiba Mais</button>
-                </div>
-            </section>
-            <section class="sgin-sec">
-                <div>
-                    <h2>Torne-se um profissional da Facitio</h2>
-                    <p>Ou contrate um agora mesmo!</p>
-                    <form action="">
-                        <input type="email" name="" id="" placeholder="exemplo@email.com">
-                        <input type="password" name="" id="" placeholder="Senha">
-                        <input type="submit" value="Cadastrar">
-                    </form>
-                </div>
-            </section>
+            </article>
+            <article class="form-sec">
+                <h2>Torne-se um profissional da Facitio</h2>
+                <p>Ou contrate um agora mesmo!</p>
+                <form method="POST">
+                    <input class="md-input gray-input" type="email" name="" id="" placeholder="exemplo@email.com">
+                    <input class="md-input gray-input" type="password" name="" id="" placeholder="Senha">
+                    <input class="bg-btn filled-gray-btn" type="submit" value="Cadastrar">
+                </form>
+            </article>
         </div>
     </main>
     <?php $this->loadView("Footer"); ?>

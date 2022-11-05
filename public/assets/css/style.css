@@ -32,12 +32,14 @@
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
     text-decoration: none;
+    outline: none;
     color: var(--black-color);
 }
 
 body { background-color: var(--neutral); }
 .wrapper { padding: 0px 65px; }
 section { width: 100%; min-height: 100vh; }
+article { width: 100%; min-height: 35vh; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -236,7 +238,7 @@ input[type=number] {
 .bg-btn {
     min-width: 200px;
     padding: 12px 16px;
-    border-radius: 10px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: var(--big-text);
     text-align: center;
@@ -248,19 +250,19 @@ input[type=number] {
 .md-btn {
     min-width: 150px;
     padding: 10px 14px;
-    border-radius: 10px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: var(--medium-text);
     text-align: center;
     text-decoration: none;
     transition: all .2s;
-    cursor: pointerbg-link
+    cursor: pointer;
 }
 
 .sm-btn {
     min-width: 100px;
     padding: 8px 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: var(--small-text);
     text-align: center;
     text-decoration: none;
@@ -327,26 +329,31 @@ input[type=number] {
 .filled-yellow-btn {
     background-color: var(--mustard-color);
     color: var(--neutral);
+    border: none;
 }
 
 .filled-white-btn {
     background-color: var(--neutral);
     color: var(--black-color);
+    border: none;
 }
 
 .filled-blue-btn {
     background-color: var(--vodka-color);
     color: var(--neutral);
+    border: none;
 }
 
 .filled-black-btn {
     background-color: var(--black-color);
     color: var(--neutral);
+    border: none;
 }
 
 .filled-gray-btn {
     background-color: var(--spanish-gray);
     color: var(--neutral);
+    border: none;
 }
 
 /* -- Transparent --- */
@@ -498,3 +505,33 @@ input[type=number] {
     background-size: cover;
     background-position: left;
 }
+
+/* 
+    === TAMANHO DOS INPUTS ===
+*/
+.bg-input {
+    min-width: 200px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: var(--big-text);
+    border-width: 3px;
+    border-style: solid;
+}
+
+.md-input {
+    min-width: 150px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: var(--medium-text);
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* 
+    === ESTILO DOS INPUTS ===
+*/
+.yellow-input { border-color: var(--mustard-color); }
+.white-input { border-color: var(--neutral); }
+.blue-input { border-color: var(--vodka-color); }
+.black-input { border-color: var(--black-color); }
+.gray-input { border-color: var(--spanish-gray); }
