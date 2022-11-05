@@ -55,164 +55,104 @@ input[type=number] {
   appearance: textfield;
 }
 
-/* Logo texto preta */
-#text-logo {
+.icon {
     display: block;
-    height: 45px; width: 125px;
-    background-image: url("../img/logo/logo-texto.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+/* Logo texto preta */
+.text-logo {
+    height: 45px; width: 125px;
+    background-image: url("../img/logo/logo-texto.svg");
 }
 
 /* -- LOGO AMARELA -- */
-#sm-logo-yellow {
-    display: block;
+.sm-logo-yellow {
     height: 25px; width: 80px;
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#md-logo-yellow {
-    display: block;
+
+.md-logo-yellow {
     height: 45px; width: 125px;
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#bg-logo-yellow {
-    display: block;
+.bg-logo-yellow {
     height: 67.5px; width: 174px;
     background-image: url("../img/logo/Facitio-logo-yellow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 /* -- LOGO PRETA -- */
-#sm-logo-black {
-    display: block;
+.sm-logo-black {
     height: 25px; width: 80px;
     background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#md-logo-black {
-    display: block;
+
+.md-logo-black {
     height: 45px; width: 125px;
     background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#bg-logo-black {
-    display: block;
+
+.bg-logo-black {
     height: 67.5px; width: 174px;
     background-image: url("../img/logo/Facitio-logo-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 /* -- LOGO BRANCA -- */
-#sm-logo-white {
-    display: block;
+.sm-logo-white {
     height: 25px; width: 80px;
     background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#md-logo-white {
-    display: block;
+
+.md-logo-white {
     height: 45px; width: 125px;
     background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-#bg-logo-white {
-    display: block;
+
+.bg-logo-white {
     height: 67.5px; width: 174px;
     background-image: url("../img/logo/Facitio-logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-diploma {
-    display: block;
+.icon-diploma {
     height: 44px; width: 44px;
     background-image: url("../img/icons/diploma.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-carro {
-    display: block;
+.icon-carro {
     height: 44px; width: 44px;
     background-image: url("../img/icons/car.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-baloes {
-    display: block;
+.icon-baloes {
     height: 44px; width: 44px;
     background-image: url("../img/icons/balloons.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-ferramentas {
-    display: block;
+.icon-ferramentas {
     height: 44px; width: 44px;
     background-image: url("../img/icons/tools.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-casa {
-    display: block;
+.icon-casa {
     height: 44px; width: 44px;
     background-image: url("../img/icons/home.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-computador {
-    display: block;
+.icon-computador {
     height: 44px; width: 44px;
     background-image: url("../img/icons/computer.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-design{
-    display: block;
+.icon-design{
     height: 44px; width: 44px;
     background-image: url("../img/icons/design.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-#icon-caretdown{
-    display: block;
+.icon-caretdown{
     height: 44px; width: 44px;
     background-image: url("../img/icons/CaretDown.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 /* 

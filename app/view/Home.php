@@ -24,7 +24,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <header>
         <div class="wrapper">
             <nav>
-                <span id="md-logo-black"></span>
+                <span class="icon md-logo-black"></span>
                 <div>
                     <a href="<?=ROOT?>signin/" class="bg-link black-link">Entrar</a>
                     <a href="<?=ROOT?>signup/" class="bg-btn outline-yellow-btn">Cadastrar</a>
@@ -50,43 +50,43 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
             <div class="ctg-sec">
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-diploma"></span>
+                        <span class="icon icon-diploma"></span>
                         <p>Estudo</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                    <span id="icon-carro"></span>
+                    <span class="icon icon-carro"></span>
                         <p>Automobilístico</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-baloes"></span>
+                        <span class="icon icon-baloes"></span>
                         <p>Festas & Eventos</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-ferramentas"></span>
+                        <span class="icon icon-ferramentas"></span>
                         <p>Reparos & Consertos</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-casa"></span>
+                        <span class="icon icon-casa"></span>
                         <p>Serviços Domésticos</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-computador"></span>
+                        <span class="icon icon-computador"></span>
                         <p>Tecnologia</p>
                     </a>
                 </div>
                 <div class="ctg-opt">
                     <a href="#">
-                        <span id="icon-design"></span>
+                        <span class="icon icon-design"></span>
                         <p>UX/UI Design</p>
                     </a>
                 </div>

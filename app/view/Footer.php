@@ -1,6 +1,6 @@
 <footer style="height: 260px; display: flex; flex-direction: column; justify-content: space-between;">
         <div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
-            <span id="md-logo-black"></span>
+            <span class="icon md-logo-black"></span>
             <div style="width: 100%; display: flex; justify-content: center; gap: 100px; text-align: center; padding-top: 20px; font-size: var(--small-text);">
                 <ul style="list-style: none; line-height: 30px">
                     <li>
@@ -28,7 +28,7 @@
         </div>
         <div style="display: flex; align-items: center; justify-content: center; gap: 5px; min-height: 50px; font-size: var(--small-text); color: var(--neutral); font-weight: bold; background-color: var(--mustard-color);">
             <p>©2022 - </p>
-            <span id="sm-logo-white"></span>
+            <span class="icon sm-logo-white"></span>
             <p> - All rights reserved.</p>
         </div>
     </footer>
