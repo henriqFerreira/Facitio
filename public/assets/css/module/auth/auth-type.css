@@ -5,7 +5,7 @@ main {
 }
 
 body { 
-    background-color: var(--cool-december-color);
+    background-color: var(--neutral);
 }
 
 /* Auth */

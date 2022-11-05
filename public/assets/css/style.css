@@ -24,7 +24,7 @@
 }
 
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background-color: var(--cool-december-color); }
+::-webkit-scrollbar-track { background-color: var(--neutral); }
 ::-webkit-scrollbar-thumb { background-color: var(--black-color); border-radius: 2px; }
 
 * {
@@ -35,7 +35,7 @@
     color: var(--black-color);
 }
 
-body { background-color: var(--cool-december-color); }
+body { background-color: var(--neutral); }
 .wrapper { padding: 0px 65px; }
 section { width: 100%; min-height: 100vh; }
 
@@ -225,7 +225,7 @@ input[type=number] {
     === ESTILOS DOS LINKS ===
 */
 .yellow-link { color: var(--mustard-color); }
-.white-link { color: var(--cool-december-color); }
+.white-link { color: var(--neutral); }
 .blue-link { color: var(--vodka-color); }
 .black-link { color: var(--black-color); }
 .gray-link { color: var(--spanish-gray); }
@@ -242,6 +242,7 @@ input[type=number] {
     text-align: center;
     text-decoration: none;
     transition: all .2s;
+    cursor: pointer;
 }
 
 .md-btn {
@@ -253,6 +254,7 @@ input[type=number] {
     text-align: center;
     text-decoration: none;
     transition: all .2s;
+    cursor: pointerbg-link
 }
 
 .sm-btn {
@@ -263,6 +265,7 @@ input[type=number] {
     text-align: center;
     text-decoration: none;
     transition: all .2s;
+    cursor: pointer;
 }
 
 /* 
@@ -273,72 +276,77 @@ input[type=number] {
 .outline-yellow-btn {
     border: 2px solid var(--mustard-color);
     color: var(--mustard-color);
+    background: none;
 }
 .outline-yellow-btn:hover {
     background-color: var(--mustard-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .outline-white-btn {
-    border: 2px solid var(--cool-december-color);
-    color: var(--cool-december-color);
+    border: 2px solid var(--neutral);
+    color: var(--neutral);
+    background: none;
 }
 .outline-white-btn:hover {
-    background-color: var(--cool-december-color);
+    background-color: var(--neutral);
     color: var(--black-color);
 }
 
 .outline-blue-btn {
     border: 2px solid var(--vodka-color);
     color: var(--vodka-color);
+    background: none;
 }
 .outline-blue-btn:hover {
     background-color: var(--vodka-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .outline-black-btn {
     border: 2px solid var(--black-color);
     color: var(--black-color);
+    background: none;
 }
 .outline-black-btn:hover {
     background-color: var(--black-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .outline-gray-btn {
     border: 2px solid var(--spanish-gray);
     color: var(--spanish-gray);
+    background: none;
 }
 .outline-gray-btn:hover {
     background-color: var(--spanish-gray);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 /* --- Filled --- */
 .filled-yellow-btn {
     background-color: var(--mustard-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .filled-white-btn {
-    background-color: var(--cool-december-color);
+    background-color: var(--neutral);
     color: var(--black-color);
 }
 
 .filled-blue-btn {
     background-color: var(--vodka-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .filled-black-btn {
     background-color: var(--black-color);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 .filled-gray-btn {
     background-color: var(--spanish-gray);
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 
 /* -- Transparent --- */
@@ -354,10 +362,10 @@ input[type=number] {
 .transparent-white-btn {
     border: 2px solid transparent;
     background-color: transparent;
-    color: var(--cool-december-color);
+    color: var(--neutral);
 }
 .transparent-white-btn:hover {
-    border: 2px solid var(--cool-december-color);
+    border: 2px solid var(--neutral);
 }
 
 .transparent-blue-btn {
@@ -433,4 +441,60 @@ input[type=number] {
     background-position: center;
     z-index: 10;
     cursor: pointer;
+}
+
+/* 
+    === CARD DO SERVIÇO ===
+*/
+.card {
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--neutral);
+    border-radius: 13px;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.card-photo{
+    height: 150px;
+    background-image: url("../img/academico.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 13px;
+    z-index: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 14px 7px;
+    transition: all .2s;
+    z-index: 1;
+}
+
+.card-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-profile-photo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--black-color);
+}
+
+#card-aval {
+    width: 115px; height: 21px;
+    background-image: url("../img/icons/Estrelas.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
 }

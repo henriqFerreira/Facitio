@@ -32,10 +32,10 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <h3>Quem é você?</h3>
                 </div>
                 <div class="btn-flex">
-                    <button onclick="document.location.href='<?=ROOT?>signin/cliente'" class="md-btn-yellow" style="margin-top:20px;margin-bottom:20px;">Sou um cliente!</button>
-                    <button onclick="document.location.href='<?=ROOT?>signin/profissional'" class="md-btn-yellow" style="margin-top:20px;margin-bottom:20px;">Sou um profissinal!</button>
+                    <button onclick="document.location.href='<?=ROOT?>signin/cliente'" class="bg-btn outline-yellow-btn" style="margin-top:20px;margin-bottom:20px;">Sou um cliente!</button>
+                    <button onclick="document.location.href='<?=ROOT?>signin/profissional'" class="bg-btn outline-yellow-btn" style="margin-top:20px;margin-bottom:20px;">Sou um profissinal!</button>
                 </div>
-                <a href="<?=ROOT?>signup/"><b>Não possui uma conta? Cadastre-se</b></a>
+                <a href="<?=ROOT?>signup/" class="bg-link black-link"><b>Não possui uma conta? Cadastre-se</b></a>
                 </div>
             <div id="ftr-footer">
                 <p>©2022 - </p>
