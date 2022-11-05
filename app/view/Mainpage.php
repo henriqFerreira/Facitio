@@ -93,8 +93,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     </div>
                 </div>
                 <div>
-                    <h1>Outros serviços</h1>
                     <div class="hglg-cards" style="border: 5px solid red">
+                        <h1 style="font-size:var(--big-header)">Outros serviços</h1>
                         <div class="card-row"  style="border: 5px solid rgb(0, 255, 21)">
                             <!---CARD-->
                             <div class="card">
