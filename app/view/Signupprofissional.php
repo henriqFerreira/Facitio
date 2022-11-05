@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 </head>
 <body>
     <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-cadastro-profissional.svg);">
-        <div id="overlay"></div>
+        <!-- <div id="overlay"></div> -->
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>
             <div class="steps">
@@ -36,7 +36,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <h2>CRIE SUA CONTA</h2>
                     <P>Como cliente</P>
                 </div>
-                <form action="" >
+                <form method="POST">
                     <div style="width: 100%;">
                             <div style="display:flex;flex-direction:row;justify-content: space-between;padding: 25px;">
                                 <div style="display:flex;flex-direction:column;width: 50%;">

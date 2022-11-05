@@ -11,7 +11,7 @@ class Signin extends Controller {
         $data = array (
             "TITLE" => WEBSITE_NAME . ": Entrar como..."
         );
-        $this->loadView("Signintype", $data);
+        $this->loadView("Signin", $data);
     }
 
     function cliente() {

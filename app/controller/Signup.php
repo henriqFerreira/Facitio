@@ -9,7 +9,7 @@ class Signup extends Controller {
         $data = array (
             "TITLE" => WEBSITE_NAME . ": Cadastrar como..."
         );
-        $this->loadView("Signuptype", $data);
+        $this->loadView("Signup", $data);
     }
     function cliente() {
         $data = array (
@@ -24,4 +24,7 @@ class Signup extends Controller {
         $this->loadView("Signupprofissional", $data);
     }
     
+    function checkSignUp($signUpData, $userType) {
+        
+    }
 }
