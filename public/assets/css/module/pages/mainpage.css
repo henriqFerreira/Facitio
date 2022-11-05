@@ -42,7 +42,7 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 }
 
 .card {
-    width: 250px;
+    width: 300px;
     background-color: var(--neutral);
     display: flex;
     flex-direction: column;
@@ -81,66 +81,11 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     font-size: var(--medium-text);
 }
 
-
-.abt-us-sec{
-    min-height: 200px;
-    background-image: url("../../../img/background/Group2.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+.card-row {
+    width: 100%;
     display: flex;
-}
-
-.abt-us-sec div:nth-child(1){
-    width: 60%; min-height: 100%;
-    margin: 10px;
-    font-size: 18px;
-    display: block;
-}
-
-.abt-us-sec div:nth-child(2){
-    width: 10%; min-height: 100%;
-    margin: 10px;
-    font-size: 18px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.abt-us-sec p{
-    padding-top: 20px;
-}
-
-.sgin-sec{
-    min-height: 200px;
-    padding: 30px;
-}
-
-.sgin-sec form {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.sgin-sec form input[type="email"], input[type="password"]{
-    width: 20%;
-    margin-right: 10px;
-    padding: 12px 20px;
-    border: 2px solid #C3C3E6;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    outline: none;
-    background: none;
-}
-
-.sgin-sec form input[type="submit"] {
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    border: 2px solid #C3C3E6;
-    border-radius: 10px;
-    outline: none;
-    background-color: #C3C3E6;
-    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer{
