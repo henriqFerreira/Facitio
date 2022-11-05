@@ -198,39 +198,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
             </section>
         </div>
     </main>
-    <footer>
-        <div id="footer">
-            <span id="md-logo-black"></span>
-            <div id="content-ftr-list">
-                <ul>
-                    <li>
-                        <h2>Sobre a Facitio</h2>
-                    </li>
-                    <li><a href="">Nossa Equipe</a></li>
-                    <li><a href="">Objetivo</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Sobre a Facitio</h2>
-                    </li>
-                    <li><a href="">Nossa Equipe</a></li>
-                    <li><a href="">Objetivo</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Sobre a Facitio</h2>
-                    </li>
-                    <li><a href="">Nossa Equipe</a></li>
-                    <li><a href="">Objetivo</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="ftr-footer">
-            <p>©2022 - </p>
-            <span id="sm-logo-white"></span>
-            <p> - All rights reserved.</p>
-        </div>
-    </footer>
+    <?php $this->loadView("Footer"); ?>
 </body>
 
 </html>

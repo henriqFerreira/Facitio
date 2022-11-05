@@ -39,133 +39,137 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     </form>
                 </div>
             </div>
-            <div id="wrapper-menu" style="border:1px solid red">
-                <span id="icon-caretdown"></span>
+            <div id="wrapper-menu">
+                <button><span id="icon-caretdown"></span></button>
             </div>
         </div>
     </header>
     <main>
         <div class="wrapper">
-            <section class="hglg-sec">
-                <h1>Categorias em destaque</h1>
-                <div class="hglg-cards">
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+            <section>
+                <div class="hglg-sec" style="border: 5px solid green">
+                    <h1>Categorias em destaque</h1>
+                    <div class="hglg-cards">
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div>
+                                    <a href="#" class="title-link black-link">Título do Serviço</a>
+                                    <p>Nome do Fornecedor</p>
+                                </div>
+                                <span>⭐ 0.0</span>
                             </div>
-                            <span>⭐ 0.0</span>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div>
+                                    <a href="#" class="title-link black-link">Título do Serviço</a>
+                                    <p>Nome do Fornecedor</p>
+                                </div>
+                                <span>⭐ 0.0</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div>
+                                    <a href="#" class="title-link black-link">Título do Serviço</a>
+                                    <p>Nome do Fornecedor</p>
+                                </div>
+                                <span>⭐ 0.0</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div>
+                                    <a href="#" class="title-link black-link">Título do Serviço</a>
+                                    <p>Nome do Fornecedor</p>
+                                </div>
+                                <span>⭐ 0.0</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+                </div>
+                <div>
+                    <div class="hglg-cards" style="border: 5px solid red">
+                        <h1 style="font-size:var(--big-header)">Outros serviços</h1>
+                        <div class="card-row"  style="border: 5px solid rgb(0, 255, 21)">
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                <div class="card-content">
+                                    <div>
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p>Nome do Fornecedor</p>
+                                    </div>
+                                    <span>⭐ 0.0</span>
+                                </div>
                             </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                <div class="card-content">
+                                    <div>
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p>Nome do Fornecedor</p>
+                                    </div>
+                                    <span>⭐ 0.0</span>
+                                </div>
                             </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                <div class="card-content">
+                                    <div>
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p>Nome do Fornecedor</p>
+                                    </div>
+                                    <span>⭐ 0.0</span>
+                                </div>
                             </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                <div class="card-content">
+                                    <div>
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p>Nome do Fornecedor</p>
+                                    </div>
+                                    <span>⭐ 0.0</span>
+                                </div>
                             </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
+                            <!---CARD-->
+                            <div class='card'>
+                                <div class='card-photo'></div>
+                                    <div class='card-content'>
+                                        <div>
+                                            <a href='#' class='title-link black-link'>Título do Serviço</a>
+                                            <p>Nome do Fornecedor</p>
+                                        </div>
+                                    <span>⭐ 0.0</span>
+                                </div>
                             </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div>
-                                <a href="#" class="title-link black-link">Título do Serviço</a>
-                                <p>Nome do Fornecedor</p>
-                            </div>
-                            <span>⭐ 0.0</span>
+                            <!---CARD-->
+
+                            <!---CARD-->
+
+                            <!---CARD-->
+
+                            <!---CARD-->
                         </div>
                     </div>
                 </div>
             </section>
     </main>
-    <footer>
-        <div id="footer">
-            <span id="md-logo-black"></span>
-            <div id="content-ftr-list">
-                <ul>
-                    <li>
-                        <h2>SOBRE NÓS</h2>
-                    </li>
-                    <li><a href="">NOSSA EQUIPE</a></li>
-                    <li><a href="">OBJETIVO</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>SUPORTE</h2>
-                    </li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">HELP</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>PRODUTO</h2>
-                    </li>
-                    <li><a href="">COMO FUNCIONA</a></li>
-                    <li><a href="">BENEFÍCIOS</a></li>
-                    <li><a href="">FUNCIONALIDADES</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="ftr-footer">
-            <p>©2022 - </p>
-            <span id="sm-logo-white"></span>
-            <p> - All rights reserved.</p>
-        </div>
-    </footer>
+    <?php $this->loadView("Footer"); ?>
 </body>
 
 </html>
