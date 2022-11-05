@@ -405,7 +405,7 @@ input[type=number] {
     font-size: var(--big-text);
     padding: 14px 16px;
     border: 2px solid var(--spanish-gray);
-    border-radius: 12px;
+    border-radius: 6px;
     outline: none;
 }
 

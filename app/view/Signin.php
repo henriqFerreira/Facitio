@@ -33,7 +33,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                 <button onclick="document.location.href='<?=ROOT?>signin/cliente'" class="bg-btn outline-yellow-btn">Sou um cliente!</button>
                 <button onclick="document.location.href='<?=ROOT?>signin/profissional'" class="bg-btn outline-yellow-btn">Sou um profissinal!</button>
             </div>
-            <a href="<?=ROOT?>signup/" class="bg-link black-link"><b>Não possui uma conta? Cadastre-se</b></a>
+            <a href="<?=ROOT?>signup/" class="bg-link black-link">Não possui uma conta? Cadastre-se!</a>
             <div id="ftr-footer">
                 <p>©2022 - </p>
                 <span class="icon sm-logo-black"></span>

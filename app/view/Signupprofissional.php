@@ -17,7 +17,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth-signup.css">
-    <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
 </head>
 <body>
     <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-cadastro-profissional.svg);">

@@ -16,8 +16,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/index.css">
-    
+    <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/home.css">
 </head>
 
 <body>

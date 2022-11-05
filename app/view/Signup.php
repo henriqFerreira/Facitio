@@ -1,6 +1,4 @@
 <?php
-use controller\Signin;
-
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 ?>
@@ -18,38 +16,28 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth-type.css">
-    <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
+    <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth.css">
 </head>
 <body>
-    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-cliente.svg);">
-        <div id="overlay"></div>
-        <div class="auth-profile">
-            <span id="bg-logo-yellow"></span>
-            <div class="layout-flex">
-                <div>
-                    <h2>Olá, Bem-vindo ao Facitio</h2>
-                    <h3>Quem é você?</h3>
-                </div>
-                <div class="btn-flex">
-                    <button onclick="document.location.href='<?=ROOT?>signup/cliente'" class="md-btn-yellow" style="margin-top:20px;margin-bottom:20px;">Quero ser um cliente!</button>
-                     <button onclick="document.location.href='<?=ROOT?>signup/profissional'" class="md-btn-yellow" style="margin-top:20px;margin-bottom:20px;">Quero ser um profissinal!</button>
-                </div>
-                <a href="<?=ROOT?>signin/"><b>Possui uma conta? Entre</b></a>
-                </div>
+    <main id="auth-wrapper">
+        <span class="half-background background-sign-type"></span>
+        <div class="auth-content">
+            <span class="icon bg-logo-yellow"></span>
+            <div>
+                <h2>Olá, bem-vindo ao Facitio</h2>
+                <h3>O que gostaria de ser?</h3>
+            </div>
+            <div class="auth-sub-content">
+                <button onclick="document.location.href='<?=ROOT?>signup/cliente'" class="bg-btn outline-yellow-btn">Quero ser um cliente!</button>
+                <button onclick="document.location.href='<?=ROOT?>signup/profissional'" class="bg-btn outline-yellow-btn">Quero ser um profissinal!</button>
+            </div>
+            <a href="<?=ROOT?>signin/" class="bg-link black-link">Já possui uma conta? Entre!</a>
             <div id="ftr-footer">
                 <p>©2022 - </p>
-                <span id="sm-logo-black"></span>
+                <span class="icon sm-logo-black"></span>
                 <p> - All rights reserved.</p>
             </div>
-        </div>      
+        </div>
     </main>
 </body>
 </html>
-
-<?php
-
-if (isset($_POST['submit'])) {
-    $checkSignin = new Signin();
-    $checkSignin->checkSignin($_POST, $data['TYPE']);
-}
