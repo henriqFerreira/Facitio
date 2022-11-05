@@ -18,14 +18,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth-type.css">
     <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
+    <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth-type.css">
 </head>
 <body>
-    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-cliente.svg);">
-        <div id="overlay"></div>
+    <main id="auth-wrapper">
+        <span class="half-background background-sign-type"></span>
         <div class="auth-profile">
-            <span id="bg-logo-yellow"></span>
+            <span class="icon bg-logo-yellow"></span>
             <div class="layout-flex">
                 <div>
                     <h2>Seja bem-vindo novamente!</h2>
@@ -36,10 +36,10 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <button onclick="document.location.href='<?=ROOT?>signin/profissional'" class="bg-btn outline-yellow-btn" style="margin-top:20px;margin-bottom:20px;">Sou um profissinal!</button>
                 </div>
                 <a href="<?=ROOT?>signup/" class="bg-link black-link"><b>Não possui uma conta? Cadastre-se</b></a>
-                </div>
+            </div>
             <div id="ftr-footer">
                 <p>©2022 - </p>
-                <span id="sm-logo-black"></span>
+                <span class="icon sm-logo-black"></span>
                 <p> - All rights reserved.</p>
             </div>
         </div>      

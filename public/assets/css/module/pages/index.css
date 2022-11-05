@@ -6,7 +6,6 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 
 /* Slogan section (slg-sec) */
 .slg-sec { display: flex; justify-content: space-between; align-items: center; gap: 50px;}
-.slg-sec-right { display: block; width: 50%; height: 500px; background-image: url("../../../img/icons/SVG-Engineer.svg"); background-repeat: no-repeat; background-size: contain; background-position: center; }
 .slg-sec-left { width: 50%; height: 100%; display: flex; flex-direction: column; gap: 20px;}
 .slg-sec-left h1 { font-size: var(--big-header); max-width: 90%;}
 .slg-sec-left h3 { font-size: var(--big-text); font-weight: normal; color: var(--spanish-gray); }
@@ -23,7 +22,7 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 .hglg-cards { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 50px 30px; padding: 30px 0; }
 
 /* About us article */
-.abt-us-sec{ background-image: url("../../../img/background/Group2.svg"); background-repeat: no-repeat; background-size: cover; background-position: right; display: flex; flex-direction: column; justify-content: space-around; padding: 14px; }
+.abt-us-sec{ background-image: url("../../../img/background/ABOUT-US.svg"); background-repeat: no-repeat; background-size: cover; background-position: right; display: flex; flex-direction: column; justify-content: space-around; padding: 14px; }
 .abt-us-sec div{ width: 70%; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
 
 /* Signin/Signup form */

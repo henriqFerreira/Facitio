@@ -1,32 +1,5 @@
 @import url("../../style.css");
 
-main {
-    display: flex;
-}
-
-body { 
-    background-color: var(--neutral);
-}
-
-/* Auth */
-#auth-wrapper {
-    width: 100%; min-height: 100vh;
-    background-image: url("../../../img/auth/background/Background.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-@media (max-width: 700px) {
-    #auth-wrapper{
-        background-size: cover; 
-        background-image: none;     
-    }    
-
-    .auth-profile{
-        right: 50%;
-    }
-}
-
 /* Auth profile */
 .auth-profile {
     height: 100vh;

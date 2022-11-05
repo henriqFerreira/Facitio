@@ -20,8 +20,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
 </head>
 <body>
-    <main id="auth-wrapper" style="background-image: url(<?=ASSETS?>img/auth/background/Background-profissional.svg);">
-        <div id="overlay"></div>
+    <main id="auth-wrapper">
+        <span class="half-background background-profissional"></span>
         <div class="auth-profile">
             <span id="bg-logo-yellow"></span>
             <div>

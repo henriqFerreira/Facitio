@@ -45,7 +45,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                         </form>
                     </div>
                 </div>
-                <div class="slg-sec-right"></div>
+                <span class="half-background background-engineer-svg"></span>
             </section>
             <div class="ctg-sec">
                 <div class="ctg-opt">

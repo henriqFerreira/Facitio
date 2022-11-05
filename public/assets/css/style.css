@@ -37,6 +37,7 @@
 }
 
 body { background-color: var(--neutral); }
+main { width: 100%; min-height: 100vh; }
 .wrapper { padding: 0px 65px; }
 section { width: 100%; min-height: 100vh; }
 article { width: 100%; min-height: 35vh; }
@@ -55,6 +56,25 @@ input[type=number] {
   appearance: textfield;
 }
 
+/* 
+    === IMAGENS DE BACKGROUND ===
+*/
+.half-background {
+    display: block;
+    width: 50%; height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.background-sign-type { background-image: url("../img/background/SIGNIN-TYPE-SVG.svg"); }
+.background-cliente { background-image: url("../img/background/CLIENTE-SVG.svg"); }
+.background-profissional { background-image: url("../img/background/PROFISSIONAL-SVG.svg"); }
+.background-engineer-svg { background-image: url("../img/icons/SVG-Engineer.svg"); }
+
+/* 
+    === ÍCONES ===
+*/
 .icon {
     display: block;
     background-repeat: no-repeat;
