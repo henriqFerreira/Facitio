@@ -517,7 +517,6 @@ input[type=number] {
 .inp-group label { font-size: var(--medium-text); color: var(--spanish-gray); }
 .icon-group { position: relative; }
 .icon-group span { position: absolute; top: 50%; left: 8%; transform: translate(-50%, -50%); }
-input[type="submit"] { width: 300px; }
 
 /* 
     === ESTILO DOS INPUTS ===

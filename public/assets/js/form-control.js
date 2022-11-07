@@ -1,0 +1,1 @@
+var currentStep = 0;
