@@ -49,121 +49,240 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
             <section>
                 <div class="hglg-sec" style="border: 5px solid green">
                     <h1>Categorias em destaque</h1>
-                    <div class="hglg-cards">
+                    <div class="card-row">
                         <div class="card">
                             <div class="card-photo"></div>
                             <div class="card-content">
-                                <div>
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p>Nome do Fornecedor</p>
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
                                 </div>
-                                <span>⭐ 0.0</span>
+                                <span id="card-aval"></span>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-photo"></div>
                             <div class="card-content">
-                                <div>
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p>Nome do Fornecedor</p>
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
                                 </div>
-                                <span>⭐ 0.0</span>
+                                <span id="card-aval"></span>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-photo"></div>
                             <div class="card-content">
-                                <div>
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p>Nome do Fornecedor</p>
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
                                 </div>
-                                <span>⭐ 0.0</span>
+                                <span id="card-aval"></span>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-photo"></div>
                             <div class="card-content">
-                                <div>
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p>Nome do Fornecedor</p>
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
                                 </div>
-                                <span>⭐ 0.0</span>
+                                <span id="card-aval"></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="hglg-cards" style="border: 5px solid red">
+                    <div class="hglg-sec" style="border: 5px solid red">
                         <h1 style="font-size:var(--big-header)">Outros serviços</h1>
                         <div class="card-row"  style="border: 5px solid rgb(0, 255, 21)">
                             <!---CARD-->
                             <div class="card">
                                 <div class="card-photo"></div>
-                                <div class="card-content">
-                                    <div>
-                                        <a href="#" class="title-link black-link">Título do Serviço</a>
-                                        <p>Nome do Fornecedor</p>
-                                    </div>
-                                    <span>⭐ 0.0</span>
-                                </div>
-                            </div>
-                            <!---CARD-->
-
-                            <!---CARD-->
-                            <div class="card">
-                                <div class="card-photo"></div>
-                                <div class="card-content">
-                                    <div>
-                                        <a href="#" class="title-link black-link">Título do Serviço</a>
-                                        <p>Nome do Fornecedor</p>
-                                    </div>
-                                    <span>⭐ 0.0</span>
-                                </div>
-                            </div>
-                            <!---CARD-->
-
-                            <!---CARD-->
-                            <div class="card">
-                                <div class="card-photo"></div>
-                                <div class="card-content">
-                                    <div>
-                                        <a href="#" class="title-link black-link">Título do Serviço</a>
-                                        <p>Nome do Fornecedor</p>
-                                    </div>
-                                    <span>⭐ 0.0</span>
-                                </div>
-                            </div>
-                            <!---CARD-->
-
-                            <!---CARD-->
-                            <div class="card">
-                                <div class="card-photo"></div>
-                                <div class="card-content">
-                                    <div>
-                                        <a href="#" class="title-link black-link">Título do Serviço</a>
-                                        <p>Nome do Fornecedor</p>
-                                    </div>
-                                    <span>⭐ 0.0</span>
-                                </div>
-                            </div>
-                            <!---CARD-->
-                            <div class='card'>
-                                <div class='card-photo'></div>
-                                    <div class='card-content'>
-                                        <div>
-                                            <a href='#' class='title-link black-link'>Título do Serviço</a>
-                                            <p>Nome do Fornecedor</p>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
                                         </div>
-                                    <span>⭐ 0.0</span>
+                                    </div>
+                                    <span id="card-aval"></span>
                                 </div>
                             </div>
                             <!---CARD-->
 
                             <!---CARD-->
-
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
                             <!---CARD-->
 
                             <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->
+                            
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->   
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->   
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->   
+
+                            <!---CARD-->
+                            <div class="card">
+                                <div class="card-photo"></div>
+                                    <div class="card-content">
+                                        <div class="card-profile">
+                                            <span class="card-profile-photo" data-image=""></span>
+                                        <div class="card-title">
+                                            <a href="#" class="title-link black-link">Título do Serviço</a>
+                                            <p class="md-link black-link">Nome do Fornecedor</p>
+                                        </div>
+                                    </div>
+                                    <span id="card-aval"></span>
+                                </div>
+                            </div>
+                            <!---CARD-->   
                         </div>
                     </div>
                 </div>

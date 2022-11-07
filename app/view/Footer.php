@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="<?=ASSETS?>css/style.css">
+</head>
 <footer style="height: 260px; display: flex; flex-direction: column; justify-content: space-between;">
         <div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
             <span class="icon md-logo-black"></span>
