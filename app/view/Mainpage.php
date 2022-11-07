@@ -48,7 +48,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         <div class="wrapper">
             <section>
                 <div class="hglg-sec">
-                    <h1>Categorias em destaque</h1>
+                    <h1 style="font-size:var(--medium-header)">Serviços em destaque</h1>
                     <div class="card-row">
                         <div class="card">
                             <div class="card-photo"><span class="icon icon-image"></span></div>
@@ -106,7 +106,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                 </div>
                 <div>
                     <div class="hglg-sec">
-                        <h1 style="font-size:var(--big-header)">Outros serviços</h1>
+                        <h1 style="font-size:var(--medium-header)">Outros serviços</h1>
                         <div class="card-row">
                             <!---CARD-->
                             <div class="card">
