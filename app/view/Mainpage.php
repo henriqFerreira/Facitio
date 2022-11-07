@@ -25,11 +25,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         <div id="topside">
             <div class="wrapper">
                 <nav >
-                    <span id="md-logo-black"></span>
+                    <span class="icon md-logo-black"></span>
                     <div >
                         <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
                         <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <a href=""><span id="icon-design"></span></a>
+                        <a href=""><span class="icon icon-design"></span></a>
                     </div>
                 </nav>
                 <div class="fullscreen-search-wrapper sw">
