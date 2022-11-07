@@ -190,6 +190,11 @@ input[type=number] {
     background-image: url("../img/icons/id.svg");
 }
 
+.icon-image {
+    height: 32px; width: 32px;
+    background-image: url("../img/icons/Image.svg");
+}
+
 /* 
     === TAMANHO DOS LINKS ===
 */
@@ -456,6 +461,9 @@ input[type=number] {
     background-position: center;
     border-radius: 13px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-content {

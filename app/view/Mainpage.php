@@ -51,7 +51,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <h1>Categorias em destaque</h1>
                     <div class="card-row">
                         <div class="card">
-                            <div class="card-photo"></div>
+                            <div class="card-photo"><span class="icon icon-image"></span></div>
                             <div class="card-content">
                                 <div class="card-profile">
                                     <span class="card-profile-photo" data-image=""></span>
@@ -64,7 +64,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-photo"></div>
+                            <div class="card-photo"><span class="icon icon-image"></span></div>
                             <div class="card-content">
                                 <div class="card-profile">
                                     <span class="card-profile-photo" data-image=""></span>
@@ -77,7 +77,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-photo"></div>
+                            <div class="card-photo"><span class="icon icon-image"></span></div>
                             <div class="card-content">
                                 <div class="card-profile">
                                     <span class="card-profile-photo" data-image=""></span>
@@ -90,7 +90,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-photo"></div>
+                            <div class="card-photo"><span class="icon icon-image"></span></div>
                             <div class="card-content">
                                 <div class="card-profile">
                                     <span class="card-profile-photo" data-image=""></span>
