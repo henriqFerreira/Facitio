@@ -31,62 +31,7 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 
 /* Highlight section (hglg-sec) */
 .hglg-sec { margin-top: 100px; }
-.hglg-sec h1 { text-align: center; }
-
-.hglg-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 50px 30px;
-    padding: 30px 0;
-}
-
-.card {
-    width: 300px;
-    background-color: var(--neutral);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 8px;
-    border-bottom: 5px solid #FED253;
-    overflow: hidden;
-    transition: all .2s;
-}
-
-.card:hover {
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
-}
-
-.card-photo{
-    height: 150px;
-    background-image: url("../../../img/academico.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-bottom-right-radius: 60px;
-    -webkit-box-shadow: inset -4px -4px 5px rgba(0,0,0,0.25);
-    -moz-box-shadow: inset -4px -4px 5px rgba(0,0,0,0.25);
-    box-shadow: inset -4px -4px 5px rgba(0,0,0,0.25);
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 14px 7px;
-}
-
-.card-content p {
-    font-size: var(--medium-text);
-}
-
-.card-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+.hglg-sec h1{ margin:20px 0px 20px 0px;}
 
 footer{
     height: 280px; 
