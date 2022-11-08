@@ -17,8 +17,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth.css">
-    <!-- JS -->
-    <script src="<?=ASSETS?>js/form-control.js"></script>
 </head>
 <body>
     <main id="auth-wrapper">
@@ -31,71 +29,42 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                 </div>
                 <div class="form-content">
                     <div class="form-step active-step">
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                        <div class="form-step-content">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="CPF">CPF</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-id"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <label for="CPF">CPF</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-id"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="CPF">CPF</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-id"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-step">
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                <div class="inp-group">
+                                    <label for="CPF">CPF</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-id"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
+                        <div class="step-buttons">
+                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
                         </div>
                     </div>
                     <div class="form-step">
@@ -131,6 +100,10 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                 </div>
                             </div>
                         </div>
+                        <div class="step-buttons">
+                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
+                        </div>
                     </div>
                     <div class="form-step">
                         <div class="form-column">
@@ -165,61 +138,60 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-buttons">
-                        <button onclick="previousStep();" class="bg-btn filled-blue-btn">Anterior</button>
-                        <div class="steps">
-                            <span class="step active-step-icon"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
+                        <div class="step-buttons">
+                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
                         </div>
-                        <button onclick="nextStep();" class="bg-btn filled-yellow-btn">Próximo</button>
+                    </div>
+                    <div class="form-step">
+                        <div class="form-column">
+                            <div class="inp-group">
+                                <label for="CPF">CPF</label>
+                                <div class="icon-group">
+                                    <span class="icon icon-input-id"></span>
+                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                </div>
+                            </div>
+                            <div class="inp-group">
+                                <label for="CPF">CPF</label>
+                                <div class="icon-group">
+                                    <span class="icon icon-input-id"></span>
+                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="inp-group">
+                                <label for="CPF">CPF</label>
+                                <div class="icon-group">
+                                    <span class="icon icon-input-id"></span>
+                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                </div>
+                            </div>
+                            <div class="inp-group">
+                                <label for="CPF">CPF</label>
+                                <div class="icon-group">
+                                    <span class="icon icon-input-id"></span>
+                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <input class="bg-btn filled-yellow-btn" name="submit" value="Finalizar">
+                        </div>
+                    </div>
+                    <div class="steps">
+                        <span class="step active-step-icon"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
                     </div>
                 </div>
             </form>
-            <!-- <div class="steps">
-                <div>1</div>
-                <div>2</div>
-                <hr>
-                <div>3</div>
-                <div>4</div>
-            </div>
-            <div id="form-area">
-                <div>
-                    <h2>CRIE SUA CONTA</h2>
-                    <P>Como cliente</P>
-                </div>
-                <form action="" >
-                    <div style="width: 100%;">
-                            <div style="display:flex;flex-direction:row;justify-content: space-between;padding: 25px;">
-                                <div style="display:flex;flex-direction:column;width: 50%;">
-
-                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/id.svg" alt=""></label>
-                                    <label for="CPF">Nome</label>
-                                    <input type="text" name="CPF" id="" placeholder="Nome">
-
-                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/id.svg" alt=""></label>
-                                    <label for="senha">Sobrenome</label>
-                                    <input type="password" name="senha" id="" placeholder="Sobrenome">
-                                </div>
-                                <div style="display:flex;flex-direction:column;width: 50%;">
-
-                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/atsign.svg" alt=""></label>
-                                    <label for="senha">Email</label>
-                                    <input type="email" name="senha" id="" placeholder="email@exemplo.com">
-                                
-                                    <label class="inp-ico" for="senha"><img src="../../public/assets/img/auth/icons/phone.svg" alt=""></label>
-                                    <label for="senha">Contato</label>
-                                    <input type="number" name="senha" id="" placeholder="(  ) _____-____">
-                                </div>
-                            </div>
-                        
-                        <div ><input class="btn-yellow" type="submit" value="PRÓXIMO"></div>
-                    </div>
-                </form> -->
-            </div>
         </div>      
     </main>
+    <!-- JS -->
+    <script src="<?=ASSETS?>js/form-control.js"></script>
 </body>
 </html>
