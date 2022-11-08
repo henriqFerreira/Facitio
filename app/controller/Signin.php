@@ -31,8 +31,10 @@ class Signin extends Controller {
     }
 
     function checkSignin($signInData, $userType) {
-        $params['cpf'] = $signInData['cpf'];
-        $params['senha'] = $signInData['senha'];
+        $params = array(
+            'cpf' => $signInData['cpf'],
+            'senha' => $signInData['senha']
+        );
 
         if(!empty($params['cpf']) && !empty($params['senha'])) {
             $database = new Database();

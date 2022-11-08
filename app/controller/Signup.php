@@ -25,6 +25,25 @@ class Signup extends Controller {
     }
     
     function checkSignUp($signUpData, $userType) {
-        
+        $params = array(
+            'nome' => $signUpData['nome'],
+            'sobrenome' => $signUpData['sobrenome'],
+            'email' => $signUpData['email'],
+            'contato' => $signUpData['contato'],
+            'cpf' => $signUpData['cpf'],
+            'rg' => $signUpData['rg'],
+            'datanasc' => $signUpData['datanasc'],
+            'senha' => $signUpData['senha']
+        );
+
+        $enderecoParams = array(
+            'rua' => $signUpData['rua'],
+            'bairro' => $signUpData['bairro'],
+            'estado' => $signUpData['estado'],
+            'cep' => $signUpData['cep'],
+            'num' => $signUpData['num'],
+            'cidade' => $signUpData['cidade'],
+            'complemento' => $signUpData['complemento']
+        );
     }
 }
