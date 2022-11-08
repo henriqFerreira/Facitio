@@ -11,15 +11,17 @@
 .signup-form { max-width: 110vh; max-height: 70vh; padding: 20px; background-color: var(--neutral-color); border-radius: 16px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); }
 .form-title { text-align: center; }
 .form-step { display: none; }
-.active-step { display: contents; padding: 32px 0px; }
+.active-step { display: block; padding: 32px 0px; animation: changeStep .2s linear; }
 .form-step-content { display: flex; justify-content: center; gap: 25px; }
 .step-buttons { display: flex; margin-top: 20px; }
 .step-buttons button:only-child { margin-left: auto; }
 .step-buttons button.prevBtn { margin-right: auto; }
-.form-column { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 15px; }
+.form-column { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 15px; }
 .steps { padding: 16px 0px; display: flex; align-items: center; justify-content: center; gap: 5px; }
 .step { display: block; border-radius: 50%; width: 16px; height: 16px; background-color: var(--vodka-color); }
 .active-step-icon { background-color: var(--black-color); }
+
+@keyframes changeStep { from { transform: translateY(5%); opacity: 0; } to { transform: translateY(0%); opacity: 1; } }
 
 /* Footer */
 #ftr-footer{ display: flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--small-text); color: var(--black-color); }

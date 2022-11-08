@@ -32,152 +32,158 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                         <div class="form-step-content">
                             <div class="form-column">
                                 <div class="inp-group">
-                                    <label for="CPF">CPF</label>
+                                    <label for="nome">Nome</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-id"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                        <input class="bg-icon-input gray-input" type="text" name="nome" placeholder="Seu nome aqui...">
                                     </div>
                                 </div>
                                 <div class="inp-group">
-                                    <label for="CPF">CPF</label>
+                                    <label for="sobrenome">Sobrenome</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-id"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                        <input class="bg-icon-input gray-input" type="text" name="sobrenome" placeholder="Seu sobrenome aqui...">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-column">
                                 <div class="inp-group">
-                                    <label for="CPF">CPF</label>
+                                    <label for="email">Email</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-arroba"></span>
+                                        <input class="bg-icon-input gray-input" type="email" name="email" placeholder="email@exemplo.com">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <label for="contato">Contato</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-telefone"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="contato" placeholder="(__) __ _____-____">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="form-step-content">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="cpf">CPF</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-id"></span>
                                         <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
                                     </div>
                                 </div>
                                 <div class="inp-group">
-                                    <label for="CPF">CPF</label>
+                                    <label for="rg">RG</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-id"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                        <input class="bg-icon-input gray-input" type="text" name="rg" placeholder="__.___.___-__">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="datanasc">Data de nascimento</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-data"></span>
+                                        <input class="bg-icon-input gray-input" type="date" name="datanasc">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="step-buttons">
-                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
+                            <button type="button" class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <button type="button" class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
                         </div>
                     </div>
                     <div class="form-step">
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                        <div class="form-step-content">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="rua">Rua</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="rua" placeholder="Ex: Rua do Jucá">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <label for="bairro">Bairro</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="bairro" placeholder="Ex: Lagoa Azul">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <label for="estado">Estado</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="estado" placeholder="Ex: RN">
+                                    </div>
+                                </div>
+                                <div class="inp-group">
+                                    <label for="cep">CEP</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cep" placeholder="Ex: 59135-210">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="num">Número</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="num" placeholder="Ex: 432">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                <div class="inp-group">
+                                    <label for="cidade">Cidade</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="cidade" placeholder="Ex: Natal">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                                <div class="inp-group">
+                                    <label for="complemento">Complemento</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-casa"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="complemento" placeholder="Ex: Casa/Prédio/Condomínio">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="step-buttons">
-                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
-                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
+                            <button type="button" class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <button type="button" class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
                         </div>
                     </div>
                     <div class="form-step">
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                        <div class="form-step-content">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="senha">Senha</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-chave"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="senha" placeholder="**************">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
+                            <div class="form-column">
+                                <div class="inp-group">
+                                    <label for="confsenha">Confirmar senha</label>
+                                    <div class="icon-group">
+                                        <span class="icon icon-input-chave"></span>
+                                        <input class="bg-icon-input gray-input" type="text" name="confsenha" placeholder="**************">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="step-buttons">
-                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
-                            <button class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
-                        </div>
-                    </div>
-                    <div class="form-step">
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-column">
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                            <div class="inp-group">
-                                <label for="CPF">CPF</label>
-                                <div class="icon-group">
-                                    <span class="icon icon-input-id"></span>
-                                    <input class="bg-icon-input gray-input" type="text" name="cpf" placeholder="___.___.___-__">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-buttons">
-                            <button class="prevBtn bg-btn filled-blue-btn">Anterior</button>
+                            <button type="button" class="prevBtn bg-btn filled-blue-btn">Anterior</button>
                             <input class="bg-btn filled-yellow-btn" name="submit" value="Finalizar">
                         </div>
                     </div>

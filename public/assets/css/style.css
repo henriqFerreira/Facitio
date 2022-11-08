@@ -172,27 +172,42 @@ input[type=number] {
 
 .icon-caretdown{
     height: 44px; width: 44px;
-    background-image: url("../img/icons/CaretDown.svg");
+    background-image: url("../img/icons/icon-caretdown.svg");
 }
 
 .icon-input-chave {
-    height: 32px; width: 32px;
-    background-image: url("../img/icons/chave.svg");
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-chave.svg");
 }
 
-.icon-input-celular {
-    height: 32px; width: 32px;
-    background-image: url("../img/icons/phone.svg");
+.icon-input-telefone {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-telefone.svg");
 }
 
 .icon-input-id {
-    height: 32px; width: 32px;
-    background-image: url("../img/icons/id.svg");
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-idcard.svg");
+}
+
+.icon-input-arroba {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-arroba.svg");
+}
+
+.icon-input-casa {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-casa.svg");
+}
+
+.icon-input-data {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-data.svg");
 }
 
 .icon-image {
     height: 32px; width: 32px;
-    background-image: url("../img/icons/Image.svg");
+    background-image: url("../img/icons/icon-image.svg");
 }
 
 /* 
