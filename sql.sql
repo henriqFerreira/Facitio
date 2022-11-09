@@ -130,6 +130,7 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
   `servico_desc` VARCHAR(1000) NOT NULL,
   `servico_aval` FLOAT DEFAULT 0.0,
   `servico_valor` FLOAT NOT NULL,
+  `servico_foto` LONGBLOB DEFAULT NULL,
   `profissional_id` INT(11) NOT NULL,
 
   CONSTRAINT
@@ -143,17 +144,17 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 1);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 1);
+INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 1);
+INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 1);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 2);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 2);
+INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 2);
+INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 2);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 3);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 3);
+INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 3);
+INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 3);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 4);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, 4);
+INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 4);
+INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 4);
 /*------------END SERVIÇO-------------*/
 
 /*----------SOLICITAÇÃO----------*/

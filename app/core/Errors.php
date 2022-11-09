@@ -6,9 +6,9 @@ class Errors {
         foreach ($authData as $data) {
             if(empty($data)) {
                 return true;
-            } else {
-                return false;
+                break;
             }
+            return false;
         }
     }
 

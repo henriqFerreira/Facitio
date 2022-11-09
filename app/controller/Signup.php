@@ -36,16 +36,25 @@ class Signup extends Controller {
             'nome' => $signUpData['nome'],
             'sobrenome' => $signUpData['sobrenome'],
             'email' => $signUpData['email'],
-            'contato' => $signUpData['contato'],
             'cpf' => $signUpData['cpf'],
             'rg' => $signUpData['rg'],
             'datanasc' => $signUpData['datanasc'],
+            'contato' => $signUpData['contato'],
             'senha' => $signUpData['senha']
         );
 
         if (!$errorHandler->isInputsEmpty($signUpData)) {
             if (!$errorHandler->userExists($params, $userType)) {
-                $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default)";
+                $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default, default)";
+                
+                echo '<pre>';
+                print_r($paramsQuery);
+                echo '</pre>';
+
+                echo '<pre>';
+                print_r($params);
+                echo '</pre>';
+                
                 $getCurrentId = $database->outputWrite($paramsQuery, $params);
 
                 $enderecoParams = array(
