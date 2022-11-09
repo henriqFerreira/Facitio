@@ -1,6 +1,11 @@
 <?php
+use controller\Signup;
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
+if (isset($_POST['submit'])) {
+    $checkSignUp = new Signup();
+    $checkSignUp->checkSignUp($_POST, $data['TYPE']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +63,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                     <label for="contato">Contato</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-telefone"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="contato" placeholder="(__) __ _____-____">
+                                        <input class="bg-icon-input gray-input" type="tel" name="contato" placeholder="(__) __ _____-____">
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +142,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                     <label for="num">Número</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-casa"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="num" placeholder="Ex: 432">
+                                        <input class="bg-icon-input gray-input" type="number" name="num" placeholder="Ex: 432">
                                     </div>
                                 </div>
                                 <div class="inp-group">
@@ -168,7 +173,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                     <label for="senha">Senha</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-chave"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="senha" placeholder="**************">
+                                        <input class="bg-icon-input gray-input" type="password" name="senha" placeholder="**************">
                                     </div>
                                 </div>
                             </div>
@@ -177,14 +182,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                     <label for="confsenha">Confirmar senha</label>
                                     <div class="icon-group">
                                         <span class="icon icon-input-chave"></span>
-                                        <input class="bg-icon-input gray-input" type="text" name="confsenha" placeholder="**************">
+                                        <input class="bg-icon-input gray-input" type="password" name="confsenha" placeholder="**************">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="step-buttons">
                             <button type="button" class="prevBtn bg-btn filled-blue-btn">Anterior</button>
-                            <input class="bg-btn filled-yellow-btn" name="submit" value="Finalizar">
+                            <button class="bg-btn filled-yellow-btn" type="submit" name="submit">Finalizar</button>
                         </div>
                     </div>
                     <div class="steps">

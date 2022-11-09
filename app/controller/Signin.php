@@ -1,8 +1,7 @@
 <?php
 namespace controller;
 use core\Controller;
-use core\Database;
-use model\User;
+use core\Errors;
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
@@ -31,46 +30,26 @@ class Signin extends Controller {
     }
 
     function checkSignin($signInData, $userType) {
+        $errorHandler = new Errors();
+
         $params = array(
             'cpf' => $signInData['cpf'],
             'senha' => $signInData['senha']
         );
 
-        if(!empty($params['cpf']) && !empty($params['senha'])) {
-            $database = new Database();
-
-            $query = "SELECT * FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf AND {$userType}_senha = :senha";
-            $checkUser = $database->read($query, $params);
-
-            $nome = $userType."_nome";
-            $sobrenome = $userType."_sobrenome";
-            $email = $userType."_email";
-            $cpf = $userType."_cpf";
-            $rg = $userType."_rg";
-            $datanasc = $userType."_datanasc";
-            $contato = $userType."_contato";
-
-            if (!empty($checkUser)) {
-                $user = new User(
-                    $checkUser[0]->$nome,
-                    $checkUser[0]->$sobrenome,
-                    $checkUser[0]->$email,
-                    $checkUser[0]->$cpf,
-                    $checkUser[0]->$rg,
-                    $checkUser[0]->$datanasc,
-                    $checkUser[0]->$contato,
-                    $userType
-                );
+        if (!$errorHandler->isInputsEmpty($signInData)) {
+            if ($errorHandler->userExists($params, $userType)) {
                 $_SESSION['logged'] = array(
-                    "CPF" => $user->getCpf(),
-                    "Tipo" => $user->getType()
+                    'CPF' => $params['cpf'],
+                    'Tipo' => $userType
                 );
                 header('Location: ' . ROOT . 'profile');
+                exit;
             } else {
-                echo "Inexistente.";
+                exit("Usuário inexistente.");
             }
         } else {
-            echo "Preencha todos os campos.";
+            exit("Preencha todos os campos");
         }
     }
 }

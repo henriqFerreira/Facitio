@@ -1,8 +1,11 @@
 <?php
 use controller\Signin;
-
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
+if (isset($_POST['submit'])) {
+    $checkSignin = new Signin();
+    $checkSignin->checkSignin($_POST, $data['TYPE']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,9 +61,3 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     </main>
 </body>
 </html>
-
-<?php
-if (isset($_POST['submit'])) {
-    $checkSignin = new Signin();
-    $checkSignin->checkSignin($_POST, $data['TYPE']);
-}
