@@ -55,4 +55,21 @@ class Database {
         }
     }
 
+    public function outputWrite($query, $data = []) {
+        $conn = $this->getConnection();
+        $stmt = $conn->prepare($query);
+
+        if(count($data) == 0) {
+            $stmt = $conn->query($query);
+            $check = $stmt ? 1 : 0;
+        } else {
+            $check = $stmt->execute($data);
+        }
+
+        if($check) {
+            return $conn->lastInsertId();
+        } else {
+            return false;
+        }
+    }
 }
