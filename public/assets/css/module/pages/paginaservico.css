@@ -38,15 +38,17 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 
 .service-content {
     display:flex;
+    min-height: 500px;
+    margin-top: 30px;
 }
 
 .service-content-left {
     width: 60%;
-    background-color: rgb(255, 238, 0);
 }
  .service-content-right {
     width: 40%;
-    background-color: green;
+    background-color: var(--light-gray);
+    border-radius: 4px;
  }
 
 
