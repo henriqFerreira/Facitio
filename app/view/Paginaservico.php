@@ -52,8 +52,23 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                     <div>
                         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, a! Debitis perferendis voluptas quam.</h1>
                         <div class="service-content">
-                            <div class="service-content-left">a</div>
-                            <div class="service-content-right">b</div>
+                            <div class="service-content-left">
+                                <div>Descrição lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta massa. Mauris sit amet felis sed ligula eleifend suscipit. Donec vulputate, risus sit amet ullamcorper luctus, odio sapien accumsan metus, a laoreet quam lectus ac arcu. Duis hendrerit turpis maximus nunc ultricies, sed consequat sapien faucibus. Morbi quis metus orci. Morbi commodo felis massa, vel lobortis odio viverra a. Vestibulum ultricies condimentum justo nec consequat. Suspendisse potenti. Maecenas id nulla sed justo mattis molestie.</div>
+                                <div style="padding-left: 25px;margin-top: 20px;">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="service-content-right">
+                                <div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
