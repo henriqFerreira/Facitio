@@ -65,8 +65,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                 </div>
                             </div>
                             <div class="service-content-right">
+                                <div style="border:1px solid red">
+                                    a
+                                </div>
                                 <div>
-                                    
+                                    b
+                                </div>
+                                <div>
+                                    c
                                 </div>
                             </div>
                         </div>

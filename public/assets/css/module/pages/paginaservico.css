@@ -45,10 +45,19 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 .service-content-left {
     width: 60%;
 }
- .service-content-right {
+
+.service-content-right {
     width: 40%;
     background-color: var(--light-gray);
+    border: 1px solid var(--spanish-gray);
     border-radius: 4px;
- }
+
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content-right :nth-last-child() {
+    
+}
 
 
