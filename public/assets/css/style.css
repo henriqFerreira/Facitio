@@ -447,6 +447,37 @@ input[type=number] {
     cursor: pointer;
 }
 
+
+/* Estrutura Barra de navegação - header */
+nav {
+    width: 100%; height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{ display: flex; align-items: center; gap: 30px; }
+
+#topside {
+    min-height: 200px;
+    /*box-shadow: x  y  blur  spread  */
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.500);
+
+}
+
+#wrapper-menu {
+    min-height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#wrapper-menu button{
+    border: none;
+    background-color: transparent;
+}
+
+/* Estrutura Barra de navegação */
+
 /* 
     === CARD DO SERVIÇO ===
 */
