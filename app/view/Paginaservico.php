@@ -65,14 +65,21 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                 </div>
                             </div>
                             <div class="service-content-right">
-                                <div style="border:1px solid red">
-                                    a
-                                </div>
+                                <div class="flex-container">
                                 <div>
-                                    b
+                                    <h1>Informações adicionais</h1>
+                                    <ul style="padding-left: 25px;margin-top: 20px;margin-bottom:20px;">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
                                 </div>
+                                </div>
+                                
                                 <div>
-                                    c
+                                    <a href="<?=ROOT?>signup/" class="sm-btn filled-yellow-btn">Solicitar Serviço</a>
                                 </div>
                             </div>
                         </div>

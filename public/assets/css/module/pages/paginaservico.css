@@ -51,13 +51,15 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     background-color: var(--light-gray);
     border: 1px solid var(--spanish-gray);
     border-radius: 4px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.service-content-right :nth-last-child() {
-    
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
-
 
