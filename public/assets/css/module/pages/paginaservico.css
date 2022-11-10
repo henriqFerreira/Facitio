@@ -67,10 +67,16 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     font-size: var(--big-text);
     font-weight: 500;
     background-color: var(--neutral);
-    height: 30px;
-    padding-left: 10px;
+    height: 40px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .service-content-right div:nth-last-child(1) {
     text-align: right;
+}
+
+.service-content-right ul {
+    list-style-image: url('../../../img/icons/home.svg');
 }
