@@ -63,3 +63,14 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     flex-direction: column;
 }
 
+.flex-container h1 {
+    font-size: var(--big-text);
+    font-weight: 500;
+    background-color: var(--neutral);
+    height: 30px;
+    padding-left: 10px;
+}
+
+.service-content-right div:nth-last-child(1) {
+    text-align: right;
+}
