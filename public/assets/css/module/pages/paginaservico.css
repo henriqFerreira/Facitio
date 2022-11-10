@@ -51,13 +51,32 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     background-color: var(--light-gray);
     border: 1px solid var(--spanish-gray);
     border-radius: 4px;
+    padding: 20px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-container {
     display: flex;
     flex-direction: column;
 }
 
-.service-content-right :nth-last-child() {
-    
+.flex-container h1 {
+    font-size: var(--big-text);
+    font-weight: 500;
+    background-color: var(--neutral);
+    height: 40px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
+.service-content-right div:nth-last-child(1) {
+    text-align: right;
+}
 
+.service-content-right ul {
+    list-style-image: url('../../../img/icons/home.svg');
+}
