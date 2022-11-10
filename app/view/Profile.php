@@ -28,7 +28,7 @@
                 </nav>
                 <div class="fullscreen-search-wrapper sw">
                     <form>
-                        <input type="text" placeholder="O que está procurando hoje?">
+                        <input type="search" placeholder="O que está procurando hoje?">
                         <input type="submit" name="search" value="">
                     </form>
                 </div>
@@ -86,14 +86,16 @@
             </div>
         </div>
     </header>
-    <h1>Profile</h1>
-    <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
-    <img src="<?=DEFAULT_PHOTO?>" alt="">
-    <?php
-    echo '<pre>';
-    print_r($_SESSION['logged']);
-    echo '</pre>';
-    ?>
+    <main class="main">
+        <h1>Profile</h1>
+        <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
+        <img src="<?=DEFAULT_PHOTO?>" alt="">
+        <?php
+            echo '<pre>';
+            print_r($_SESSION['logged']);
+            echo '</pre>';
+        ?>
+    </main>
     <section>
         <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
     </section>
