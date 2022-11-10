@@ -62,6 +62,8 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     display: flex;
     flex-direction: column;
 }
+.flex-container ul {list-style: none;}
+.flex-container li {display: flex; align-items: center;}
 
 .flex-container h1 {
     font-size: var(--big-text);
@@ -77,6 +79,6 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     text-align: right;
 }
 
-.service-content-right ul {
-    list-style-image: url('../../../img/icons/home.svg');
+li.flex-container::before {
+    content: '✔️';
 }
