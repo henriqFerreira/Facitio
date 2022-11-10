@@ -87,19 +87,25 @@
         </div>
     </header>
     <main class="main">
-        <h1>Profile</h1>
-        <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
-        <img src="<?=DEFAULT_PHOTO?>" alt="">
-        <?php
-            echo '<pre>';
-            print_r($_SESSION['logged']);
-            echo '</pre>';
-        ?>
+        <article class="user-profile">
+            <div class="wrapper">
+                <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
+                <div class="user-title">
+                    <h2>Nome do usuário</h2>
+                    <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
+                    <!-- barra em card com saldo e outros detalhes -->
+                </div>
+            </div>
+        </article>
+        <section>
+            <div class="wrapper">
+                <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
+            </div>
+        </section>
     </main>
-    <section>
-        <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
-    </section>
+    <?php $this->loadView('Footer'); ?>
     <!-- JS -->
     <script src="<?=ASSETS?>js/header-control.js"></script>
+    <script src="<?=ASSETS?>js/profile-control.js"></script>
 </body>
 </html>
