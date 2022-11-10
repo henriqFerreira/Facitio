@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/profile.css">
 </head>
 <body>
-    <header>
-        <div id="topside">
+    <header class="header">
+        <div class="topside">
             <div class="wrapper">
-                <nav >
+                <nav>
                     <span class="icon md-logo-black"></span>
-                    <div >
+                    <div class="nav-links">
                         <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
                         <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <a href=""><span class="icon icon-design"></span></a>
+                        <span class="icon icon-design"></span>
                     </div>
                 </nav>
                 <div class="fullscreen-search-wrapper sw">
@@ -33,8 +33,56 @@
                     </form>
                 </div>
             </div>
-            <div id="wrapper-menu">
-                <button><span class="icon icon-caretdown"></span></button>
+        </div>
+        <div class="bottomside">
+            <div class="header-ctg-sec">
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-diploma"></span>
+                        <p>Estudo</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                    <span class="icon icon-carro"></span>
+                        <p>Automobilístico</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-baloes"></span>
+                        <p>Festas & Eventos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-ferramentas"></span>
+                        <p>Reparos & Consertos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-casa"></span>
+                        <p>Serviços Domésticos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-computador"></span>
+                        <p>Tecnologia</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-design"></span>
+                        <p>UX/UI Design</p>
+                    </a>
+                </div>
+            </div>
+            <div class="button-menu">
+                <button class="header-ctg-btn">
+                    <span class="icon icon-caretdown"></span>
+                </button>
             </div>
         </div>
     </header>
@@ -49,5 +97,7 @@
     <section>
         <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
     </section>
+    <!-- JS -->
+    <script src="<?=ASSETS?>js/header-control.js"></script>
 </body>
 </html>
