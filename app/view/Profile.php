@@ -98,9 +98,7 @@
             </div>
         </article>
         <section>
-            <div class="wrapper">
-                <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
-            </div>
+            <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
         </section>
     </main>
     <?php $this->loadView('Footer'); ?>
