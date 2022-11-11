@@ -43,7 +43,7 @@ main { width: 100%; min-height: 100vh; }
 section { width: 100%; min-height: 100vh; }
 article { width: 100%; min-height: 35vh; }
 .wrapper { padding: 0px 65px; }
-.main { padding-top: 200px; }
+.main { padding-top: 220px; }
 .header { width: 100%; position: fixed; top: 0; left: 0; padding: 0px 0px 20px 0px; background-color: var(--neutral); z-index: 10; transition: all .2s linear; }
 
 /* Chrome, Safari, Edge, Opera */
@@ -207,6 +207,16 @@ input[type=number] {
 .icon-input-data {
     height: 24px; width: 24px;
     background-image: url("../img/icons/icon-data.svg");
+}
+
+.icon-dinheiro {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-dinheiro.svg");
+}
+
+.icon-estrela {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-estrela.svg");
 }
 
 .icon-image {
@@ -467,7 +477,17 @@ nav {
 nav div{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+}
+
+.user-icon-photo {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-icon-photo img {
+    width: 100%;
 }
 
 .header-ctg-sec {

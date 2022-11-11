@@ -10,8 +10,6 @@
 
 <div class="wrapper">
     <div id="MeusDados" class="tab-content">
-        <h1>Meus dados</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis.</p>
     </div>
     
     <div id="Servicos" class="tab-content">
