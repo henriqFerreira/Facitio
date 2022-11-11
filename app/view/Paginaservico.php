@@ -21,30 +21,78 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 </head>
 
 <body>
-    <header>
-        <div id="topside">
+    <header class="header">
+        <div class="topside">
             <div class="wrapper">
-                <nav >
+                <nav>
                     <span class="icon md-logo-black"></span>
-                    <div >
+                    <div class="nav-links">
                         <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
                         <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <a href=""><span class="icon icon-design"></span></a>
+                        <span class="icon icon-design"></span>
                     </div>
                 </nav>
                 <div class="fullscreen-search-wrapper sw">
                     <form>
-                        <input type="text" placeholder="O que está procurando hoje?">
+                        <input type="search" placeholder="O que está procurando hoje?">
                         <input type="submit" name="search" value="">
                     </form>
                 </div>
             </div>
-            <div id="wrapper-menu">
-                <button><span class="icon icon-caretdown"></span></button>
+        </div>
+        <div class="bottomside">
+            <div class="header-ctg-sec">
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-diploma"></span>
+                        <p>Estudo</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                    <span class="icon icon-carro"></span>
+                        <p>Automobilístico</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-baloes"></span>
+                        <p>Festas & Eventos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-ferramentas"></span>
+                        <p>Reparos & Consertos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-casa"></span>
+                        <p>Serviços Domésticos</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-computador"></span>
+                        <p>Tecnologia</p>
+                    </a>
+                </div>
+                <div class="header-ctg-opt">
+                    <a href="#">
+                        <span class="icon icon-design"></span>
+                        <p>UX/UI Design</p>
+                    </a>
+                </div>
+            </div>
+            <div class="button-menu">
+                <button class="header-ctg-btn">
+                    <span class="icon icon-caretdown"></span>
+                </button>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="wrapper">
             <section>
                 <div style="border: 5px solid red;">
@@ -68,13 +116,67 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                 <div class="flex-container">
                                     <h1>Informações adicionais</h1>
                                     <ul style="padding-left: 25px;margin-top: 20px;margin-bottom:20px;">
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                        <li>5</li>
-                                        <li>6</li>
-                                        <li>7</li>
+                                        <li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li><li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li><li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li><li>
+                                            <span class="icon icon-check">
+
+                                            </span>
+                                            <div>
+                                                1
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div >
@@ -86,7 +188,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                 </div>
             </section>
     </main>
-    <?php $this->loadView("Footer"); ?>
+                                                                                                                                                                                                                   
+    <!-- JS -->
+    <script src="<?=ASSETS?>js/header-control.js"></script>
 </body>
-
 </html>
