@@ -25,4 +25,4 @@ define('ROOT', str_replace("app/core", "public", $path));
 define('ASSETS', str_replace("app/core", "public/assets", $path));
 
 // Outros
-define('DEFAULT_PHOTO', ASSETS . "img/icons/placeholder-profile.png");
+define('DEFAULT_PHOTO', ASSETS . "img/icons/placeholder-profile.svg");

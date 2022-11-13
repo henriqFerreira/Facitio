@@ -23,7 +23,9 @@
                     <div class="nav-links">
                         <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
                         <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <span class="icon icon-design"></span>
+                        <div class="user-icon-photo">
+                            <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
+                        </div>
                     </div>
                 </nav>
                 <div class="fullscreen-search-wrapper sw">
@@ -87,20 +89,32 @@
         </div>
     </header>
     <main class="main">
-        <article class="user-profile">
-            <div class="wrapper">
-                <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
-                <div class="user-title">
-                    <h2>Nome do usuário</h2>
-                    <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
-                    <!-- barra em card com saldo e outros detalhes -->
+        <div class="wrapper">
+            <article class="user-profile">
+                <div class="user-photo">
+                    <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
                 </div>
-            </div>
-        </article>
+                <div class="user-profile-left">
+                    <div class="user-title">
+                        <h2>Nome do usuário</h2>
+                        <h3>Sobrenome do usuário</h3>
+                    </div>
+                    <div class="user-card">
+                        <div class="card-item">
+                            <span class="icon icon-dinheiro"></span>
+                            <p>0,00</p>
+                        </div>
+                        <div class="card-item">
+                            <span class="icon icon-estrela"></span>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
         <section>
-            <div class="wrapper">
-                <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
-            </div>
+            <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
         </section>
     </main>
     <?php $this->loadView('Footer'); ?>
