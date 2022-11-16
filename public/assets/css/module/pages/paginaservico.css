@@ -79,6 +79,16 @@ nav div{ display: flex; align-items: center; gap: 30px; }
     text-align: right;
 }
 
-li.flex-container::before {
-    content: '✔️';
+hr { margin-top: 50px; margin-bottom: 50px; border: 1px solid var(--mustard-color);}
+
+.bottom { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.foto {
+    background-image: url("../../../img/icons/Foto-do-profissional.svg");
+    height: 100px; width: 100px;
 }

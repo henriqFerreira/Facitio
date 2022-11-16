@@ -95,101 +95,110 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <main class="main">
         <div class="wrapper">
             <section>
-                <div style="border: 5px solid red;">
+                <div>
                     <div class="service-photo"></div>
-                    <div>
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, a! Debitis perferendis voluptas quam.</h1>
-                        <div class="service-content">
-                            <div class="service-content-left">
-                                <div>Descrição lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta massa. Mauris sit amet felis sed ligula eleifend suscipit. Donec vulputate, risus sit amet ullamcorper luctus, odio sapien accumsan metus, a laoreet quam lectus ac arcu. Duis hendrerit turpis maximus nunc ultricies, sed consequat sapien faucibus. Morbi quis metus orci. Morbi commodo felis massa, vel lobortis odio viverra a. Vestibulum ultricies condimentum justo nec consequat. Suspendisse potenti. Maecenas id nulla sed justo mattis molestie.</div>
-                                <div style="padding-left: 25px;margin-top: 20px;">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                    </ul>
+                        <div>
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, a! Debitis perferendis voluptas quam.</h1>
+                            <div class="service-content">
+                                <div class="service-content-left">
+                                    <div>Descrição lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta massa. Mauris sit amet felis sed ligula eleifend suscipit. Donec vulputate, risus sit amet ullamcorper luctus, odio sapien accumsan metus, a laoreet quam lectus ac arcu. Duis hendrerit turpis maximus nunc ultricies, sed consequat sapien faucibus. Morbi quis metus orci. Morbi commodo felis massa, vel lobortis odio viverra a. Vestibulum ultricies condimentum justo nec consequat. Suspendisse potenti. Maecenas id nulla sed justo mattis molestie.</div>
+                                    <div style="padding-left: 25px;margin-top: 20px;">
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="service-content-right">
-                                <div class="flex-container">
-                                    <h1>Informações adicionais</h1>
-                                    <ul style="padding-left: 25px;margin-top: 20px;margin-bottom:20px;">
-                                        <li>
-                                            <span class="icon icon-check">
+                                <div class="service-content-right">
+                                    <div class="flex-container">
+                                        <h1>Informações adicionais</h1>
+                                        <ul style="padding-left: 25px;margin-top: 20px;margin-bottom:20px;">
+                                            <li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li><li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li><li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li><li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li><li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li><li>
-                                            <span class="icon icon-check">
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li><li>
+                                                <span class="icon icon-check">
 
-                                            </span>
-                                            <div>
-                                                1
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div >
-                                    <a href="<?=ROOT?>signup/" class="sm-btn filled-yellow-btn">Solicitar Serviço</a>
+                                                </span>
+                                                <div>
+                                                    1
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div >
+                                        <a href="<?=ROOT?>signup/" class="sm-btn filled-yellow-btn">Solicitar Serviço</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                <hr> 
+                <div class="bottom">
+                    <span class="icon foto"></span>
+                    <div>
+                        <h3>Nome do Profissional</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ab ipsa cumque veritatis quos repellat a? Aspernatur iusto neque adipisci architecto maxime eum at, ea, molestias dolore quam placeat soluta.</p>
+                    </div>
                 </div>
-            </section>
-    </main>
-                                                                                                                                                                                                                   
+            </section> 
+</main>
+    <?php $this->loadView("Footer"); ?>
     <!-- JS -->
     <script src="<?=ASSETS?>js/header-control.js"></script>
 </body>
 </html>
+
