@@ -1,7 +1,7 @@
 <?php
 namespace model;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'app/autoLoader.php';
 
 class User {
     private string $nome;
@@ -50,10 +50,6 @@ class User {
 
     public function getContato() : string {
         return $this->contato;
-    }
-
-    public function getEndereco() : string {
-        return $this->endereco;
     }
 
     public function getType() : string {

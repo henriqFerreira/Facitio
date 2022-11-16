@@ -1,7 +1,7 @@
 <?php
 namespace core;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'app/autoLoader.php';
 
 class App {
     const ERROR404PAGE = "../app/view/404.php";
