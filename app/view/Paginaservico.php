@@ -17,19 +17,26 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/paginaservico.css">
-    
 </head>
-
-<body>
+<body onselectstart="return false;">
     <header class="header">
         <div class="topside">
             <div class="wrapper">
                 <nav>
-                    <span class="icon md-logo-black"></span>
+                    <span class="icon md-logo-black" onclick="document.location.href='<?=ROOT?>mainpage'"></span>
                     <div class="nav-links">
-                        <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
-                        <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <span class="icon icon-design"></span>
+                        <div class="dropdown-wrapper">
+                            <a class="bg-link black-link dropdown-btn">Minha conta</a>
+                            <div class="dropdown">
+                                <a href="<?=ROOT?>profile">Ver perfil</a>
+                                <a href="#">Pedidos</a>
+                                <a href="#">Configurações</a>
+                                <a href="<?=ROOT?>logout">Sair</a>
+                            </div>
+                        </div>
+                        <div class="user-icon-photo">
+                            <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
+                        </div>
                     </div>
                 </nav>
                 <div class="fullscreen-search-wrapper sw">

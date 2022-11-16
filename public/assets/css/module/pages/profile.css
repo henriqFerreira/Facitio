@@ -11,11 +11,11 @@
     width: inherit; height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .user-photo { align-self: center; }
-.user-photo img { width: 20vw; border-radius: 5%; }
+.user-photo img { width: 200px; border-radius: 5%; }
 
 .user-card {
     display: flex;

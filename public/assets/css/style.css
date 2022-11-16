@@ -482,7 +482,52 @@ nav {
 nav div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 120%; right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-color: var(--neutral);
+    z-index: 50;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all .1s linear;
+}
+
+.dropdown a:hover {
+    background-color: var(--light-gray);
+}
+
+.dropdown a:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-expanded {
+    display: block;
 }
 
 .user-icon-photo {

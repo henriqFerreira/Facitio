@@ -14,15 +14,22 @@
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/profile.css">
 </head>
-<body>
+<body onselectstart="return false;">
     <header class="header">
         <div class="topside">
             <div class="wrapper">
                 <nav>
-                    <span class="icon md-logo-black"></span>
+                    <span class="icon md-logo-black" onclick="document.location.href='<?=ROOT?>mainpage'"></span>
                     <div class="nav-links">
-                        <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
-                        <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
+                        <div class="dropdown-wrapper">
+                            <a class="bg-link black-link dropdown-btn">Minha conta</a>
+                            <div class="dropdown">
+                                <a href="<?=ROOT?>profile">Ver perfil</a>
+                                <a href="#">Pedidos</a>
+                                <a href="#">Configurações</a>
+                                <a href="<?=ROOT?>logout">Sair</a>
+                            </div>
+                        </div>
                         <div class="user-icon-photo">
                             <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
                         </div>
@@ -112,7 +119,6 @@
                 </div>
             </article>
         </div>
-        <button onclick="document.location.href='<?=ROOT?>Logout'">Deslogar</button>
         <section>
             <?php $this->loadView('Profile'.$_SESSION['logged']['Tipo']); ?>
         </section>

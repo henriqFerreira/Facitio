@@ -1,6 +1,8 @@
 const header = document.querySelector(".header");
 const btn = document.querySelector(".header-ctg-btn");
 const ctg = document.querySelector(".header-ctg-sec");
+const dropdownBtn = document.querySelector(".dropdown-btn");
+const dropdown = document.querySelector(".dropdown");
 
 window.addEventListener("scroll", () => {
     setTimeout(() => {
@@ -12,8 +14,16 @@ window.addEventListener("scroll", () => {
     }, 200);
 });
 
+dropdownBtn.addEventListener("click", () => {
+
+    if (dropdown.classList.contains("dropdown-expanded")) {
+        dropdown.classList.remove("dropdown-expanded");
+    } else {
+        dropdown.classList.add("dropdown-expanded");
+    }
+});
+
 btn.addEventListener("click", () => {
-    console.log("clicked");
     console.log(ctg.classList.contains("expanded"));
     if (ctg.classList.contains("expanded")) {
         ctg.classList.remove("expanded");
