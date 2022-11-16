@@ -1,7 +1,7 @@
 <?php
 namespace model;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 
 class User {
     private string $nome;

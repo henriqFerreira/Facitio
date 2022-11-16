@@ -1,7 +1,7 @@
 <?php
 use controller\Signup;
-require_once $_SERVER['DOCUMENT_ROOT'].'app/autoLoader.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'app/core/Config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
 if (isset($_POST['submit'])) {
     $checkSignUp = new Signup();

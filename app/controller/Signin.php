@@ -3,7 +3,7 @@ namespace controller;
 use core\Controller;
 use core\Errors;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'app/core/Config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
 class Signin extends Controller {
     function index() {

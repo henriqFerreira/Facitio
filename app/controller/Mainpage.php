@@ -2,7 +2,7 @@
 namespace controller;
 use core\Controller;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'app/core/Config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
 class Mainpage extends Controller {
     function index() {

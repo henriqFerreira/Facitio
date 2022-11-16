@@ -1,8 +1,8 @@
 <?php
 use controller\Signin;
 
-require_once $_SERVER['DOCUMENT_ROOT'].'app/autoLoader.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'app/core/Config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
