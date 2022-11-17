@@ -228,9 +228,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                 <h2>Torne-se um profissional da Facitio</h2>
                 <p>Ou contrate um agora mesmo!</p>
                 <form method="POST">
-                    <input class="md-input gray-input" type="email" name="" id="" placeholder="exemplo@email.com">
-                    <input class="md-input gray-input" type="password" name="" id="" placeholder="Senha">
-                    <input class="bg-btn filled-gray-btn" type="submit" value="Cadastrar">
+                    <div class="form__input">
+                        <input class="md-input gray-input" type="email" name="" id="" placeholder="exemplo@email.com">
+                        <input class="md-input gray-input" type="password" name="" id="" placeholder="Senha">
+                        <input class="bg-btn filled-gray-btn" type="submit" value="Cadastrar">
+                    </div>
                 </form>
             </article>
         </div>
