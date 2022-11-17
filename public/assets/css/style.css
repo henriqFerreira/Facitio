@@ -169,9 +169,14 @@ input[type=number] {
     background-image: url("../img/icons/computer.svg");
 }
 
-.icon-design{
+.icon-design {
     height: 44px; width: 44px;
     background-image: url("../img/icons/design.svg");
+}
+
+.icon-hamburguer {
+    height: 44px; width: 44px;
+    background-image: url("../img/icons/menu-hamburguer-yellow.svg");
 }
 
 .icon-check {

@@ -19,15 +19,20 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/home.css">
 </head>
 
-<body>
+<body>  
     <header>
         <div class="wrapper">
             <nav>
                 <span class="icon md-logo-black"></span>
-                <div>
+                <div class="sec">
                     <a href="<?=ROOT?>signin/" class="bg-link black-link">Entrar</a>
                     <a href="<?=ROOT?>signup/" class="bg-btn outline-yellow-btn">Cadastrar</a>
                 </div>
+                <div id="hamburguer">
+                <button class="btn">
+                    <span class="icon icon-hamburguer"></span>
+                </button>
+            </div>
             </nav>
         </div>
     </header>
@@ -231,5 +236,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         </div>
     </main>
     <?php $this->loadView("Footer"); ?>
+
+    <script src="<?=ASSETS?>js/navmenu.js"></script>
 </body>
 </html>
