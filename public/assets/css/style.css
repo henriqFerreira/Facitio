@@ -41,7 +41,7 @@
 body { background-color: var(--neutral); }
 main { width: 100%; min-height: 100vh; }
 section { width: 100%; min-height: 100vh; }
-article { width: 100%; min-height: 35vh; }
+article { width: 100%; min-height: 35vh; margin-top: 30px; }
 .wrapper { padding: 0px 65px; }
 .main { padding-top: 220px; }
 .header { width: 100%; position: fixed; top: 0; left: 0; padding: 0px 0px 20px 0px; background-color: var(--neutral); z-index: 10; transition: all .2s linear; }
