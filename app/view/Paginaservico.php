@@ -17,81 +17,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/paginaservico.css">
-    
 </head>
-
 <body>
-    <header class="header">
-        <div class="topside">
-            <div class="wrapper">
-                <nav>
-                    <span class="icon md-logo-black"></span>
-                    <div class="nav-links">
-                        <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
-                        <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <span class="icon icon-design"></span>
-                    </div>
-                </nav>
-                <div class="fullscreen-search-wrapper sw">
-                    <form>
-                        <input type="search" placeholder="O que está procurando hoje?">
-                        <input type="submit" name="search" value="">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="bottomside">
-            <div class="header-ctg-sec">
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-diploma"></span>
-                        <p>Estudo</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                    <span class="icon icon-carro"></span>
-                        <p>Automobilístico</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-baloes"></span>
-                        <p>Festas & Eventos</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-ferramentas"></span>
-                        <p>Reparos & Consertos</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-casa"></span>
-                        <p>Serviços Domésticos</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-computador"></span>
-                        <p>Tecnologia</p>
-                    </a>
-                </div>
-                <div class="header-ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-design"></span>
-                        <p>UX/UI Design</p>
-                    </a>
-                </div>
-            </div>
-            <div class="button-menu">
-                <button class="header-ctg-btn">
-                    <span class="icon icon-caretdown"></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <?php $this->loadView("Header"); ?>
     <main class="main">
         <div class="wrapper">
             <section>

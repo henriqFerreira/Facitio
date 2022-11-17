@@ -17,33 +17,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <link rel="shortcut icon" href="<?=ASSETS?>img/icons/favicon.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="<?=ASSETS?>css/module/pages/mainpage.css">
-    
 </head>
-
 <body>
-    <header>
-        <div id="topside">
-            <div class="wrapper">
-                <nav >
-                    <span class="icon md-logo-black"></span>
-                    <div >
-                        <a href="<?=ROOT?>signin/" class="bg-link black-link">Pedidos</a>
-                        <a href="<?=ROOT?>signup/" class="bg-link black-link">Minha conta</a>
-                        <a href=""><span class="icon icon-design"></span></a>
-                    </div>
-                </nav>
-                <div class="fullscreen-search-wrapper sw">
-                    <form>
-                        <input type="text" placeholder="O que está procurando hoje?">
-                        <input type="submit" name="search" value="">
-                    </form>
-                </div>
-            </div>
-            <div id="wrapper-menu">
-                <button><span id="icon-caretdown"></span></button>
-            </div>
-        </div>
-    </header>
+    <?php $this->loadView("Header"); ?>
     <main>
         <div class="wrapper">
             <section>
@@ -305,6 +281,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
             </section>
     </main>
     <?php $this->loadView("Footer"); ?>
+    <!-- JS -->
+    <script src="<?=ASSETS?>js/header-control.js"></script>
 </body>
 
 </html>
