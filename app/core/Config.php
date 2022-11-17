@@ -26,3 +26,4 @@ define('ASSETS', str_replace("app/core", "public/assets", $path));
 
 // Outros
 define('DEFAULT_PHOTO', ASSETS . "img/icons/placeholder-profile.svg");
+define('FILE_INPUT_PLACEHOLDER', ASSETS . "img/icons/placeholder-file-input.svg");
