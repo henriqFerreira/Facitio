@@ -31,6 +31,9 @@ nav button { background-color: transparent; border: none;}
 .form-sec form { width: inherit; height: inherit; display: flex; gap: 10px; }
 
 
+
+.form__input input { margin: 2.5px;  }
+
 .sec {
     overflow: hidden;
     transition: all .4s ease-in-out
@@ -45,7 +48,10 @@ nav button { background-color: transparent; border: none;}
 
 @media (max-width:700px) { 
     .sec {width: 100%; height: 0vh; position: absolute; top: 15%;padding-right: 0px; padding-left: 0px; right: 0px;display: flex;
-    flex-direction: column;}}
+    flex-direction: column;}
+
+    .hglg-cards { justify-content: center; }
+}
 
 @media (min-width:700px) {
     #hamburguer {display: none;}   
