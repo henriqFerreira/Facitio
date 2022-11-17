@@ -1,7 +1,7 @@
 <footer style="height: 260px; display: flex; flex-direction: column; justify-content: space-between;">
-        <div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
             <span class="icon md-logo-black"></span>
-            <div style="width: 100%; display: flex; justify-content: center; gap: 100px; text-align: center; padding-top: 20px; font-size: var(--small-text);">
+            <div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 100px; text-align: center; padding-top: 20px; font-size: var(--small-text);">
                 <ul style="list-style: none; line-height: 30px">
                     <li>
                         <h2>SOBRE NÓS</h2>
