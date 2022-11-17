@@ -37,204 +37,208 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <section class="slg-sec">
-                <div class="slg-sec-left">
-                    <h1>Soluções fáceis para seus problemas difíceis</h1>
-                    <h3>O que precisar, quando precisar.</h3>
-                    <div class="bg-search-wrapper sw">
-                        <form>
-                            <input type="text" placeholder="O que está procurando hoje?">
-                            <input type="submit" name="search" value="">
-                        </form>
-                    </div>
-                </div>
-                <span class="half-background background-engineer-svg"></span>
-            </section>
-            <div class="ctg-sec">
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-diploma"></span>
-                        <p>Estudo</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                    <span class="icon icon-carro"></span>
-                        <p>Automobilístico</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-baloes"></span>
-                        <p>Festas & Eventos</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-ferramentas"></span>
-                        <p>Reparos & Consertos</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-casa"></span>
-                        <p>Serviços Domésticos</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-computador"></span>
-                        <p>Tecnologia</p>
-                    </a>
-                </div>
-                <div class="ctg-opt">
-                    <a href="#">
-                        <span class="icon icon-design"></span>
-                        <p>UX/UI Design</p>
-                    </a>
-                </div>
-            </div>
-            <section class="hglg-sec">
-                <h1>Categorias em destaque</h1>
-                <div class="hglg-cards">
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
+        <div class="wrapper" >
+            <div style="border:1px solid red"> <!--APAGAAAAAAR-->
+                <section class="slg-sec">
+                    <div class="slg-sec-left">
+                        <h1>Soluções fáceis para seus problemas difíceis</h1>
+                        <h3>O que precisar, quando precisar.</h3>
+                        <div class="bg-search-wrapper sw">
+                            <form>
+                                <input type="text" placeholder="O que está procurando hoje?">
+                                <input type="submit" name="search" value="">
+                            </form>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <span class="half-background background-engineer-svg"></span>
+                </section>
+                <div class="ctg-sec">
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-diploma"></span>
+                            <p>Estudo</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                        <span class="icon icon-carro"></span>
+                            <p>Automobilístico</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-baloes"></span>
+                            <p>Festas & Eventos</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-ferramentas"></span>
+                            <p>Reparos & Consertos</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-casa"></span>
+                            <p>Serviços Domésticos</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-computador"></span>
+                            <p>Tecnologia</p>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo"></div>
-                        <div class="card-content">
-                            <div class="card-profile">
-                                <span class="card-profile-photo" data-image=""></span>
-                                <div class="card-title">
-                                    <a href="#" class="title-link black-link">Título do Serviço</a>
-                                    <p class="md-link black-link">Nome do Fornecedor</p>
-                                </div>
-                            </div>
-                            <span id="card-aval"></span>
-                        </div>
+                    <div class="ctg-opt">
+                        <a href="#">
+                            <span class="icon icon-design"></span>
+                            <p>UX/UI Design</p>
+                        </a>
                     </div>
                 </div>
-            </section>
-            <article class="abt-us-sec">
-                <h2>Um pouco sobre nós</h2>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non malesuada lacus, euismod viverra nulla. Mauris vitae mi ac ligula pellentesque maximus ac in ex. Aenean condimentum, massa quis mattis ullamcorper, velit ex sodales purus, at egestas ex lacus eget quam. In ipsum arcu, efficitur quis augue et, mollis porta odio. Sed sodales tortor eu tempus semper.</p>
-                    <button class="md-btn filled-white-btn">Saiba Mais</button>
-                </div>
-            </article>
-            <article class="form-sec">
-                <h2>Torne-se um profissional da Facitio</h2>
-                <p>Ou contrate um agora mesmo!</p>
-                <form method="POST">
-                    <div class="form__input">
-                        <input class="md-input gray-input" type="email" name="" id="" placeholder="exemplo@email.com">
-                        <input class="md-input gray-input" type="password" name="" id="" placeholder="Senha">
-                        <input class="bg-btn filled-gray-btn" type="submit" value="Cadastrar">
+                <section class="hglg-sec">
+                    <h1>Categorias em destaque</h1>
+                    <div class="hglg-cards">
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-photo"></div>
+                            <div class="card-content">
+                                <div class="card-profile">
+                                    <span class="card-profile-photo" data-image=""></span>
+                                    <div class="card-title">
+                                        <a href="#" class="title-link black-link">Título do Serviço</a>
+                                        <p class="md-link black-link">Nome do Fornecedor</p>
+                                    </div>
+                                </div>
+                                <span id="card-aval"></span>
+                            </div>
+                        </div>
                     </div>
-                </form>
-            </article>
+                </section>
+                <article class="abt-us-sec">
+                    <div>
+                        <h2>Um pouco sobre nós</h2>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non malesuada lacus, euismod viverra nulla. Mauris vitae mi ac ligula pellentesque maximus ac in ex. Aenean condimentum, massa quis mattis ullamcorper, velit ex sodales purus, at egestas ex lacus eget quam. In ipsum arcu, efficitur quis augue et, mollis porta odio. Sed sodales tortor eu tempus semper.</p>
+                            <button class="md-btn filled-white-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="form-sec">
+                    <h2>Torne-se um profissional da Facitio</h2>
+                    <p>Ou contrate um agora mesmo!</p>
+                    <form method="POST">
+                        <div class="form__input">
+                            <input class="md-input gray-input" type="email" name="" id="" placeholder="exemplo@email.com">
+                            <input class="md-input gray-input" type="password" name="" id="" placeholder="Senha">
+                            <input class="bg-btn filled-gray-btn" type="submit" value="Cadastrar">
+                        </div>
+                    </form>
+                </article>
+            </div><!--APAGAAAAAAR-->
         </div>
     </main>
     <?php $this->loadView("Footer"); ?>
