@@ -22,7 +22,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 <body>  
     <header>
         <div class="wrapper">
-            <nav>
+            <nav  style="border:1px solid red">
                 <span class="icon md-logo-black"></span>
                 <div class="sec">
                     <a href="<?=ROOT?>signin/" class="bg-link black-link">Entrar</a>
