@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var array $data
+ */
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 ?>
@@ -38,7 +41,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     </header>
     <main>
         <div class="wrapper" >
-            <div style="border:1px solid red"> <!--APAGAAAAAAR-->
+            <div>
                 <section class="slg-sec">
                     <div class="slg-sec-left">
                         <h1>Soluções fáceis para seus problemas difíceis</h1>
@@ -238,11 +241,10 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                         </div>
                     </form>
                 </article>
-            </div><!--APAGAAAAAAR-->
+            </div>
         </div>
     </main>
     <?php $this->loadView("Footer"); ?>
-
     <script src="<?=ASSETS?>js/navmenu.js"></script>
 </body>
 </html>

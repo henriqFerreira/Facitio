@@ -25,12 +25,12 @@
         <div class="wrapper">
             <article class="user-profile">
                 <div class="user-photo">
-                    <img src="<?=DEFAULT_PHOTO?>" alt="Foto de perfil">
+                    <img src="<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".$_SESSION['logged']['Foto']?>" alt="Foto de perfil">
                 </div>
                 <div class="user-profile-left">
                     <div class="user-title">
-                        <h2>Nome do usuário</h2>
-                        <h3>Sobrenome do usuário</h3>
+                        <h2><?=$_SESSION['logged']['Nome']?></h2>
+                        <h3><?=$_SESSION['logged']['Sobrenome']?></h3>
                     </div>
                     <div class="user-card">
                         <div class="card-item">

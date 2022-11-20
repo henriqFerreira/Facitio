@@ -60,15 +60,15 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_endereco_cliente` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_login_cliente VALUES (default, "Ruan", "teste", "Ruan@email.com", "123.456.789-10", "98.765.432-10", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_cliente VALUES (default, "Claudio", "teste", "Claudio@email.com", "123.456.789-20", "98.765.432-20", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_cliente VALUES (default, "Paulo", "teste", "Paulo@email.com", "123.456.789-30", "98.765.432-30", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_cliente VALUES (default, "Cristina", "teste", "Cristina@email.com", "123.456.789-40", "98.765.432-40", "2000-02-02", "(12) 34567-8900", "senha", default, default);
+INSERT INTO tb_login_cliente VALUES (default, 'Ruan', 'teste', 'Ruan@email.com', '123.456.789-10', '98.765.432-10', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_cliente VALUES (default, 'Claudio', 'teste', 'Claudio@email.com', '123.456.789-20', '98.765.432-20', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_cliente VALUES (default, 'Paulo', 'teste', 'Paulo@email.com', '123.456.789-30', '98.765.432-30', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_cliente VALUES (default, 'Cristina', 'teste', 'Cristina@email.com', '123.456.789-40', '98.765.432-40', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
 
-INSERT INTO tb_endereco_cliente VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 1);
-INSERT INTO tb_endereco_cliente VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 2);
-INSERT INTO tb_endereco_cliente VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 3);
-INSERT INTO tb_endereco_cliente VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 4);
+INSERT INTO tb_endereco_cliente VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 1);
+INSERT INTO tb_endereco_cliente VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 2);
+INSERT INTO tb_endereco_cliente VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 3);
+INSERT INTO tb_endereco_cliente VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 4);
 /*----------END CLIENTE----------*/
 
 /*----------PROFISSIONAL----------*/
@@ -111,15 +111,15 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_endereco_profissional` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_login_profissional VALUES (default, "Vinicius", "teste", "Vinicius@email.com", "123.456.789-01", "98.765.432-01", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_profissional VALUES (default, "Angélica", "teste", "Angélica@email.com", "123.456.789-02", "98.765.432-02", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_profissional VALUES (default, "Alberto", "teste", "Alberto@email.com", "123.456.789-03", "98.765.432-03", "2000-02-02", "(12) 34567-8900", "senha", default, default);
-INSERT INTO tb_login_profissional VALUES (default, "Yago", "teste", "Yago@email.com", "123.456.789-04", "98.765.432-04", "2000-02-02", "(12) 34567-8900", "senha", default, default);
+INSERT INTO tb_login_profissional VALUES (default, 'Vinicius', 'teste', 'Vinicius@email.com', '123.456.789-01', '98.765.432-01', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_profissional VALUES (default, 'Angélica', 'teste', 'Angélica@email.com', '123.456.789-02', '98.765.432-02', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_profissional VALUES (default, 'Alberto', 'teste', 'Alberto@email.com', '123.456.789-03', '98.765.432-03', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
+INSERT INTO tb_login_profissional VALUES (default, 'Yago', 'teste', 'Yago@email.com', '123.456.789-04', '98.765.432-04', '2000-02-02', '(12) 34567-8900', 'senha', default, default);
 
-INSERT INTO tb_endereco_profissional VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 1);
-INSERT INTO tb_endereco_profissional VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 2);
-INSERT INTO tb_endereco_profissional VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 3);
-INSERT INTO tb_endereco_profissional VALUES (default, "Nome", "Num", "Complemento", "Bairro", "Cidade", "Estado", "CEP", 4);
+INSERT INTO tb_endereco_profissional VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 1);
+INSERT INTO tb_endereco_profissional VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 2);
+INSERT INTO tb_endereco_profissional VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 3);
+INSERT INTO tb_endereco_profissional VALUES (default, 'Nome', 'Num', 'Complemento', 'Bairro', 'Cidade', 'Estado', 'CEP', 4);
 
 /*----------END PROFISSIONAL----------*/
 
@@ -144,24 +144,24 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 1);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 1);
+INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 1);
+INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 1);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 2);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 2);
+INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 2);
+INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 2);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 3);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 3);
+INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 3);
+INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 3);
 
-INSERT INTO tb_servico VALUES (default, "Serviço 1", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 4);
-INSERT INTO tb_servico VALUES (default, "Serviço 2", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?", default, 10.0, default, 4);
+INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 4);
+INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 4);
 /*------------END SERVIÇO-------------*/
 
 /*----------SOLICITAÇÃO----------*/
 CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
   `solicitacao_id` INT NOT NULL AUTO_INCREMENT,
   `solicitacao_data` VARCHAR(45) NULL DEFAULT NULL,
-  `solicitacao_status` ENUM("S", "N", "A") NULL DEFAULT NULL,
+  `solicitacao_status` ENUM('S', 'N', 'A') NULL DEFAULT NULL,
   `cliente_id` INT(11) NOT NULL,
   `profissional_id` INT(11) NOT NULL,
   `servico_id` INT(11) NOT NULL,
@@ -193,45 +193,45 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 4, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 1, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 2, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 3, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 4, 1);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 1, 4, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 1, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 2, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 3, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 4, 2);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 4, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 1, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 2, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 3, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 4, 1);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 2, 4, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 1, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 2, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 3, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 4, 2);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 4, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 1, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 2, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 3, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 4, 1);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 3, 4, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 1, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 2, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 3, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 4, 2);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 4, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 1, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 2, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 3, 1);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 4, 1);
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), "A", 4, 4, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 1, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 2, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 3, 2);
+INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 4, 2);
 /*----------END PROFISSIONAL----------*/
 
 SELECT * FROM tb_login_cliente;

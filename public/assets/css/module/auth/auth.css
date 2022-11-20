@@ -8,7 +8,7 @@
 .auth-sub-content button { width: 300px; }
 
 /* Signup form */
-.signup-form { max-width: 110vh; max-height: 70vh; padding: 20px; background-color: var(--neutral-color); border-radius: 16px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); }
+.signup-form { min-width: 110vh; min-height: 50vh; padding: 20px; background-color: var(--neutral); border-radius: 16px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); }
 .form-title { text-align: center; }
 .form-step { display: none; }
 .active-step { display: block; padding: 32px 0px; animation: changeStep .2s linear; }
@@ -20,6 +20,8 @@
 .steps { padding: 16px 0px; display: flex; align-items: center; justify-content: center; gap: 5px; }
 .step { display: block; border-radius: 50%; width: 16px; height: 16px; background-color: var(--vodka-color); }
 .active-step-icon { background-color: var(--black-color); }
+.profile-photo-upload { display: block; width: 250px; height: 250px; background-image: var(--background); background-size: contain; background-position: center; background-repeat: no-repeat; }
+.profile-photo-upload input { display: none; }
 
 @keyframes changeStep { from { transform: translateY(5%); opacity: 0; } to { transform: translateY(0%); opacity: 1; } }
 

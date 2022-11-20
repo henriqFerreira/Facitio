@@ -11,7 +11,7 @@ class Paginaservico extends Controller {
 
         $data = array (
             "TITLE" => WEBSITE_NAME . ": Soluções fáceis para seus problemas difíceis.",
-            // "TYPE" => $_SESSION['logged']['Tipo']
+             "TYPE" => $_SESSION['logged']['Tipo']
         );
         
         $className = explode("\\", __CLASS__);

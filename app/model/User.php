@@ -12,8 +12,9 @@ class User {
     private string $nascimento;
     private string $contato;
     private string $type;
+    private string $photo;
 
-    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, string $type) {
+    public function __construct(string $nome, string $sobrenome, string $email, string $cpf, string $rg, string $nascimento, string $contato, string $type, string $photo) {
         $this->nome = $nome;
         $this->sobrenome = $sobrenome;
         $this->email = $email;
@@ -22,6 +23,7 @@ class User {
         $this->nascimento = $nascimento;
         $this->contato = $contato;
         $this->type = $type;
+        $this->photo = $photo;
     }
 
     public function getNome() : string {
@@ -54,5 +56,9 @@ class User {
 
     public function getType() : string {
         return $this->type;
+    }
+
+    public function getPhoto(): string {
+        return $this->photo;
     }
 }

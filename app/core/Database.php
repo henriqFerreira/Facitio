@@ -5,21 +5,23 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
 use PDO;
+use Exception;
+use PDOException;
 
 class Database {
-    private function getConnection() {
+    private function getConnection() : PDO {
         try {
             $conn = new PDO("mysql:host=" . DATABASE_HOST . ";dbname=" . DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
-        } catch (\PDOException $Exception) {
+        } catch (PDOException $Exception) {
             die("[ PDOException ] => " . $Exception->getMessage());
-        } catch (\Exception $Exception) {
+        } catch (Exception $Exception) {
             die("[ Exception ] => " . $Exception->getMessage());
         }
     }
 
-    public function read($query, $data = []) {
+    public function read(string $query, array $data = []) : bool | array {
         $conn = $this->getConnection();
         $stmt = $conn->prepare($query);
 
@@ -30,14 +32,13 @@ class Database {
             $check = $stmt->execute($data);
         }
 
-        if($check) {
+        if($check)
             return $stmt->fetchAll(PDO::FETCH_OBJ);
-        } else {
+        else
             return false;
-        }
     }
 
-    public function write($query, $data = []) {
+    public function write(string $query, array $data = []) : bool {
         $conn = $this->getConnection();
         $stmt = $conn->prepare($query);
 
@@ -48,14 +49,13 @@ class Database {
             $check = $stmt->execute($data);
         }
 
-        if($check) {
+        if($check)
             return true;
-        } else {
+        else
             return false;
-        }
     }
 
-    public function outputWrite($query, $data = []) {
+    public function outputWrite(string $query, array $data = []) : bool | string {
         $conn = $this->getConnection();
         $stmt = $conn->prepare($query);
 

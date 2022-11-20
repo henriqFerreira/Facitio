@@ -2,27 +2,38 @@
 namespace core;
 
 class Errors {
-    function isInputsEmpty($authData) : bool {
+    function isInputsEmpty(array $authData) : bool {
         foreach ($authData as $data) {
-            if(empty($data)) {
-                return true;
-                break;
-            }
-            return false;
+            if(empty($data))
+                return $data;
         }
+        return false;
     }
 
-    function userExists($params, $userType) : bool {
+    function isFileInputValid(array $fileInput) : bool {
+        if (empty($fileInput['profileImage']['name']))
+            return false;
+
+        $filename = basename($fileInput['profileImage']['name']);
+        $fileType = pathinfo($filename, PATHINFO_EXTENSION);
+        $allowedFileTypes = array('jpg', 'jpeg');
+
+        if (!in_array($fileType, $allowedFileTypes))
+            return false;
+
+        return true;
+    }
+
+    function userExists(array $params, string $userType) : bool {
         $database = new Database();
         $param = array("cpf" => $params['cpf']);
 
         $query = "SELECT * FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf";
         $checkUser = $database->read($query, $param);
         
-        if(!empty($checkUser)) {
+        if(!empty($checkUser))
             return true;
-        } else {
+        else
             return false;
-        }
     }
 }

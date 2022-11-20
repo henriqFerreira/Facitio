@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var array $data
+ */
 use controller\Signup;
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
@@ -28,7 +31,7 @@ if (isset($_POST['submit'])) {
     <main id="auth-wrapper">
         <div class="auth-content">
             <span class="icon bg-logo-yellow"></span>
-            <form method="POST" class="signup-form">
+            <form method="POST" class="signup-form" enctype="multipart/form-data">
                 <div class="form-title">
                     <h2>Crie sua conta</h2>
                     <h3>Como cliente</h3>
@@ -70,6 +73,19 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
                         <div class="step-buttons">
+                            <button type="button" class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="form-step-content">
+                            <div class="form-column">
+                                <label class="profile-photo-upload" style="--background: url(<?=FILE_INPUT_PLACEHOLDER?>);">
+                                    <input type="file" name="profileImage" class="fileInput">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="prevBtn bg-btn filled-blue-btn">Anterior</button>
                             <button type="button" class="nextBtn bg-btn filled-yellow-btn">Próximo</button>
                         </div>
                     </div>
@@ -195,6 +211,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="steps">
                         <span class="step active-step-icon"></span>
+                        <span class="step"></span>
                         <span class="step"></span>
                         <span class="step"></span>
                         <span class="step"></span>

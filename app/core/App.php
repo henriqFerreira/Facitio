@@ -5,10 +5,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 
 class App {
     const ERROR404PAGE = "../app/view/404.php";
-
-    private $controller = 'Home'; // Controlador padrão a ser chamado caso a URL não tenha parâmetros
-    private $method = 'index'; // Método padrão do controlador
-    private $params = []; // Parâmetros da URL
+    private mixed $controller = 'Home'; // Controlador padrão a ser chamado caso a URL não tenha parâmetros
+    private string $method = 'index'; // Método padrão do controlador
+    private array $params = []; // Parâmetros da (URL)
 
     public function __construct() {
         $url = $this->splitURL(); // Transforma a URL num array
@@ -25,8 +24,7 @@ class App {
                     $this->method = $url[1]; // Atribui o método a variável do método
                     unset($url[1]); // Remove o método do array
                     $this->params = array_values($url); // Atribui um novo array dos índices restantes na variável de parâmetros
-                    call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada    
-    
+                    call_user_func_array([$this->controller, $this->method], $this->params); // Chama o método da classe instanciada
                 }  else {
                     include_once self::ERROR404PAGE;
                 }
@@ -39,8 +37,8 @@ class App {
         }
     }
 
-    private function splitURL() {
-        $url = isset($_GET['url']) ? $_GET['url'] : $this->controller; // Se não houver nada na URL, a página gerada será a Home
+    private function splitURL() : array {
+        $url = $_GET['url'] ?? $this->controller; // Se não houver nada na (URL), a página gerada será a Home
         return explode("/", filter_var(trim($url, "/"), FILTER_SANITIZE_URL));
     }
 }

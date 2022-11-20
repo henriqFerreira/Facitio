@@ -2,7 +2,7 @@
 namespace core;
 
 class EnvHandler {
-    public function loadEnvFile($dir) {
+    public function loadEnvFile($dir) : bool {
         if (!file_exists($dir."/.env"))
             return false;
 
@@ -10,5 +10,6 @@ class EnvHandler {
 
         foreach ($lines as $line)
             putenv(trim($line));
+        return true;
     }
 }

@@ -3,6 +3,7 @@ namespace controller;
 use core\Controller;
 use core\Database;
 use core\Errors;
+use model\User;
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
@@ -28,9 +29,15 @@ class Signup extends Controller {
         $this->loadView("Signupprofissional", $data);
     }
     
-    function checkSignUp($signUpData, $userType) {
+    function checkSignUp($signUpData, $userType) : void {
         $database = new Database();
         $errorHandler = new Errors();
+
+        if (!$errorHandler->isFileInputValid($_FILES))
+            die("Imagem de usuário inválida");
+
+        $profileImage = $_FILES['profileImage']['tmp_name'];
+        $profileImageContent = file_get_contents($profileImage);
 
         $params = array(
             'nome' => $signUpData['nome'],
@@ -40,23 +47,14 @@ class Signup extends Controller {
             'rg' => $signUpData['rg'],
             'datanasc' => $signUpData['datanasc'],
             'contato' => $signUpData['contato'],
-            'senha' => $signUpData['senha']
+            'senha' => $signUpData['senha'],
+            'foto' => $profileImageContent
         );
 
         if (!$errorHandler->isInputsEmpty($signUpData)) {
             if (!$errorHandler->userExists($params, $userType)) {
-                $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default, default)";
-                
-                echo '<pre>';
-                print_r($paramsQuery);
-                echo '</pre>';
-
-                echo '<pre>';
-                print_r($params);
-                echo '</pre>';
-                
+                $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default, :foto)";
                 $getCurrentId = $database->outputWrite($paramsQuery, $params);
-
                 $enderecoParams = array(
                     'rua' => $signUpData['rua'],
                     'num' => $signUpData['num'],
@@ -72,7 +70,15 @@ class Signup extends Controller {
                 $enderecoQuery = $database->write($enderecoQuery, $enderecoParams);
 
                 $_SESSION['logged'] = array(
+                    'Nome' => $params['nome'],
+                    'Sobrenome' => $params['sobrenome'],
+                    'Email' => $params['email'],
                     'CPF' => $params['cpf'],
+                    'RG' => $params['rg'],
+                    'Datanasc' => $params['datanasc'],
+                    'Contato' => $params['contato'],
+                    'Foto' => base64_encode($profileImageContent),
+                    'Endereco' => $paramsQuery,
                     'Tipo' => $userType
                 );
 
