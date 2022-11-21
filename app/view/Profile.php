@@ -55,3 +55,12 @@
     <script src="<?=ASSETS?>js/profile-control.js"></script>
 </body>
 </html>
+
+<?php
+
+if (isset($_POST['submit'])) {
+    foreach ($_POST as $key => $value) {
+        echo "{$key} : {$value}<br>";
+    }
+    // $this::updateProfile($_POST, $_SESSION['logged']['Tipo']);
+}
