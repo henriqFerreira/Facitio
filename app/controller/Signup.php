@@ -77,8 +77,14 @@ class Signup extends Controller {
                     'RG' => $params['rg'],
                     'Datanasc' => $params['datanasc'],
                     'Contato' => $params['contato'],
-                    'Foto' => base64_encode($profileImageContent),
-                    'Endereco' => $paramsQuery,
+                    'Foto' => $profileImageContent,
+                    'End_nome' => $enderecoParams['rua'],
+                    'End_num' => $enderecoParams['num'],
+                    'End_complemento' => $enderecoParams['complemento'],
+                    'End_bairro' => $enderecoParams['bairro'],
+                    'End_cidade' => $enderecoParams['cidade'],
+                    'End_estado' => $enderecoParams['estado'],
+                    'End_cep' => $enderecoParams['cep'],
                     'Tipo' => $userType
                 );
 

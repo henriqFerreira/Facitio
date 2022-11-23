@@ -2,6 +2,9 @@
 /**
  * @var array $data
  */
+
+use controller\Profile;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +28,7 @@
         <div class="wrapper">
             <article class="user-profile">
                 <div class="user-photo">
-                    <img src="<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".$_SESSION['logged']['Foto']?>" alt="Foto de perfil">
+                    <img src="<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto'])?>" alt="Foto de perfil">
                 </div>
                 <div class="user-profile-left">
                     <div class="user-title">
@@ -55,3 +58,9 @@
     <script src="<?=ASSETS?>js/profile-control.js"></script>
 </body>
 </html>
+
+<?php
+    $profile = new Profile();
+    $profile->updateProfile($_POST, $_SESSION['logged']['Tipo']);
+if (isset($_POST['submit'])) {
+}
