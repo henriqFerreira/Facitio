@@ -77,7 +77,7 @@ class Signup extends Controller {
                     'RG' => $params['rg'],
                     'Datanasc' => $params['datanasc'],
                     'Contato' => $params['contato'],
-                    'Foto' => base64_encode($profileImageContent),
+                    'Foto' => $profileImageContent,
                     'End_nome' => $enderecoParams['rua'],
                     'End_num' => $enderecoParams['num'],
                     'End_complemento' => $enderecoParams['complemento'],

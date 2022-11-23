@@ -2,6 +2,9 @@
 namespace controller;
 use core\Controller;
 use core\Database;
+use core\Errors;
+use DOMDocument;
+use DOMXPath;
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
 
@@ -21,65 +24,79 @@ class Profile extends Controller {
     }
 
     function updateProfile($updatingData, $userType) {
+        $dom = new DOMDocument();
         $database = new Database();
         $errorHandler = new Errors();
 
-        if (!$errorHandler->isFileInputValid($_FILES))
-            die("Imagem de usuário inválida");
+        echo "foi chamado";
 
-        $profileImage = $_FILES['profileImage']['tmp_name'];
-        $profileImageContent = file_get_contents($profileImage);
+        // if (!$errorHandler->isFileInputValid($_FILES))
+        //     die("Imagem de usuário inválida");
 
-        $params = array(
-            'nome' => $signUpData['nome'],
-            'sobrenome' => $signUpData['sobrenome'],
-            'email' => $signUpData['email'],
-            'rg' => $signUpData['rg'],
-            'datanasc' => $signUpData['datanasc'],
-            'contato' => $signUpData['contato'],
-            'senha' => $signUpData['senha'],
-            'foto' => $profileImageContent
-        );
+        // $profileImage = $_FILES['profileImage']['tmp_name'];
+        // $profileImageContent = file_get_contents($profileImage);
 
-        $userQuery = "UPDATE TABLE tb_login_{$userType} SET {$userType}_nome = :nome,
-                                                            {$userType}_sobrenome = :sobrenome,
-                                                            {$userType}_email = :email,
-                                                            {$userType}_rg = :rg,
-                                                            {$userType}_datanasc = :datanasc,
-                                                            {$userType}_contato = :contato,
-                                                            {$userType}_foto = :foto WHERE {$userType}_cpf = :cpf";
+        // foreach ($element as $value) {
+        //     if (empty($value))
+        //         continue;
+        //     echo $value->getAttribute('placeholder') . "<br>";
+        // }
+        // foreach ($updatingData as $value) {
+        //     if (empty($value)) {
+        //         $value = $value;
+        //     }
+        // }
 
-        if (!$errorHandler->isInputsEmpty($signUpData)) {
-            if (!$errorHandler->userExists($params, $userType)) {
-                $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default, :foto)";
-                $getCurrentId = $database->outputWrite($paramsQuery, $params);
-                $enderecoParams = array(
-                    'rua' => $signUpData['rua'],
-                    'num' => $signUpData['num'],
-                    'complemento' => $signUpData['complemento'],
-                    'bairro' => $signUpData['bairro'],
-                    'cidade' => $signUpData['cidade'],
-                    'estado' => $signUpData['estado'],
-                    'cep' => $signUpData['cep'],
-                    'id' => $getCurrentId
-                );
+        // $params = array(
+        //     'nome' => $updatingData['nome'],
+        //     'sobrenome' => $updatingData['sobrenome'],
+        //     'email' => $updatingData['email'],
+        //     'rg' => $updatingData['rg'],
+        //     'datanasc' => $updatingData['datanasc'],
+        //     'contato' => $updatingData['contato'],
+        //     'foto' => $profileImageContent,
+        //     'rua' => $updatingData['rua'],
+        //     'num' => $updatingData['num'],
+        //     'complemento' => $updatingData['complemento'],
+        //     'bairro' => $updatingData['bairro'],
+        //     'cidade' => $updatingData['cidade'],
+        //     'estado' => $updatingData['estado'],
+        //     'cep' => $updatingData['cep'],
+        // );
 
-                $enderecoQuery = "INSERT INTO tb_endereco_{$userType} VALUES (default, :rua, :num, :complemento, :bairro, :cidade, :estado, :cep, :id)";
-                $enderecoQuery = $database->write($enderecoQuery, $enderecoParams);
+        // $userQuery = "UPDATE TABLE tb_login_{$userType} SET {$userType}_nome = :nome,
+        //                                                     {$userType}_sobrenome = :sobrenome,
+        //                                                     {$userType}_email = :email,
+        //                                                     {$userType}_rg = :rg,
+        //                                                     {$userType}_datanasc = :datanasc,
+        //                                                     {$userType}_contato = :contato,
+        //                                                     {$userType}_foto = :foto WHERE {$userType}_cpf = :cpf";
 
-                $_SESSION['logged'] = array(
-                    'Nome' => $params['nome'],
-                    'Sobrenome' => $params['sobrenome'],
-                    'Email' => $params['email'],
-                    'CPF' => $params['cpf'],
-                    'RG' => $params['rg'],
-                    'Datanasc' => $params['datanasc'],
-                    'Contato' => $params['contato'],
-                    'Foto' => base64_encode($profileImageContent),
-                    'Endereco' => $paramsQuery,
-                    'Tipo' => $userType
-                );
-            }
-        }
+        // if (!$errorHandler->isInputsEmpty($signUpData)) {
+        //     if (!$errorHandler->userExists($params, $userType)) {
+        //         $paramsQuery = "INSERT INTO tb_login_{$userType} VALUES (default, :nome, :sobrenome, :email, :cpf, :rg, :datanasc, :contato, :senha, default, :foto)";
+        //         $getCurrentId = $database->outputWrite($paramsQuery, $params);
+        //         $enderecoParams = array(
+
+        //             'id' => $getCurrentId
+        //         );
+
+        //         $enderecoQuery = "INSERT INTO tb_endereco_{$userType} VALUES (default, :rua, :num, :complemento, :bairro, :cidade, :estado, :cep, :id)";
+        //         $enderecoQuery = $database->write($enderecoQuery, $enderecoParams);
+
+        //         $_SESSION['logged'] = array(
+        //             'Nome' => $params['nome'],
+        //             'Sobrenome' => $params['sobrenome'],
+        //             'Email' => $params['email'],
+        //             'CPF' => $params['cpf'],
+        //             'RG' => $params['rg'],
+        //             'Datanasc' => $params['datanasc'],
+        //             'Contato' => $params['contato'],
+        //             'Foto' => base64_encode($profileImageContent),
+        //             'Endereco' => $paramsQuery,
+        //             'Tipo' => $userType
+        //         );
+        //     }
+        // }
     }
 }

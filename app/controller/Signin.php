@@ -51,7 +51,7 @@ class Signin extends Controller {
                 $rg = $userType."_rg";
                 $datanasc = $userType."_datanasc";
                 $contato = $userType."_contato";
-                $foto = base64_encode($userType."_foto");
+                $foto = $userType."_foto";
 
                 $_SESSION['logged'] = array(
                     'Nome' => $loggedUser->$nome,

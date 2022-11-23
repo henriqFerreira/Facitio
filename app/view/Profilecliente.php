@@ -10,9 +10,9 @@
 
 <div class="wrapper">
     <div id="MeusDados" class="tab-content">
-        <form method="POST">
+        <form method="POST" onsubmit="return checkFormContents();">
             <div class="form-left">
-                <label class="profile-photo-upload" style="--background: url(<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".$_SESSION['logged']['Foto']?>);">
+                <label class="profile-photo-upload" style="--background: url(<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto'])?>);">
                     <input type="file" name="profileImage" class="fileInput">
                 </label>
             </div>

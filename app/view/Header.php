@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="user-icon-photo">
-                        <img src="<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".$_SESSION['logged']['Foto'] ?>" alt="Foto de perfil">
+                        <img src="<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto'])?>" alt="Foto de perfil">
                     </div>
                 </div>
             </nav>
