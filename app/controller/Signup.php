@@ -69,32 +69,51 @@ class Signup extends Controller {
                 $enderecoQuery = "INSERT INTO tb_endereco_{$userType} VALUES (default, :rua, :num, :complemento, :bairro, :cidade, :estado, :cep, :id)";
                 $enderecoQuery = $database->write($enderecoQuery, $enderecoParams);
 
+                $loginParams = array(
+                    'cpf' => $signUpData['cpf'],
+                    'senha' => $signUpData['senha']
+                );
+
+                $loggedUser = $database->read("SELECT * FROM tb_login_{$userType} as A INNER JOIN tb_endereco_{$userType} as B ON A.{$userType}_id = B.{$userType}_id AND A.{$userType}_cpf = :cpf AND A.{$userType}_senha = :senha", $loginParams);
+                $loggedUser = $loggedUser[0];
+
+                $nome = $userType."_nome";
+                $sobrenome = $userType."_sobrenome";
+                $email = $userType."_email";
+                $cpf = $userType."_cpf";
+                $rg = $userType."_rg";
+                $datanasc = $userType."_datanasc";
+                $contato = $userType."_contato";
+                $foto = $userType."_foto";
+                $saldo = $userType."_saldo";
+
                 $_SESSION['logged'] = array(
-                    'Nome' => $params['nome'],
-                    'Sobrenome' => $params['sobrenome'],
-                    'Email' => $params['email'],
-                    'CPF' => $params['cpf'],
-                    'RG' => $params['rg'],
-                    'Datanasc' => $params['datanasc'],
-                    'Contato' => $params['contato'],
-                    'Foto' => $profileImageContent,
-                    'End_nome' => $enderecoParams['rua'],
-                    'End_num' => $enderecoParams['num'],
-                    'End_complemento' => $enderecoParams['complemento'],
-                    'End_bairro' => $enderecoParams['bairro'],
-                    'End_cidade' => $enderecoParams['cidade'],
-                    'End_estado' => $enderecoParams['estado'],
-                    'End_cep' => $enderecoParams['cep'],
+                    'Nome' => $loggedUser->$nome,
+                    'Sobrenome' => $loggedUser->$sobrenome,
+                    'Email' => $loggedUser->$email,
+                    'CPF' => $loggedUser->$cpf,
+                    'RG' => $loggedUser->$rg,
+                    'Datanasc' => $loggedUser->$datanasc,
+                    'Contato' => $loggedUser->$contato,
+                    'Foto' => $loggedUser->$foto,
+                    'Saldo' => $loggedUser->$saldo,
+                    'Rua' => $loggedUser->end_nome,
+                    'Num' => $loggedUser->end_num,
+                    'Complemento' => $loggedUser->end_complemento,
+                    'Bairro' => $loggedUser->end_bairro,
+                    'Cidade' => $loggedUser->end_cidade,
+                    'Estado' => $loggedUser->end_estado,
+                    'Cep' => $loggedUser->end_cep,
                     'Tipo' => $userType
                 );
 
                 header('Location: ' . ROOT . 'profile');
-                exit;
+                die;
             } else {
-                exit("Usuário existente.");
+                die("Usuário existente.");
             }
         } else {
-            exit("Preencha todos os campos");
+            die("Preencha todos os campos");
         }
     }
 }

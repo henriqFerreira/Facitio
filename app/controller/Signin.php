@@ -52,6 +52,7 @@ class Signin extends Controller {
                 $datanasc = $userType."_datanasc";
                 $contato = $userType."_contato";
                 $foto = $userType."_foto";
+                $saldo = $userType."_saldo";
 
                 $_SESSION['logged'] = array(
                     'Nome' => $loggedUser->$nome,
@@ -62,23 +63,24 @@ class Signin extends Controller {
                     'Datanasc' => $loggedUser->$datanasc,
                     'Contato' => $loggedUser->$contato,
                     'Foto' => $loggedUser->$foto,
-                    'End_nome' => $loggedUser->end_nome,
-                    'End_num' => $loggedUser->end_num,
-                    'End_complemento' => $loggedUser->end_complemento,
-                    'End_bairro' => $loggedUser->end_bairro,
-                    'End_cidade' => $loggedUser->end_cidade,
-                    'End_estado' => $loggedUser->end_estado,
-                    'End_cep' => $loggedUser->end_cep,
+                    'Saldo' => $loggedUser->$saldo,
+                    'Rua' => $loggedUser->end_nome,
+                    'Num' => $loggedUser->end_num,
+                    'Complemento' => $loggedUser->end_complemento,
+                    'Bairro' => $loggedUser->end_bairro,
+                    'Cidade' => $loggedUser->end_cidade,
+                    'Estado' => $loggedUser->end_estado,
+                    'Cep' => $loggedUser->end_cep,
                     'Tipo' => $userType
                 );
 
                 header('Location: ' . ROOT . 'profile');
-                exit;
+                die;
             } else {
-                exit("Usuário inexistente.");
+                die("Usuário inexistente.");
             }
         } else {
-            exit("Preencha todos os campos");
+            die("Preencha todos os campos");
         }
     }
 }
