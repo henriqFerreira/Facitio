@@ -38,7 +38,7 @@ use controller\Profile;
                     <div class="user-card">
                         <div class="card-item">
                             <span class="icon icon-dinheiro"></span>
-                            <p>0,00</p>
+                            <p><?=$_SESSION['logged']['Saldo']?></p>
                         </div>
                         <div class="card-item">
                             <span class="icon icon-estrela"></span>
@@ -60,7 +60,7 @@ use controller\Profile;
 </html>
 
 <?php
+if (isset($_POST['submit'])) {
     $profile = new Profile();
     $profile->updateProfile($_POST, $_SESSION['logged']['Tipo']);
-if (isset($_POST['submit'])) {
 }

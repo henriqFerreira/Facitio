@@ -10,10 +10,10 @@
 
 <div class="wrapper">
     <div id="MeusDados" class="tab-content">
-        <form method="POST" onsubmit="return checkFormContents();">
+        <form method="POST">
             <div class="form-left">
                 <label class="profile-photo-upload" style="--background: url(<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto'])?>);">
-                    <input type="file" name="profileImage" class="fileInput">
+                    <input type="file" name="foto" class="fileInput">
                 </label>
             </div>
             <div class="form-right">
@@ -54,7 +54,7 @@
                             <label for="rg">RG</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-id"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="rg" placeholder="<?=$_SESSION['logged']['RG']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="rg" placeholder="<?=$_SESSION['logged']['Rg']?>">
                             </div>
                         </div>
                         <div class="inp-group">
@@ -73,28 +73,28 @@
                             <label for="rua">Rua</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="rua" placeholder="<?=$_SESSION['logged']['End_nome']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="rua" placeholder="<?=$_SESSION['logged']['Rua']?>">
                             </div>
                         </div>
                         <div class="inp-group">
                             <label for="bairro">Bairro</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="bairro" placeholder="<?=$_SESSION['logged']['End_bairro']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="bairro" placeholder="<?=$_SESSION['logged']['Bairro']?>">
                             </div>
                         </div>
                         <div class="inp-group">
                             <label for="estado">Estado</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="estado" placeholder="<?=$_SESSION['logged']['End_estado']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="estado" placeholder="<?=$_SESSION['logged']['Estado']?>">
                             </div>
                         </div>
                         <div class="inp-group">
                             <label for="cep">CEP</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="cep" placeholder="<?=$_SESSION['logged']['End_cep']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="cep" placeholder="<?=$_SESSION['logged']['Cep']?>">
                             </div>
                         </div>
                     </div>
@@ -103,21 +103,21 @@
                             <label for="num">Número</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="number" name="num" placeholder="<?=$_SESSION['logged']['End_num']?>">
+                                <input class="bg-icon-input gray-input" type="number" name="num" placeholder="<?=$_SESSION['logged']['Num']?>">
                             </div>
                         </div>
                         <div class="inp-group">
                             <label for="cidade">Cidade</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="cidade" placeholder="<?=$_SESSION['logged']['End_cidade']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="cidade" placeholder="<?=$_SESSION['logged']['Cidade']?>">
                             </div>
                         </div>
                         <div class="inp-group">
                             <label for="complemento">Complemento</label>
                             <div class="icon-group">
                                 <span class="icon icon-input-casa"></span>
-                                <input class="bg-icon-input gray-input" type="text" name="complemento" placeholder="<?=$_SESSION['logged']['End_complemento']?>">
+                                <input class="bg-icon-input gray-input" type="text" name="complemento" placeholder="<?=$_SESSION['logged']['Complemento']?>">
                             </div>
                         </div>
                     </div>
