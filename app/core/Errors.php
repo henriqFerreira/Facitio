@@ -11,10 +11,10 @@ class Errors {
     }
 
     function isFileInputValid(array $fileInput) : bool {
-        if (empty($fileInput['profileImage']['name']))
+        if ($fileInput['foto']['error'] != 0)
             return false;
 
-        $filename = basename($fileInput['profileImage']['name']);
+        $filename = basename($fileInput['foto']['name']);
         $fileType = pathinfo($filename, PATHINFO_EXTENSION);
         $allowedFileTypes = array('jpg', 'jpeg');
 
@@ -26,9 +26,12 @@ class Errors {
 
     function userExists(array $params, string $userType) : bool {
         $database = new Database();
-        $param = array("cpf" => $params['cpf']);
+        $param = [
+            "cpf" => $params['cpf'],
+            "senha" => $params['senha']
+        ];
 
-        $query = "SELECT * FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf";
+        $query = "SELECT * FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf AND {$userType}_senha = :senha";
         $checkUser = $database->read($query, $param);
         
         if(!empty($checkUser))

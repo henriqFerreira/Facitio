@@ -4,7 +4,6 @@
  */
 
 use controller\Profile;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

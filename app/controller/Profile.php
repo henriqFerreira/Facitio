@@ -32,10 +32,10 @@ class Profile extends Controller {
         if (!$errorHandler->isFileInputValid($_FILES))
             $profileImageContent = $_SESSION['logged']['Foto'];
         else
-            $profileImageContent = file_get_contents($_FILES['profileImage']['tmp_name']);
+            $profileImageContent = file_get_contents($_FILES['foto']['tmp_name']);
 
         foreach ($updatingData as $key => $value) {
-            if (empty($updatingData[$key]))
+            if (empty($value))
                 $updatingData[$key] = $_SESSION['logged'][ucfirst($key)];
         }
 
@@ -60,14 +60,6 @@ class Profile extends Controller {
             'cep' => $updatingData['cep']
         );
 
-        echo '<pre>';
-        print_r($tb_endereco);
-        echo '</pre>';
-
-        echo '<pre>';
-        print_r($tb_login);
-        echo '</pre>';
-
         $find = "SELECT {$userType}_id FROM tb_login_{$userType} WHERE {$userType}_cpf = :cpf";
         $id = $database->read($find, ['cpf' => $_SESSION['logged']['Cpf']])[0]->$userId;
 
@@ -81,14 +73,27 @@ class Profile extends Controller {
         $database->write($userQuery, $tb_login);
 
         $enderecoQuery = "UPDATE tb_endereco_{$userType} SET end_nome = :rua,
-                                                                   end_num = :num,
-                                                                   end_complemento = :complemento,
-                                                                   end_bairro = :bairro,
-                                                                   end_cidade = :cidade,
-                                                                   end_estado = :estado,
-                                                                   end_cep = :cep WHERE {$userType}_id = {$id}";
+                                                             end_num = :num,
+                                                             end_complemento = :complemento,
+                                                             end_bairro = :bairro,
+                                                             end_cidade = :cidade,
+                                                             end_estado = :estado,
+                                                             end_cep = :cep WHERE {$userType}_id = {$id}";
         $database->write($enderecoQuery, $tb_endereco);
 
-        $_SESSION['logged']['Nome']
+        $_SESSION['logged']['Nome'] = $updatingData['nome'];
+        $_SESSION['logged']['Sobrenome'] = $updatingData['sobrenome'];
+        $_SESSION['logged']['Email'] = $updatingData['email'];
+        $_SESSION['logged']['Rg'] = $updatingData['rg'];
+        $_SESSION['logged']['Datanasc'] = $updatingData['datanasc'];
+        $_SESSION['logged']['Contato'] = $updatingData['contato'];
+        $_SESSION['logged']['Foto'] = $profileImageContent;
+        $_SESSION['logged']['Rua'] = $updatingData['rua'];
+        $_SESSION['logged']['Num'] = $updatingData['num'];
+        $_SESSION['logged']['Complemento'] = $updatingData['complemento'];
+        $_SESSION['logged']['Bairro'] = $updatingData['bairro'];
+        $_SESSION['logged']['Cidade'] = $updatingData['cidade'];
+        $_SESSION['logged']['Estado'] = $updatingData['estado'];
+        $_SESSION['logged']['Cep'] = $updatingData['cep'];
     }
 }
