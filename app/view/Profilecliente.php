@@ -1,10 +1,9 @@
 <div class="profile-tabs">
     <div class="wrapper">
         <div class="tab-wrapper">
-            <button id="defaultOpen" class="md-btn tab-btn" onclick="openTab(event, 'MeusDados')">Meus dados</button>
-            <button class="md-btn tab-btn" onclick="openTab(event, 'Servicos')">Serviços</button>
-            <button class="md-btn tab-btn" onclick="openTab(event, 'Solicitacoes')">Solicitações</button>
-        </div>
+            <button id="defaultOpen" class="md-btn tab-btn" onclick="openTab(event, 'Servicos')">Serviços</button>
+            <button class="md-btn tab-btn" onclick="openTab(event, 'Solicitacoes')">Solicitações pendentes</button>
+            <button class="md-btn tab-btn" onclick="openTab(event, 'MeusDados')">Dados Pessoais</button></div>
     </div>
 </div>
 
