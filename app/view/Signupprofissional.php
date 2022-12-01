@@ -79,7 +79,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-step-content">
                             <div class="form-column">
                                 <label class="profile-photo-upload" style="--background: url(<?=FILE_INPUT_PLACEHOLDER?>);">
-                                    <input type="file" name="profileImage" class="fileInput">
+                                    <input type="file" name="foto" class="fileInput">
                                 </label>
                             </div>
                         </div>
