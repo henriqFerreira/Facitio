@@ -59,7 +59,7 @@ use controller\Profile;
 </html>
 
 <?php
-if (isset($_POST['submit'])) {
-    $profile = new Profile();
+$profile = new Profile();
+if (isset($_POST['updateProfile'])) {
     $profile->updateProfile($_POST, $_SESSION['logged']['Tipo']);
 }

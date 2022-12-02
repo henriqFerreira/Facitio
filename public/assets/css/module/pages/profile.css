@@ -1,73 +1,21 @@
 @import "../../style.css";
-
-.user-profile {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.user-profile-left {
-    width: inherit; height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
+.user-profile { display: flex; justify-content: flex-start; gap: 20px; margin-bottom: 20px; }
+.user-profile-left { width: inherit; height: inherit; display: flex; flex-direction: column; justify-content: space-evenly; }
 .user-photo { align-self: center; }
 .user-photo img { width: 200px; border-radius: 5%; }
-
-.user-card {
-    display: flex;
-    gap: 50px;
-}
-
-.card-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
+.user-card { display: flex; gap: 50px; }
+.card-item { display: flex; align-items: center; justify-content: center; gap: 5px; }
 .profile-tabs { height: 45px; border-bottom: 1px solid var(--spanish-gray); margin-bottom: 20px }
 .tab-wrapper { height: 100%; display: flex; align-items: center; gap: 5px; }
 .tab-btn { background-color: var(--neutral); padding: 8px 12px; border: none; font-weight: normal; }
 .tab-btn:hover { background-color: rgba(255, 212, 82, 0.2); }
 .active-tab { position: relative; font-weight: bold; }
 .active-tab::before { content: ""; position: absolute; bottom: -12px; left: 0; width: 100%; height: 3px; background-color: var(--mustard-color); }
-
-.tab-content form {
-    display: flex;
-    gap: 100px;
-}
-
-.form-right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 50px;
-}
-
-.form-section {
-    display: flex;
-    gap: 50px;
-}
-
-.inp-column {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.profile-photo-upload {
-    display: block;
-    width: 250px; height: 250px;
-    background-image: var(--background);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.profile-photo-upload input {
-    display: none;
-}
+.tab-content form { display: flex; gap: 100px; }
+.form-right { display: flex; flex-direction: column; gap: 20px; margin-bottom: 50px; }
+.form-section { display: flex; gap: 50px; }
+.inp-column { display: flex; flex-direction: column; gap: 25px; }
+.profile-photo-upload { display: block; width: 250px; height: 250px; background-image: var(--background); background-size: contain; background-position: center; background-repeat: no-repeat; }
+.profile-photo-upload input { display: none; }
+.add-service { display: flex; justify-content: flex-end; }
+.services-wrapper { margin-top: 10px; display: flex; justify-content: flex-start; gap: 20px; }
