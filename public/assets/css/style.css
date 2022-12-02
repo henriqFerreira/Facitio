@@ -621,9 +621,8 @@ nav div{
     transition: all .2s;
 }
 
-.card-photo{
+.card-photo {
     height: 150px;
-    background-image: url("../img/academico.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -632,6 +631,11 @@ nav div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-photo img {
+    width: 100%; height: inherit;
+    object-fit: cover;
 }
 
 .card-content {

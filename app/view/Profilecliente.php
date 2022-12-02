@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="bg-btn filled-blue-btn">Salvar alterações</button>
+                <button type="submit" name="updateProfile" class="bg-btn filled-blue-btn">Salvar alterações</button>
             </div>
         </form>
     </div>

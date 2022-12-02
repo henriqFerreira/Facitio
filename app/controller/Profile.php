@@ -23,11 +23,11 @@ class Profile extends Controller {
         $this->loadView($className, $data);
     }
 
-    function updateProfile($updatingData, $userType) {
+    function updateProfile($updatingData, $userType) : void {
         $database = new Database();
         $errorHandler = new Errors();
         $userId = $userType."_id";
-        unset($updatingData['submit']);
+        unset($updatingData['updateProfile']);
 
         if (!$errorHandler->isFileInputValid($_FILES))
             $profileImageContent = $_SESSION['logged']['Foto'];
@@ -95,5 +95,11 @@ class Profile extends Controller {
         $_SESSION['logged']['Cidade'] = $updatingData['cidade'];
         $_SESSION['logged']['Estado'] = $updatingData['estado'];
         $_SESSION['logged']['Cep'] = $updatingData['cep'];
+    }
+
+    function getProfissionalServices() : array {
+        $database = new Database();
+        $id = $database->read("SELECT profissional_id FROM tb_login_profissional WHERE profissional_cpf = :cpf", ['cpf' => $_SESSION['logged']['Cpf']])[0]->profissional_id;
+        return $database->read("SELECT * FROM tb_servico WHERE profissional_id = :id", ['id' => $id]);
     }
 }

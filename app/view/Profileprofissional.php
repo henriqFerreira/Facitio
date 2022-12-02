@@ -122,13 +122,49 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="bg-btn filled-blue-btn">Salvar alterações</button>
+                <button type="submit" name="updateProfile" class="bg-btn filled-blue-btn">Salvar alterações</button>
             </div>
         </form>
     </div>
 
     <div id="Servicos" class="tab-content">
-        <h1>Serviços</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis.</p>
+        <form method="POST" class="add-service">
+            <button type="submit" name="newService" class="md-btn filled-blue-btn">+ Adicionar novo serviço</button>
+        </form>
+        <div class="services-wrapper">
+            <?php
+            $profile = new \controller\Profile();
+            $services = $profile->getProfissionalServices();
+
+            foreach ($services as $service) {
+                $foto = empty($service->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto']);
+                echo <<<HTML
+                    <div class="card">
+                        <div class="card-photo">
+                            <img src="{$foto}" alt="Foto do serviço">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-profile">
+                                <span class="card-profile-photo" data-image=""></span>
+                                <div class="card-title">
+                                    <a href="#" class="title-link black-link">{$service->servico_nome}</a>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="card-item">
+                                    <span class="icon icon-dinheiro"></span>
+                                    <p>{$service->servico_valor}</p>
+                                </div>
+                                <div class="card-item">
+                                    <span class="icon icon-estrela"></span>
+                                    <p>{$service->servico_aval}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                HTML;
+            }
+            ?>
+        </div>
     </div>
 </div>
