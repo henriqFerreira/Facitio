@@ -127,7 +127,7 @@ INSERT INTO tb_endereco_profissional VALUES (default, 'Nome', 'Num', 'Complement
 CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
   `servico_id` INT NOT NULL AUTO_INCREMENT,
   `servico_nome` VARCHAR(255) NOT NULL,
-  `servico_desc` VARCHAR(1000) NOT NULL,
+  `servico_desc` LONGTEXT NOT NULL,
   `servico_aval` FLOAT DEFAULT 0.0,
   `servico_valor` FLOAT NOT NULL,
   `servico_foto` LONGBLOB DEFAULT NULL,
@@ -144,24 +144,24 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_servico` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 1);
-INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 1);
+INSERT INTO tb_servico VALUES (default, 'Pedreiro', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 4.6, 50.0, default, 1);
+INSERT INTO tb_servico VALUES (default, 'Eletricista', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 4.4, 45.0, default, 1);
 
-INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 2);
-INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 2);
+INSERT INTO tb_servico VALUES (default, 'Encanador', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 3.0, 89.30, default, 2);
+INSERT INTO tb_servico VALUES (default, 'Aulas de Matemática', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 4.9, 12.50, default, 2);
 
-INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 3);
-INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 3);
+INSERT INTO tb_servico VALUES (default, 'Garçom', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 4.9, 75.13, default, 3);
+INSERT INTO tb_servico VALUES (default, 'Diarista', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 2.8, 54.17, default, 3);
 
-INSERT INTO tb_servico VALUES (default, 'Serviço 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 4);
-INSERT INTO tb_servico VALUES (default, 'Serviço 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis?', default, 10.0, default, 4);
+INSERT INTO tb_servico VALUES (default, 'Psicólogo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 1.5, 97.81, default, 4);
+INSERT INTO tb_servico VALUES (default, 'Consultoria Jurídica', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla viverra arcu et luctus. Nam sed risus et ante hendrerit tempus non vitae sapien. Maecenas a nisi sollicitudin, egestas nunc in, pharetra quam. Donec eu facilisis risus, fringilla efficitur nisl. Curabitur ut lacus ullamcorper diam aliquet elementum. Donec ac laoreet justo. Etiam maximus neque sit amet arcu aliquet feugiat. Integer tristique lectus ac nibh iaculis facilisis. Aenean a mollis arcu. Vivamus rhoncus malesuada nunc, in luctus purus blandit id. Sed sit amet massa a nunc porta eleifend vel eu sapien. Nunc in semper tellus. Donec ornare suscipit mauris, eu auctor mauris vehicula in. Praesent fermentum enim eu velit egestas rutrum. Integer id scelerisque est. Mauris arcu nisi, sodales non libero sit amet, commodo dignissim enim. Sed nec iaculis neque. In dapibus urna id libero placerat, nec congue sem accumsan. Cras bibendum, neque sit amet consectetur convallis, elit nulla mattis urna, eget porttitor mauris justo sed lorem. Vivamus fermentum iaculis turpis quis lobortis. Nam ac euismod dolor. Sed pellentesque, sem sit amet pellentesque pretium, arcu ipsum facilisis orci, tempus accumsan nunc urna ac diam. Vivamus volutpat leo ex, at gravida nisl gravida sit amet. Donec sollicitudin porta placerat. Ut in lectus lacus. Pellentesque a aliquam purus. Fusce bibendum urna ligula, nec pharetra nisl sollicitudin ac. Donec a ante porta justo tempor vestibulum. Duis finibus id urna sed molestie. Aenean bibendum, risus ut vehicula rhoncus, justo mauris vulputate lectus, in posuere purus sapien vitae augue.', 4.7, 80.30, default, 4);
 /*------------END SERVIÇO-------------*/
 
 /*----------SOLICITAÇÃO----------*/
 CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
   `solicitacao_id` INT NOT NULL AUTO_INCREMENT,
   `solicitacao_data` VARCHAR(45) NULL DEFAULT NULL,
-  `solicitacao_status` ENUM('S', 'N', 'A') NULL DEFAULT NULL,
+  `solicitacao_status` ENUM('S', 'N', 'P') NULL DEFAULT NULL,
   `cliente_id` INT(11) NOT NULL,
   `profissional_id` INT(11) NOT NULL,
   `servico_id` INT(11) NOT NULL,
@@ -193,45 +193,45 @@ CREATE TABLE IF NOT EXISTS `DB_Facitio`.`tb_solicitacao` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 4, 1);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 1, 4, 2);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 4, 1);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 2, 4, 2);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 4, 1);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 3, 4, 2);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 1, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 2, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 3, 1);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 4, 1);
-
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 1, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 2, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 3, 2);
-INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'A', 4, 4, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 1, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 2, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 3, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 4, 1);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 1, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 2, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 3, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 1, 4, 2);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 1, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 2, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 3, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 4, 1);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 1, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 2, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 3, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 2, 4, 2);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 1, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 2, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 3, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 4, 1);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 1, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 2, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 3, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 3, 4, 2);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 1, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 2, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 3, 1);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 4, 1);
+#
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 1, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 2, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 3, 2);
+# INSERT INTO tb_solicitacao VALUES (default, CURDATE(), 'P', 4, 4, 2);
 /*----------END PROFISSIONAL----------*/
 
 SELECT * FROM tb_login_cliente;

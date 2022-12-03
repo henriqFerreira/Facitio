@@ -95,6 +95,7 @@ class Profile extends Controller {
         $_SESSION['logged']['Cidade'] = $updatingData['cidade'];
         $_SESSION['logged']['Estado'] = $updatingData['estado'];
         $_SESSION['logged']['Cep'] = $updatingData['cep'];
+        echo '<meta http-equiv="Refresh" content="0">';
     }
 
     function getProfissionalServices() : array {

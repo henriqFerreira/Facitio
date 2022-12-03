@@ -30,8 +30,9 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 
 
 /* Highlight section (hglg-sec) */
-.hglg-sec { margin-top: 100px; }
-.hglg-sec h1{ margin:20px 0px 20px 0px;}
+.hglg-sec h1 { margin: 0 0 20px 0; }
+.others-sec { margin-top: 50px }
+.others-sec h1 { margin: 0 0 20px 0; }
 
 footer{
     height: 280px; 

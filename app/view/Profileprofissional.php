@@ -12,7 +12,7 @@
     <div id="MeusDados" class="tab-content">
         <form method="POST" enctype="multipart/form-data">
             <div class="form-left">
-                <label class="profile-photo-upload" style="--background: url(<?=empty($_SESSION['logged']['Foto']) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto'])?>);">
+                <label class="profile-photo-upload" style="--background: url(<?=DEFAULT_PHOTO?>);">
                     <input type="file" name="foto" class="fileInput">
                 </label>
             </div>
@@ -137,7 +137,7 @@
             $services = $profile->getProfissionalServices();
 
             foreach ($services as $service) {
-                $foto = empty($service->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($_SESSION['logged']['Foto']);
+                $foto = empty($service->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($service->servico_foto);
                 echo <<<HTML
                     <div class="card">
                         <div class="card-photo">
@@ -166,5 +166,9 @@
             }
             ?>
         </div>
+    </div>
+
+    <div id="Solicitacoes" class="tab-content">
+        <h1>Solicitacoes</h1>
     </div>
 </div>
