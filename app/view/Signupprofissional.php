@@ -27,9 +27,14 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="<?=ASSETS?>css/module/auth/auth.css">
 </head>
 <body>
-    <main id="auth-wrapper">
+    <main id="auth-wrapper" style="background-image: url('../../public/assets/img/background/auth-background.jpg');">
         <div class="auth-content">
             <span class="icon bg-logo-yellow"></span>
+            <?php
+            if (isset($_SESSION['auth-error'])) {
+                echo '<span id="auth-error-msg-signup">&#9888; ' . $_SESSION['auth-error'] . '</span>';
+            }
+            ?>
             <form method="POST" class="signup-form" enctype="multipart/form-data">
                 <div class="form-title">
                     <h2>Crie sua conta</h2>

@@ -11,6 +11,10 @@ class Signin extends Controller {
         $data = array (
             "TITLE" => WEBSITE_NAME . ": Entrar como..."
         );
+
+        if (isset($_SESSION['auth-error']))
+            unset($_SESSION['auth-error']);
+
         $this->loadView("Signin", $data);
     }
 
@@ -77,10 +81,14 @@ class Signin extends Controller {
                 header('Location: ' . ROOT . 'profile');
                 die;
             } else {
-                die("Usuário inexistente.");
+                $_SESSION['auth-error'] = 'Usuário inexistente.';
+                echo '<meta http-equiv="Refresh" content="0">';
+                die();
             }
         } else {
-            die("Preencha todos os campos");
+            $_SESSION['auth-error'] = 'Preencha todos os campos!';
+            echo '<meta http-equiv="Refresh" content="0">';
+            die();
         }
     }
 }
