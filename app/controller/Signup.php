@@ -12,6 +12,10 @@ class Signup extends Controller {
         $data = array (
             "TITLE" => WEBSITE_NAME . ": Cadastrar como..."
         );
+
+        if (isset($_SESSION['auth-error']))
+            unset($_SESSION['auth-error']);
+
         $this->loadView("Signup", $data);
     }
     function cliente() {
@@ -33,9 +37,11 @@ class Signup extends Controller {
         $database = new Database();
         $errorHandler = new Errors();
 
-        if (!$errorHandler->isFileInputValid($_FILES))
-            die("Imagem de usuário inválida");
-
+        if (!$errorHandler->isFileInputValid($_FILES)) {
+            $_SESSION['auth-error'] = 'Imagem Inválida';
+            echo '<meta http-equiv="Refresh" content="0">';
+            die();
+        }
         $profileImage = $_FILES['profileImage']['tmp_name'];
         $profileImageContent = file_get_contents($profileImage);
 
@@ -110,10 +116,14 @@ class Signup extends Controller {
                 header('Location: ' . ROOT . 'profile');
                 die;
             } else {
-                die("Usuário existente.");
+                $_SESSION['auth-error'] = 'CPF já cadastrado.';
+                echo '<meta http-equiv="Refresh" content="0">';
+                die();
             }
         } else {
-            die("Preencha todos os campos");
+            $_SESSION['auth-error'] = 'Preencha todos os campos!';
+            echo '<meta http-equiv="Refresh" content="0">';
+            die();
         }
     }
 }

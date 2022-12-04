@@ -53,6 +53,11 @@ if (isset($_POST['submit'])) {
                     </div>
                     <input class="bg-btn outline-yellow-btn" type="submit" name="submit" value="ENTRAR">
                 </form>
+                <?php
+                if (isset($_SESSION['auth-error'])) {
+                    echo '<span id="auth-error-msg-signin">&#9888; ' . $_SESSION['auth-error'] . '</span>';
+                }
+                ?>
             </div>
             <a href="<?=ROOT?>signup/" class="bg-link black-link">Não possui uma conta? Cadastre-se</a>
             <div id="ftr-footer">

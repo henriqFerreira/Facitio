@@ -2,7 +2,7 @@
 .user-profile { display: flex; justify-content: flex-start; gap: 20px; margin-bottom: 20px; }
 .user-profile-left { width: inherit; height: inherit; display: flex; flex-direction: column; justify-content: space-evenly; }
 .user-photo { align-self: center; }
-.user-photo img { width: 200px; border-radius: 5%; }
+.user-photo img { width: 200px; height: 200px; object-fit: cover; border-radius: 5%; }
 .user-card { display: flex; gap: 50px; }
 .card-item { display: flex; align-items: center; justify-content: center; gap: 5px; }
 .profile-tabs { height: 45px; border-bottom: 1px solid var(--spanish-gray); margin-bottom: 20px }
@@ -15,7 +15,7 @@
 .form-right { display: flex; flex-direction: column; gap: 20px; margin-bottom: 50px; }
 .form-section { display: flex; gap: 50px; }
 .inp-column { display: flex; flex-direction: column; gap: 25px; }
-.profile-photo-upload { display: block; width: 250px; height: 250px; background-image: var(--background); background-size: contain; background-position: center; background-repeat: no-repeat; }
+.profile-photo-upload { display: block; width: 250px; height: 250px; background-image: var(--background); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 5% }
 .profile-photo-upload input { display: none; }
 .add-service { display: flex; justify-content: flex-end; }
 .services-wrapper { margin-top: 10px; display: flex; justify-content: flex-start; gap: 20px; }
