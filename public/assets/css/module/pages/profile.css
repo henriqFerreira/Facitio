@@ -17,5 +17,23 @@
 .inp-column { display: flex; flex-direction: column; gap: 25px; }
 .profile-photo-upload { display: block; width: 250px; height: 250px; background-image: var(--background); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 5% }
 .profile-photo-upload input { display: none; }
-.add-service { display: flex; justify-content: flex-end; }
 .services-wrapper { margin-top: 10px; display: flex; justify-content: flex-start; gap: 20px; }
+
+.services-modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vh; background-color: var(--neutral); border-radius: 4px; overflow: hidden; box-shadow: 0 0 5px 1000px rgba(0, 0, 0, 0.25); z-index: 10; }
+.modal-open { display: block; }
+.modal-left { width: 40%; height: 100%; float: left; }
+.modal-right { width: 60%; height: 100%; float: right; padding: 16px; background-color: var(--neutral); }
+.modal-right form { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; gap: 10px; }
+.new-service-photo { display: block; width: 100%; height: 100%; background-image: var(--service-background); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.new-service-photo input { display: none; }
+.modal-title { display: flex; justify-content: space-between; }
+.close-modal-btn { width: 24px; height: 24px; border-radius: 50%; cursor: pointer; background: none; border: none; }
+.modal-content { width: 100%; height: 100%; padding-top: 10px; }
+.modal-input-row { display: flex; justify-content: space-between }
+.modal-input { display: flex; flex-direction: column; gap: 5px; }
+.modal-input label { font-size: var(--medium-text); font-weight: 400; }
+.modal-input input, .modal-input select { width: 280px; height: 45px; font-size: var(--big-text); padding: 8px 14px; border: 0 0 2px 0 solid var(--black-color); border-radius: 4px; background-color: var(--light-gray); }
+.modal-input input[type="number"] { -moz-appearance: initial; padding-left: 50px; }
+.modal-input-icon { position: relative; }
+.modal-input-icon span { position: absolute; top: 50%; left: 5%; transform: translate(-50%, -50%); }
+.modal-input textarea { resize: none; padding: 8px 14px; border: 0 0 2px 0 solid var(--black-color); border-radius: 4px; background-color: var(--light-gray); }
