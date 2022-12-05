@@ -128,9 +128,54 @@
     </div>
 
     <div id="Servicos" class="tab-content">
-        <form method="POST" class="add-service">
-            <button type="submit" name="newService" class="md-btn filled-blue-btn">+ Adicionar novo serviço</button>
-        </form>
+        <button class="md-btn filled-blue-btn add-service" onclick="openModal();">+ Adicionar novo serviço</button>
+        <div class="services-modal">
+            <div class="modal-left">
+                <label class="new-service-photo" style="--service-background: url(<?=DEFAULT_NEW_SERVICE_PHOTO?>);">
+                    <input type="file" name="foto" class="newServiceFileInput">
+                </label>
+            </div>
+            <div class="modal-right">
+                <div class="modal-title">
+                    <h2>Adicionar novo serviço</h2>
+                    <button class="close-modal-btn" onclick="closeModal();">&#10006;</button>
+                </div>
+                <div class="modal-content">
+                    <form method="POST">
+                        <div class="modal-input-row">
+                            <div class="modal-input">
+                                <label for="service-name">Nome do serviço</label>
+                                <input type="text" id="service-name" placeholder="Ex: Aulas de Português">
+                            </div>
+                            <div class="modal-input">
+                                <label for="service-category">Categoria</label>
+                                <select name="service-cat" id="service-category">
+                                    <option value="estudo">Estudo</option>
+                                    <option value="automobilistico">Automobilistico</option>
+                                    <option value="festas-e-eventos">Festas & Eventos</option>
+                                    <option value="reparos-e-consertos">Reparos & Consertos</option>
+                                    <option value="servicos-domesticos">Serviços Domésticos</option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="ux-ui-design">UX/UI Design</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <label for="price">Valor</label>
+                            <div class="modal-input-icon">
+                                <span class="icon icon-input-money"></span>
+                                <input type="number" name="service-price" id="price" min="1.00" max="10000.00" step="any">
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <label for="description">Descrição</label>
+                            <textarea name="service-description" id="description" cols="30" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="md-btn filled-yellow-btn">Criar novo serviço</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="services-wrapper">
             <?php
             $profile = new \controller\Profile();

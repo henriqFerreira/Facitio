@@ -42,7 +42,7 @@ class Signup extends Controller {
             echo '<meta http-equiv="Refresh" content="0">';
             die();
         }
-        $profileImage = $_FILES['profileImage']['tmp_name'];
+        $profileImage = $_FILES['foto']['tmp_name'];
         $profileImageContent = file_get_contents($profileImage);
 
         $params = array(

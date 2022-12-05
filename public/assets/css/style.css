@@ -219,6 +219,16 @@ input[type=number] {
     background-image: url("../img/icons/icon-data.svg");
 }
 
+.icon-input-service {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-service.svg");
+}
+
+.icon-input-money {
+    height: 24px; width: 24px;
+    background-image: url("../img/icons/icon-money.svg");
+}
+
 .icon-dinheiro {
     height: 24px; width: 24px;
     background-image: url("../img/icons/icon-dinheiro.svg");

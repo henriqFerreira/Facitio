@@ -28,3 +28,4 @@ define('ASSETS', str_replace("app/core", "public/assets", $path));
 define('DEFAULT_PHOTO', ASSETS . "img/icons/placeholder-profile.svg");
 define('DEFAULT_SERVICE_PHOTO', ASSETS . "img/icons/placeholder-service.svg");
 define('FILE_INPUT_PLACEHOLDER', ASSETS . "img/icons/placeholder-file-input.svg");
+define('DEFAULT_NEW_SERVICE_PHOTO', ASSETS . "img/icons/placeholder-new-service.svg");
