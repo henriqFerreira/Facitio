@@ -129,27 +129,32 @@
 
     <div id="Servicos" class="tab-content">
         <button class="md-btn filled-blue-btn add-service" onclick="openModal();">+ Adicionar novo serviço</button>
+        <?php
+        if (isset($_SESSION['auth-error'])) {
+            echo '<span id="auth-error-msg-signin">&#9888; ' . $_SESSION['auth-error'] . '</span>';
+        }
+        ?>
         <div class="services-modal">
-            <div class="modal-left">
-                <label class="new-service-photo" style="--service-background: url(<?=DEFAULT_NEW_SERVICE_PHOTO?>);">
-                    <input type="file" name="foto" class="newServiceFileInput">
-                </label>
-            </div>
-            <div class="modal-right">
-                <div class="modal-title">
-                    <h2>Adicionar novo serviço</h2>
-                    <button class="close-modal-btn" onclick="closeModal();">&#10006;</button>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="modal-left">
+                    <label class="new-service-photo" style="--service-background: url(<?=DEFAULT_NEW_SERVICE_PHOTO?>);">
+                        <input type="file" name="foto" class="newServiceFileInput">
+                    </label>
                 </div>
-                <div class="modal-content">
-                    <form method="POST">
+                <div class="modal-right">
+                    <div class="modal-title">
+                        <h2>Adicionar novo serviço</h2>
+                        <button class="close-modal-btn" onclick="closeModal();">&#10006;</button>
+                    </div>
+                    <div class="modal-content">
                         <div class="modal-input-row">
                             <div class="modal-input">
                                 <label for="service-name">Nome do serviço</label>
-                                <input type="text" id="service-name" placeholder="Ex: Aulas de Português">
+                                <input type="text" name="servico_nome" id="service-name" placeholder="Ex: Aulas de Português">
                             </div>
                             <div class="modal-input">
                                 <label for="service-category">Categoria</label>
-                                <select name="service-cat" id="service-category">
+                                <select name="servico_cat" id="service-category">
                                     <option value="estudo">Estudo</option>
                                     <option value="automobilistico">Automobilistico</option>
                                     <option value="festas-e-eventos">Festas & Eventos</option>
@@ -164,17 +169,17 @@
                             <label for="price">Valor</label>
                             <div class="modal-input-icon">
                                 <span class="icon icon-input-money"></span>
-                                <input type="number" name="service-price" id="price" min="1.00" max="10000.00" step="any">
+                                <input type="number" name="servico_valor" id="price" min="1.00" max="10000.00" step="any">
                             </div>
                         </div>
                         <div class="modal-input">
                             <label for="description">Descrição</label>
-                            <textarea name="service-description" id="description" cols="30" rows="3"></textarea>
+                            <textarea name="servico_desc" id="description" cols="30" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="md-btn filled-yellow-btn">Criar novo serviço</button>
-                    </form>
+                        <button type="submit" name="newService" class="md-btn filled-yellow-btn">Criar novo serviço</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="services-wrapper">
             <?php

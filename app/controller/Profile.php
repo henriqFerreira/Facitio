@@ -17,7 +17,10 @@ class Profile extends Controller {
             "TITLE" => WEBSITE_NAME . ": Soluções fáceis para seus problemas difíceis.",
             "TYPE" => $_SESSION['logged']['Tipo']
         );
-        
+
+        if (isset($_SESSION['auth-error']))
+            unset($_SESSION['auth-error']);
+
         $className = explode("\\", __CLASS__);
         $className = array_pop($className);
         $this->loadView($className, $data);
@@ -102,5 +105,26 @@ class Profile extends Controller {
         $database = new Database();
         $id = $database->read("SELECT profissional_id FROM tb_login_profissional WHERE profissional_cpf = :cpf", ['cpf' => $_SESSION['logged']['Cpf']])[0]->profissional_id;
         return $database->read("SELECT * FROM tb_servico WHERE profissional_id = :id", ['id' => $id]);
+    }
+
+    function setNewService(array $newServiceData) : void {
+        $database = new Database();
+        $errorHandler = new Errors();
+        unset($newServiceData['newService']);
+
+        if (!$errorHandler->isFileInputValid($_FILES)) {
+            die();
+        }
+
+        $newServiceData['servico_foto'] = file_get_contents($_FILES['foto']['tmp_name']);
+
+        if (!$errorHandler->isInputsEmpty($newServiceData)) {
+            $id = $database->read("SELECT profissional_id FROM tb_login_profissional WHERE profissional_cpf = :cpf", ['cpf' => $_SESSION['logged']['Cpf']])[0]->profissional_id;
+            $newServiceData['profissional_id'] = $id;
+            $database->write("INSERT INTO tb_servico VALUES (default, :servico_nome, :servico_desc, default, :servico_valor, :servico_foto, :servico_cat, :profissional_id)", $newServiceData);
+            echo '<meta http-equiv="Refresh" content="0">';
+        } else {
+            die();
+        }
     }
 }
