@@ -59,7 +59,10 @@ use controller\Profile;
 </html>
 
 <?php
-$profile = new Profile();
 if (isset($_POST['updateProfile'])) {
-    $profile->updateProfile($_POST, $_SESSION['logged']['Tipo']);
+    $this->updateProfile($_POST, $_SESSION['logged']['Tipo']);
+}
+
+if (isset($_POST['newService'])) {
+    $this->setNewService($_POST);
 }

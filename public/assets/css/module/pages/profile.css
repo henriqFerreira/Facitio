@@ -23,12 +23,12 @@
 .modal-open { display: block; }
 .modal-left { width: 40%; height: 100%; float: left; }
 .modal-right { width: 60%; height: 100%; float: right; padding: 16px; background-color: var(--neutral); }
-.modal-right form { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; gap: 10px; }
+.services-modal form { width: 100%; height: 100%; display: flex; gap: 10px; }
 .new-service-photo { display: block; width: 100%; height: 100%; background-image: var(--service-background); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .new-service-photo input { display: none; }
 .modal-title { display: flex; justify-content: space-between; }
 .close-modal-btn { width: 24px; height: 24px; border-radius: 50%; cursor: pointer; background: none; border: none; }
-.modal-content { width: 100%; height: 100%; padding-top: 10px; }
+.modal-content { width: 100%; height: 100%; padding-top: 10px; display: flex; flex-direction: column; gap: 40px; }
 .modal-input-row { display: flex; justify-content: space-between }
 .modal-input { display: flex; flex-direction: column; gap: 5px; }
 .modal-input label { font-size: var(--medium-text); font-weight: 400; }
