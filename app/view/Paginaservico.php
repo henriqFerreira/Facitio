@@ -4,6 +4,7 @@
  */
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/autoLoader.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
+$data = $data[0];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?=$data['TITLE']?></title>
+    <title><?=$data->servico_nome?></title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +28,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
         <div class="wrapper">
             <section>
                 <div>
-                    <div class="service-photo"></div>
+                    <div class="service-photo">
+                        <img src="<?=empty($data->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($data->servico_foto);?>" alt="Imagem do serviço">
+                    </div>
                         <div>
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, a! Debitis perferendis voluptas quam.</h1>
+                            <h1><?=$data->servico_nome?></h1>
                             <div class="service-content">
                                 <div class="service-content-left">
-                                    <div>Descrição lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta massa. Mauris sit amet felis sed ligula eleifend suscipit. Donec vulputate, risus sit amet ullamcorper luctus, odio sapien accumsan metus, a laoreet quam lectus ac arcu. Duis hendrerit turpis maximus nunc ultricies, sed consequat sapien faucibus. Morbi quis metus orci. Morbi commodo felis massa, vel lobortis odio viverra a. Vestibulum ultricies condimentum justo nec consequat. Suspendisse potenti. Maecenas id nulla sed justo mattis molestie.</div>
-                                    <div style="padding-left: 25px;margin-top: 20px;">
-                                        <ul>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                        </ul>
-                                    </div>
+                                    <p><?=$data->servico_desc?></p>
                                 </div>
                                 <div class="service-content-right">
                                     <div class="flex-container">
@@ -117,11 +111,13 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                             </div>
                         </div>
                     </div>
-                <hr> 
+                <hr>
                 <div class="bottom">
-                    <span class="icon foto"></span>
+                    <div class="profissional-foto">
+                        <img src="<?=empty($data->profissional_foto) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($data->profissional_foto);?>" alt="Imagem do profissional">
+                    </div>
                     <div>
-                        <h3>Nome do Profissional</h3>
+                        <h3><?=$data->profissional_nome?></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ab ipsa cumque veritatis quos repellat a? Aspernatur iusto neque adipisci architecto maxime eum at, ea, molestias dolore quam placeat soluta.</p>
                     </div>
                 </div>

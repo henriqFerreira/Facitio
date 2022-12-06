@@ -34,6 +34,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                         foreach ($services as $service) {
                             $fotoServico = empty($service->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($service->servico_foto);
                             $fotoProfissional = empty($service->profissional_foto) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($service->profissional_foto);
+                            $path = ROOT . "Paginaservico/servico/" . $service->servico_id;
                             echo <<<HTML
                                 <div class="card">
                                     <div class="card-photo">
@@ -45,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                                 <img src="{$fotoProfissional}" alt="Foto do profissional">
                                             </div>
                                             <div class="card-title">
-                                                <a href="#" class="title-link black-link">{$service->servico_nome}</a>
+                                                <a href="{$path}" class="title-link black-link">{$service->servico_nome}</a>
                                                 <p class="md-link black-link">{$service->profissional_nome}</p>
                                             </div>
                                         </div>
@@ -74,6 +75,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                         foreach ($services as $service) {
                             $fotoServico = empty($service->servico_foto) ? DEFAULT_SERVICE_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($service->servico_foto);
                             $fotoProfissional = empty($service->profissional_foto) ? DEFAULT_PHOTO : "data:image/jpg;charset=utf8;base64,".base64_encode($service->profissional_foto);
+                            $path = ROOT . "Paginaservico/servico/" . $service->servico_id;
                             echo <<<HTML
                                 <div class="card">
                                     <div class="card-photo">
@@ -85,7 +87,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/Facitio/app/core/Config.php';
                                                 <img src="{$fotoProfissional}" alt="Foto do profissional">
                                             </div>
                                             <div class="card-title">
-                                                <a href="#" class="title-link black-link">{$service->servico_nome}</a>
+                                                <a href="{$path}" class="title-link black-link">{$service->servico_nome}</a>
                                                 <p class="md-link black-link">{$service->profissional_nome}</p>
                                             </div>
                                         </div>
