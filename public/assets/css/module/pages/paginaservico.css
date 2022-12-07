@@ -29,11 +29,14 @@ nav div{ display: flex; align-items: center; gap: 30px; }
 }
 
 .service-photo {
-    min-height: 525px;
+    height: 525px;
     border-radius: 4px;
-    background-image: url("../../../img/Foto.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
+}
+
+.service-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
 }
 
 .service-content {
@@ -88,7 +91,5 @@ hr { margin-top: 50px; margin-bottom: 50px; border: 1px solid var(--mustard-colo
     margin-bottom: 50px;
 }
 
-.foto {
-    background-image: url("../../../img/icons/Foto-do-profissional.svg");
-    height: 100px; width: 100px;
-}
+.profissional-foto { width: 150px; border-radius: 100px; overflow: hidden }
+.profissional-foto img { width: 100%; object-fit: cover; }
