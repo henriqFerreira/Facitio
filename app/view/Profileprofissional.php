@@ -222,3 +222,4 @@
         <h1>Solicitacoes</h1>
     </div>
 </div>
+<script src="<?=ASSETS?>js/new-service.js"></script>
